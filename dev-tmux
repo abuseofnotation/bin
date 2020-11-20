@@ -1,0 +1,13 @@
+#!/bin/sh
+
+kill $(ps aux | grep '[n]ginx' | awk '{print $2}')
+sudo nginx -c ~/pr/usq_api/server-config/nginx/local/nginx.conf 
+
+cd ~/pr/usq_api
+tmux new-session -d -s dev 
+tmux send-keys -t dev 'git status' ENTER
+tmux split-window -v 
+tmux send-keys -t dev 'npm run webpack:watch' ENTER
+tmux split-window -h 
+tmux send-keys -t dev 'npm run up' ENTER
+tmux a
