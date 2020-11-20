@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+lynx -accept-all-cookies https://merriam-webster.com/dictionary/$@
+
+

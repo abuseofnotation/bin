@@ -1,19 +1,3 @@
-" Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
-" inoremap 
-" Description: A minimal, but feature rich, example .vimrc. If you are a
-"              newbie, basing your first .vimrc on this file is a good choice.
-"              If you're a more advanced user, building your own .vimrc based
-"              on this file is still a good idea.
- 
-"------------------------------------------------------------
-" Features {{{1
-"
-" These options and commands enable some very useful features in Vim, that
-" no user should have to live without.
- 
-" Set 'nocompatible' to ward off unexpected things that your distro might
-" have made, as well as sanely reset options when re-sourcing .vimrc
-set nocompatible
  
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
@@ -24,7 +8,7 @@ set nocompatible
 syntax off
  
  
-"------------------------------------------------------------
+"
 " Must have options {{{1
 "
 " These are highly recommended options.
@@ -59,20 +43,6 @@ set showcmd
 " Highlight searches (use <C-L> to temporarily turn off highlighting; see the
 " mapping of <C-L> below)
 set hlsearch
- 
-" Modelines have historically been a source of security vulnerabilities. As
-" such, it may be a good idea to disable them and use the securemodelines
-" script, <http://www.vim.org/scripts/script.php?script_id=1876>.
-" set nomodeline
- 
- 
-"------------------------------------------------------------
-" Usability options {{{1
-"
-" These are options that users frequently set in their .vimrc. Some of them
-" change Vim's behaviour in ways which deviate from the true Vi way, but
-" which are considered to add usability. Which, if any, of these options to
-" use is very much a personal preference, but they are harmless.
  
 " Use case insensitive search, except when using capital letters
 set ignorecase
@@ -121,15 +91,18 @@ set number
  
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
+
+let mapleader = "\<Space>"
  
-" Use <F11> to toggle between 'paste' and 'nopaste'
-set pastetoggle=<F11>
+
+" Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
+" which is the default
+map Y y$
+
  
- 
-"------------------------------------------------------------
-" Indentation options {{{1
 "
-" Indentation settings according to personal preference.
+" Indentation options 
+"
  
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
@@ -142,21 +115,61 @@ set expandtab
 "set shiftwidth=4
 "set tabstop=4
  
- 
-"------------------------------------------------------------
-" Mappings {{{1
-"
-" Useful mappings
- 
-" Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
-" which is the default
-map Y y$
- 
-" Map <C-L> (redraw screen) to also turn off search highlighting until the
-" next search
-nnoremap <C-L> :nohl<CR><C-L>
 
-let mapleader = "\<Space>"
+"
+" writing
+"
+
+"display word count for files in dir
+nmap <leader>w <esc>:!wc %:p:h/*<CR>
+
+"spellcheck the current file
+nmap <leader>s <esc>:!spellchecker -f %<CR>
+
+"Search wikipedia for current word, using lynx
+"nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/w/index.php?search='<c-r>"'<CR>
+nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/wiki/<c-r>"<CR>
+
+"
+" node programming
+"
+
+"start current file in node js
+nmap <leader>n <esc>:!node %<CR>
+
+"insert debugger statement in JS file and launch test suite
+nnoremap <leader>t :w<CR> :!killall -9 node;node debug --es_staging node_modules/nodeunit/bin/nodeunit <CR>
+
+"eslint fix file
+nnoremap <leader>l :!npx eslint --fix %<CR>
+
+
+"
+" modes
+"
+
+
+"jk goes to normal mode
+inoremap jk <esc>
+
+"Ctrl + j k h l goes to normal mode
+inoremap <C-j> <esc> j
+inoremap <C-k> <esc> k
+inoremap <C-h> <esc> h
+inoremap <C-l> <esc> l
+
+
+"next match an put result in the middle
+nnoremap <leader>n nzz
+
+inoremap d^ v^d
+
+"replace the current line by the contents of the zeroeth register (delete
+"without erazing pasted content
+
+nnoremap <leader>0 "0p
+
+"disable keyboard navigation
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -170,6 +183,21 @@ inoremap <right> <nop>
 "noremap jj <nop>
 "noremap kk <nop>
 
+"
+" settings
+"
+
+"Search in all folders by default
+set path+=**
+
+"File browser
+let g:netrw_banner=0
+let g:liststyle=3
+
+"Save files so watchers are triggered
+:set backupcopy=yes
+
+
 "set relativenumber
 set undofile
 set autoread
@@ -181,50 +209,14 @@ set autoread
 "autocmd TextChanged,TextChangedI <buffer> silent write
 
 
-"
-" this enables "visual" wrapping
+"this enables "visual" wrapping
 set wrap
 
+" j and k navigation do not skip wrapped lines
 nnoremap j gj
 nnoremap k gk
+
 " this turns off physical line wrapping (ie: automatic insertion of newlines)
 set textwidth=0 wrapmargin=0
 
-nmap <leader>n <esc>:!node %<CR>
-nmap <leader>w <esc>:!wc %:p:h/*<CR>
-nmap <leader>s <esc>:!spellchecker -f %<CR>
-
-"insert dibugger statement in JS file
-nnoremap <leader>t :w<CR> :!killall -9 node;node debug --es_staging node_modules/nodeunit/bin/nodeunit <CR>
-
-"replace the current line by the contents of the zeroeth register 
-nnoremap <leader>0 "0p
-
-"jk goes to normal mode
-inoremap jk <esc>
-
-"Some other stuff too go to normal mode
-inoremap <C-j> <esc> j
-inoremap <C-k> <esc> k
-inoremap <C-h> <esc> h
-inoremap <C-l> <esc> l
-
-
-"eslint fix file
-nnoremap <leader>l :!npx eslint --fix %<CR>
-
-"next match an put result in the middle
-nnoremap <leader>n nzz
-
-inoremap d^ v^d
-
-"Search in all folders by default
-set path+=**
-
-"File browser
-let g:netrw_banner=0
-let g:liststyle=3
-
-"Save files so watchers are triggered
-:set backupcopy=yes
 
