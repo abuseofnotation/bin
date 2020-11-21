@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+lynx -accept-all-cookies https://goduckgo.com/html/?q="$@"
+
+
