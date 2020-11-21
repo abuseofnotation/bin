@@ -35,13 +35,13 @@ Same but also pushes the changes.
 ===
 Commits and push current changes with a predefined message.
 
-rv
+`rv`
 ==
 Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted.
 
 Usage: `rv <<<<` opens up all files with merge conflicts.
 
-vt
+`vt`
 ===
 Just `vim ~/temp.md` - a handy solution for keeping notes.
 
