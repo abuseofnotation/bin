@@ -124,7 +124,7 @@ set expandtab
 nmap <leader>w <esc>:!wc %:p:h/*<CR>
 
 "spellcheck the current file
-nmap <leader>s <esc>:!spellchecker -f %<CR>
+nmap <leader>s <esc>:!spellchecker -f % --dictionaries dictionary.txt<CR>
 
 "Search wikipedia for current word, using lynx
 "nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/w/index.php?search='<c-r>"'<CR>
