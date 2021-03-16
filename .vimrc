@@ -219,4 +219,15 @@ nnoremap k gk
 " this turns off physical line wrapping (ie: automatic insertion of newlines)
 set textwidth=0 wrapmargin=0
 
+"markdown controls
+nnoremap <leader>i wbi*<esc>ea*<esc>
+nnoremap <leader>b wbi**<esc>ea**<esc>
 
+"autosave on text changed
+autocmd CursorHold,CursorHoldI * update
+
+" More frequent updates
+set updatetime=750
+
+"open notes
+nmap <leader>n <esc>:tabe %:p:h/notes.md<CR>

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+branches=( "master" "production" "main" "dev" )
+ 
+for i in "${branches[@]}"
+do
+    if [ $(git rev-parse --abbrev-ref HEAD) == "$i" ]
+    then
+        echo "Error: You are on $i"
+        exit 1
+    fi
+done
+
+git push --force-with-lease
