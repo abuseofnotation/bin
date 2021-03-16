@@ -37,9 +37,13 @@ Commits and push current changes with a predefined message.
 
 `rv`
 ==
-Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted.
+Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted. e.g. `rv <<<<` opens up all files with merge conflicts.
 
-Usage: `rv <<<<` opens up all files with merge conflicts.
+`fv`
+==
+Searches for a file in `fzf` and opens the result in `vim`.
+
+
 
 `vt`
 ===
