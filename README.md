@@ -59,9 +59,7 @@ Open files in vim
 
 `rv <term>`
 ---
-Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted.
-
-Usage: `rv <<<<` opens up all files with merge conflicts.
+Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted. e.g. `rv <<<<` opens up all files with merge conflicts.
 
 `fv`
 ---
