@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+vim -p $(git diff ${1:-'HEAD~'} --name-only) 

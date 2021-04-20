@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+git up
+git fetch && git rebase origin/master
+git force-push
+

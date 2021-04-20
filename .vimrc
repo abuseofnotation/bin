@@ -1,4 +1,3 @@
- 
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
@@ -157,6 +156,7 @@ inoremap <C-j> <esc> j
 inoremap <C-k> <esc> k
 inoremap <C-h> <esc> h
 inoremap <C-l> <esc> l
+inoremap <C-p> <esc> p
 
 
 "next match an put result in the middle
@@ -231,3 +231,10 @@ set updatetime=750
 
 "open notes
 nmap <leader>n <esc>:tabe %:p:h/notes.md<CR>
+
+
+"Text to speech
+vmap <leader>s :'<,'> w ! say & <CR><CR>
+nmap <leader>p V<leader>s
+nmap <leader>o :! kill `pgrep say` & <CR><CR>
+
