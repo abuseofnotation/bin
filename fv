@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-vim -p $(fzf) 
+vim -p $(fname "$1" $2)

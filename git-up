@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 git fetch
-git checkout master && git pull
-git fetch && git checkout staging && git reset --hard origin/staging
-git checkout @{-2}
+git checkout master && git reset --hard origin/master 
+git checkout staging && git reset --hard origin/staging
+bin/update

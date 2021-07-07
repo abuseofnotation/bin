@@ -1,11 +1,8 @@
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
-" filetype indent plugin on
- 
-" Enable syntax highlighting
+ filetype indent plugin on
 syntax off
- 
  
 "
 " Must have options {{{1
@@ -129,34 +126,68 @@ nmap <leader>s <esc>:!spellchecker -f % --dictionaries dictionary.txt<CR>
 "nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/w/index.php?search='<c-r>"'<CR>
 nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/wiki/<c-r>"<CR>
 
+
+"markdown controls
+nnoremap <leader>i wbi*<esc>ea*<esc>
+nnoremap <leader>b wbi**<esc>ea**<esc>
+
+
+
+
 "
 " node programming
 "
 
 "start current file in node js
-nmap <leader>n <esc>:!node %<CR>
+autocmd FileType javascript nmap <leader>n <esc>:!node %<CR>
 
 "insert debugger statement in JS file and launch test suite
-nnoremap <leader>t :w<CR> :!killall -9 node;node debug --es_staging node_modules/nodeunit/bin/nodeunit <CR>
+autocmd FileType javascript nnoremap <leader>t :w<CR> :!killall -9 node;node debug --es_staging node_modules/nodeunit/bin/nodeunit <CR>
 
 "eslint fix file
-nnoremap <leader>l :!npx eslint --fix %<CR>
+autocmd FileType javascript nnoremap <leader>l :!npx eslint --fix %<CR>
 
 
 "
-" modes
+" ruby programming
+"
+
+"insert debugger statement in Ruby file and launch test suite
+autocmd FileType ruby nnoremap <leader>t :w<CR> :!bin/rspec $(find spec -name "%:t:r*" -print)<CR>
+autocmd FileType ruby nnoremap <leader>r obinding.pry<esc>:w<CR> :!bin/rspec $(find spec -name "%:t:r*" -print)<CR><esc>u
+autocmd FileType ruby nnoremap <leader>s obinding.pry<esc>:w<CR> :tabe !$(find spec -name "%:t:r*" -print)<CR>
+
+autocmd FileType ruby nnoremap <leader>l :w<CR> :!bundle exec rubocop -A %<CR>
+"
+" mics
+"
+
+"open notes
+nnoremap <leader>m <esc>:tabe %:p:h/notes.md<CR>
+
+
+"Text to speech
+vmap <leader>s :'<,'> w ! say & <CR><CR>
+nmap <leader>p V<leader>s
+nmap <leader>o :! kill `pgrep say` & <CR><CR>
+
+"Exec the command in register c
+nnoremap <leader>c q:"cp<CR>
+
+"
+" navigation
 "
 
 
 "jk goes to normal mode
 inoremap jk <esc>
 
-"Ctrl + j k h l goes to normal mode
-inoremap <C-j> <esc> j
-inoremap <C-k> <esc> k
-inoremap <C-h> <esc> h
-inoremap <C-l> <esc> l
-inoremap <C-p> <esc> p
+"switch tabs with numbers
+map <D-1> <Cmd>1tabnext<CR>
+map <D-2> <Cmd>2tabnext<CR>
+map <D-3> <Cmd>3tabnext<CR>
+map <D-4> <Cmd>4tabnext<CR>
+map <D-5> <Cmd>5tabnext<CR>
 
 
 "next match an put result in the middle
@@ -164,9 +195,8 @@ nnoremap <leader>n nzz
 
 inoremap d^ v^d
 
-"replace the current line by the contents of the zeroeth register (delete
+"replace selected text by the contents of the zeroeth register (delete
 "without erazing pasted content
-
 nnoremap <leader>0 "0p
 
 "disable keyboard navigation
@@ -180,8 +210,21 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-"noremap jj <nop>
+" disable j and k
+" noremap jj <nop>
 "noremap kk <nop>
+
+"this enables "visual" wrapping
+set wrap
+
+" j and k navigation do not skip wrapped lines
+nnoremap j gj
+nnoremap k gk
+
+" this turns off physical line wrapping (ie: automatic insertion of newlines)
+set textwidth=0 wrapmargin=0
+
+
 
 "
 " settings
@@ -197,7 +240,6 @@ let g:liststyle=3
 "Save files so watchers are triggered
 :set backupcopy=yes
 
-
 "set relativenumber
 set undofile
 set autoread
@@ -207,34 +249,11 @@ set autoread
 
 "Save files on buffer change
 "autocmd TextChanged,TextChangedI <buffer> silent write
-
-
-"this enables "visual" wrapping
-set wrap
-
-" j and k navigation do not skip wrapped lines
-nnoremap j gj
-nnoremap k gk
-
-" this turns off physical line wrapping (ie: automatic insertion of newlines)
-set textwidth=0 wrapmargin=0
-
-"markdown controls
-nnoremap <leader>i wbi*<esc>ea*<esc>
-nnoremap <leader>b wbi**<esc>ea**<esc>
-
+"
 "autosave on text changed
 autocmd CursorHold,CursorHoldI * update
 
 " More frequent updates
 set updatetime=750
 
-"open notes
-nmap <leader>n <esc>:tabe %:p:h/notes.md<CR>
-
-
-"Text to speech
-vmap <leader>s :'<,'> w ! say & <CR><CR>
-nmap <leader>p V<leader>s
-nmap <leader>o :! kill `pgrep say` & <CR><CR>
-
+au VimEnter * if !&diff | tab all | tabfirst | endif

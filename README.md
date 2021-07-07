@@ -55,7 +55,7 @@ Opens all local branches, ordered by last commit using "fzf" and lets you chose 
 
 vim
 ===
-Open files in vim
+Open files in vim.
 
 `rv <term>`
 ---
