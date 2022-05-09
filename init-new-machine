@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt install git
+sudo apt install neovim
+sudo apt install chromium browser
+sudo apt install ubuntu-tweaks
+ssh-keygen -t rsa -b 4096 -C "marinovboris@protonmail.com"
+sudo apt install tmux
+mkdir ~/pr
