@@ -1,8 +1,4 @@
 sudo apt update
-sudo apt install git
-sudo apt install neovim
-sudo apt install chromium browser
-sudo apt install ubuntu-tweaks
+sudo apt install git neovim chromium-browser ubuntu-tweaks curl tmux
 ssh-keygen -t rsa -b 4096 -C "marinovboris@protonmail.com"
-sudo apt install tmux
 mkdir ~/pr

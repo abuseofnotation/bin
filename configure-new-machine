@@ -1,11 +1,16 @@
 cd ~/
 git clone git@github.com:boris-marinov/bin.git
-echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+
+echo 'source ~/bin/.bashrc' >> ~/.bashrc
 cd ~/bin
 find -not -path "*.git*" -exec chmod +x {} \;
+
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
 cd ~/.config
 mkdir nvim
 cd nvim/
 ln -s ~/bin/.vimrc init.vim
 ln -s ~/bin/.tmux.conf ~
+ln -s ~/bin/.tmux.conf ~
+
