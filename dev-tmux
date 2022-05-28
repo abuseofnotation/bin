@@ -1,14 +1,10 @@
 #!/bin/sh
 
+cd ~/pr/growyze-front-end
+
 tmux new-session -d -s dev 
 
 tmux send-keys -t dev 'git status' ENTER
-tmux split-window -v
-tmux send-keys -t dev 'bin/rails server -p 3000' ENTER
 tmux split-window -h
-tmux send-keys -t dev 'bin/webpack-dev-server' ENTER
-tmux select-pane -t 0
-tmux split-window -h 
-tmux send-keys -t dev 'bin/deploy/sidekiq' ENTER
-tmux select-pane -t 0
+tmux send-keys -t dev 'npx gatsby develop' ENTER
 tmux a

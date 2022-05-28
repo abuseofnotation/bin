@@ -231,7 +231,7 @@ set textwidth=0 wrapmargin=0
 "
 
 "Search in all folders by default
-set path+=**
+set path+=.,,**
 
 "File browser
 let g:netrw_banner=0

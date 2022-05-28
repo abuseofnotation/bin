@@ -13,4 +13,3 @@ cd nvim/
 ln -s ~/bin/.vimrc init.vim
 ln -s ~/bin/.tmux.conf ~
 ln -s ~/bin/.tmux.conf ~
-

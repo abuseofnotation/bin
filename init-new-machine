@@ -1,4 +1,6 @@
 sudo apt update
-sudo apt install git neovim chromium-browser ubuntu-tweaks curl tmux
+sudo apt install git neovim chromium-browser ubuntu-tweaks curl tmux ripgrep fzf
 ssh-keygen -t rsa -b 4096 -C "marinovboris@protonmail.com"
 mkdir ~/pr
+
+npm install -g spellchecker-cli
