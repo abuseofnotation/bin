@@ -1,6 +1,23 @@
+brew update
+sudo brew install git neovim chromium curl tmux ripgrep fzf
+
 sudo apt update
 sudo apt install git neovim chromium-browser ubuntu-tweaks curl tmux ripgrep fzf
+
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+
+
 ssh-keygen -t rsa -b 4096 -C "marinovboris@protonmail.com"
 mkdir ~/pr
 
 npm install -g spellchecker-cli
+
+cd ~/.config
+mkdir nvim
+cd nvim/
+ln -s ~/bin/.vimrc init.vim
+ln -s ~/bin/.tmux.conf ~
+ln -s ~/bin/.tmux.conf ~
+
+cd /opt/homebrew/bin
+ln -s nvim vi

@@ -1,23 +1,34 @@
 Some handy scripts that I use.
 
-Lynx
+
+vim
 ===
 
-Open websites from the command line.
-
-`dd <term>`
+`copy`
 ---
-Opens up the GoDuckGo search engine in the `lynx` CLI browser showing search results for a word that you pass. 
+[Works only from tmux] - opens the current contents of the console in vim for the purpose of easy copying and pasting - a text screenshot, if you will. Also, it keeps an archive of all the things you copied in ~/.screengrabs
 
-Usage: `dd test` opens search results for the word "test".
-
-`wiki <term>`
+`rv <term>`
 ---
-Same but with Wikipedia
+Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted. e.g. `rv <<<<` opens up all files with merge conflicts.
 
-`dict <term>`
+`fv`
 ---
-Same but with Merriam Webster dictionary.
+Searches for a file using "fzf" and opens it in vim
+
+
+`gv <git_revision = "HEAD~">`
+---
+Opens all the files that were changed in the given git revision. By default it is the last revision.
+
+`vt`
+---
+Just `vim ~/temp.md` - a handy solution for keeping notes.
+
+
+`note <note>`
+---
+Adds a new note to  ~/temp.md file directly from the console
 
 git
 ===
@@ -53,24 +64,22 @@ Opens all local branches, ordered by last commit using "fzf" and lets you chose 
 
 
 
-vim
+Lynx
 ===
-Open files in vim.
 
-`rv <term>`
+Open websites from the command line.
+
+`dd <term>`
 ---
-Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted. e.g. `rv <<<<` opens up all files with merge conflicts.
+Opens up the GoDuckGo search engine in the `lynx` CLI browser showing search results for a word that you pass. 
 
-`fv`
+Usage: `dd test` opens search results for the word "test".
+
+`wiki <term>`
 ---
-Searches for a file using "fzf" and opens it in vim
+Same but with Wikipedia
 
-
-`gv <git_revision = "HEAD~">`
+`dict <term>`
 ---
-Opens all the files that were changed in the given git revision. By default it is the last revision.
-
-`vt`
----
-Just `vim ~/temp.md` - a handy solution for keeping notes.
+Same but with Merriam Webster dictionary.
 

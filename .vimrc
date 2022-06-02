@@ -257,3 +257,5 @@ autocmd CursorHold,CursorHoldI * update
 set updatetime=750
 
 au VimEnter * if !&diff | tab all | tabfirst | endif
+
+set rtp+=/opt/homebrew/opt/fzf
