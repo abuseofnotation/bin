@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+git pull
 if [ $(git rev-parse --abbrev-ref HEAD) != "$1" ]
 then
   git checkout -b $1;
