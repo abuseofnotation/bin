@@ -8,9 +8,14 @@ vim
 ---
 [Works only from tmux] - opens the current contents of the console in vim for the purpose of easy copying and pasting - a text screenshot, if you will. Also, it keeps an archive of all the things you copied in ~/.screengrabs
 
+![copy](vids/copy.gif)
+
 `rv <term>`
 ---
 Searches for a word or a phrase in current dir, using `ripgrep` and opens all results in `vim` in separate tabs with the word highlighted. e.g. `rv <<<<` opens up all files with merge conflicts.
+
+
+![copy](vids/rv.gif)
 
 `fv`
 ---
@@ -21,14 +26,17 @@ Searches for a file using "fzf" and opens it in vim
 ---
 Opens all the files that were changed in the given git revision. By default it is the last revision.
 
-`vt`
----
-Just `vim ~/temp.md` - a handy solution for keeping notes.
-
+![copy](vids/gv.gif)
 
 `note <note>`
 ---
 Adds a new note to  ~/temp.md file directly from the console
+
+![copy](vids/gv.gif)
+
+`vt`
+---
+Just opens `~/temp.md` - a handy solution for keeping notes.
 
 git
 ===
