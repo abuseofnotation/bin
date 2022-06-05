@@ -32,7 +32,7 @@ Opens all the files that were changed in the given git revision. By default it i
 ---
 Adds a new note to  ~/temp.md file directly from the console
 
-![copy](vids/gv.gif)
+![copy](vids/note.gif)
 
 `vt`
 ---
