@@ -130,7 +130,7 @@ nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/wiki/<c-r>"<CR>
 "markdown controls
 nnoremap <leader>i wbi*<esc>ea*<esc>
 nnoremap <leader>b wbi**<esc>ea**<esc>
-
+nnoremap <leader>g da"i <span class="voice-"><esc>pa</span><esc>F-
 
 
 
@@ -165,10 +165,12 @@ autocmd FileType ruby nnoremap <leader>l :w<CR> :!bundle exec rubocop -A %<CR>
 "open notes
 nnoremap <leader>m <esc>:tabe %:p:h/notes.md<CR>
 
+"copy from OS with leader p
+nnoremap <leader>p "+p
 
 "Text to speech
 vmap <leader>s :'<,'> w ! say & <CR><CR>
-nmap <leader>p V<leader>s
+nmap <leader>d V<leader>s
 nmap <leader>o :! kill `pgrep say` & <CR><CR>
 
 "Exec the command in register c
