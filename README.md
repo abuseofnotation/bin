@@ -43,6 +43,10 @@ git
 
 helpful git aliases.
 
+`status`
+---
+Run this from your project folder and it will show you the `git status` of all your projects. 
+
 `git-commit-branch <branch_name>`
 ---
 Creates a new git branch with the name you pass and commits the current changes there. 
