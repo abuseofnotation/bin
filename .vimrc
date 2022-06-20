@@ -133,7 +133,6 @@ nnoremap <leader>b wbi**<esc>ea**<esc>
 nnoremap <leader>g da"i <span class="voice-"><esc>pa</span><esc>F-
 
 
-
 "
 " node programming
 "
@@ -175,6 +174,9 @@ nmap <leader>o :! kill `pgrep say` & <CR><CR>
 
 "Exec the command in register c
 nnoremap <leader>c q:"cp<CR>
+
+nnoremap <leader>v :tabe ~/bin/.vimrc<CR>
+
 
 "
 " navigation

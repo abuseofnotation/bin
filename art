@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd ~/pr/x-notes
+
+tmux new-session -d -s art
+
+tmux send-keys -t art 'vim _one/' ENTER
+tmux split-window -h
+tmux send-keys -t art 'bundle exec jekyll serve' ENTER
+tmux split-window -h
+tmux send-keys -t art 'cd ~/pr/art' ENTER
+tmux send-keys -t art 'npx tsc --watch' ENTER
+tmux a
