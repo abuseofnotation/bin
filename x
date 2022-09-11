@@ -1,2 +1,9 @@
-cd ~/pr/thoughts-of-x
-vim 01/13-dana.md 01/14-doubt.md notes.md
+#!/bin/sh
+
+cd ~/pr/x-notes
+
+tmux new-session -d -s x
+tmux send-keys -t x 'vim _permanent-confusion/' ENTER
+tmux split-window -h
+tmux send-keys -t x 'bundle exec jekyll serve' ENTER
+tmux a
