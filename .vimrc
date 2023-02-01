@@ -117,10 +117,10 @@ set expandtab
 "
 
 "display word count for files in dir
-nmap <leader>w <esc>:!wc %:p:h/*<CR>
+nmap <leader>w <esc>:!wc %:p:h/*.*<CR>
 
 "spellcheck the current file
-nmap <leader>s <esc>:!spellchecker -f % --dictionaries dictionary.txt > errors.md<CR><esc>:tabe errors.md
+nmap <leader>s <esc>:!spellchecker -f % --dictionaries dictionary.txt > errors.md<CR><esc>:vsplit errors.md
 
 "Search wikipedia for current word, using lynx
 "nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/w/index.php?search='<c-r>"'<CR>
@@ -128,10 +128,12 @@ nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/wiki/<c-r>"<CR>
 
 
 "markdown controls
+"
+"bold italic and tex
 nnoremap <leader>i wbi*<esc>ea*<esc>
 nnoremap <leader>b wbi**<esc>ea**<esc>
-
-
+nnoremap <leader>t diWi$<esc>pa$<esc>
+nnoremap <leader>v da"i<span="voice-"><esc>pi</span><esc>/voice-<CR>wa
 
 
 "
