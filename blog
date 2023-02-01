@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd ~/pr/boris.marinov.github.io
+
+tmux new-session -d -s blog
+
+tmux send-keys -t blog 'vim .' ENTER
+tmux split-window -h
+tmux send-keys -t blog 'bundle exec jekyll serve' ENTER
+tmux a

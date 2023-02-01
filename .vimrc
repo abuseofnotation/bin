@@ -132,6 +132,7 @@ nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/wiki/<c-r>"<CR>
 "bold italic and tex
 nnoremap <leader>i wbi*<esc>ea*<esc>
 nnoremap <leader>b wbi**<esc>ea**<esc>
+
 nnoremap <leader>t diWi$<esc>pa$<esc>
 nnoremap <leader>v da"i<span="voice-"><esc>pi</span><esc>/voice-<CR>wa
 
@@ -167,14 +168,19 @@ autocmd FileType ruby nnoremap <leader>l :w<CR> :!bundle exec rubocop -A %<CR>
 "open notes
 nnoremap <leader>m <esc>:tabe %:p:h/notes.md<CR>
 
+"copy from OS with leader p
+nnoremap <leader>p "+p
 
 "Text to speech
 vmap <leader>s :'<,'> w ! say & <CR><CR>
-nmap <leader>p V<leader>s
+nmap <leader>d V<leader>s
 nmap <leader>o :! kill `pgrep say` & <CR><CR>
 
 "Exec the command in register c
 nnoremap <leader>c q:"cp<CR>
+
+nnoremap <leader>v :tabe ~/bin/.vimrc<CR>
+
 
 "
 " navigation
@@ -233,7 +239,7 @@ set textwidth=0 wrapmargin=0
 "
 
 "Search in all folders by default
-set path+=**
+set path+=.,,**
 
 "File browser
 let g:netrw_banner=0
@@ -259,3 +265,7 @@ autocmd CursorHold,CursorHoldI * update
 set updatetime=750
 
 au VimEnter * if !&diff | tab all | tabfirst | endif
+
+set rtp+=/opt/homebrew/opt/fzf
+
+set nomodeline

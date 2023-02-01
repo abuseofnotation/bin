@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-vim -p $(rg -l "$1") -c "/$1"
+vim -p $(rg -l "$1" $2) -c "/$1"

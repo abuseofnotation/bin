@@ -1,5 +1,6 @@
 #!/bin/sh
 
+<<<<<<< HEAD
 cd ~/pr/growyze-frontend
 
 tmux new-session -d -s dev 
@@ -8,4 +9,13 @@ tmux send-keys -t dev 'npm start' ENTER
 tmux split-window -v
 tmux send-keys -t dev 'git status' ENTER
 tmux select-pane -t 0
+=======
+cd ~/pr/growyze-front-end
+
+tmux new-session -d -s dev 
+
+tmux send-keys -t dev 'git status' ENTER
+tmux split-window -h
+tmux send-keys -t dev 'npx gatsby develop' ENTER
+>>>>>>> cf32641639160e84dfc1de9bb1ee127da029c7a0
 tmux a

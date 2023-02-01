@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+mkdir -p ~/.screengrabs
+date=$(date +"%Y-%m-%dT%T.%3N%z")
+tmux capture-pane -pS - > ~/.screengrabs/grab-$date   && vim + ~/.screengrabs/grab-$date

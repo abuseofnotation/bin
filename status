@@ -1,0 +1,6 @@
+for dir in */; do 
+  cd $dir 
+  printf "\n\n$dir\n=====\n"
+  git status -s 2>/dev/null 
+  cd - >/dev/null
+done

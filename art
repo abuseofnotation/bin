@@ -1,21 +1,7 @@
 #!/bin/sh
-
-cd ~/pr/thoughts-of-x
-
-tmux new-session -d -s art 
-
-tmux send-keys -t art 'jekyll serve' ENTER
-
-
-tmux split-window -v
-
-tmux send-keys -t art 'cd ~/pr/art' ENTER
-
-tmux send-keys -t art 'tsc --watch' ENTER
-
-tmux split-window -v
-
-
-tmux send-keys -t art 'vim 00' ENTER
-
+cd ~/pr/art
+tmux new-session -d -s art
+tmux send-keys -t art 'vim .' ENTER
+tmux split-window -h
+tmux send-keys -t art 'npx tsc --watch' ENTER
 tmux a

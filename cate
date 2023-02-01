@@ -9,4 +9,3 @@ tmux send-keys -t dev 'vim _chapters' ENTER
 tmux split-window -h
 tmux send-keys -t dev 'jekyll serve' ENTER
 tmux select-pane -t 0
-tmux a
