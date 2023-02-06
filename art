@@ -1,5 +1,4 @@
 #!/bin/sh
-
 cd ~/pr/art
 tmux new-session -d -s art
 tmux send-keys -t art 'vim .' ENTER

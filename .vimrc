@@ -117,7 +117,7 @@ set expandtab
 "
 
 "display word count for files in dir
-nmap <leader>w <esc>:!wc %:p:h/*<CR>
+nmap <leader>w <esc>:!wc %:p:h/*.*<CR>
 
 "spellcheck the current file
 nmap <leader>s <esc>:!spellchecker -f % --dictionaries dictionary.txt > ~/errors.md<CR><esc>:tabe ~/errors.md
@@ -128,9 +128,13 @@ nnoremap <leader>d yw:! lynx -dump https://en.wikipedia.org/wiki/<c-r>"<CR>
 
 
 "markdown controls
+"
+"bold italic and tex
 nnoremap <leader>i wbi*<esc>ea*<esc>
 nnoremap <leader>b wbi**<esc>ea**<esc>
-nnoremap <leader>g da"i <span class="voice-"><esc>pa</span><esc>F-
+
+nnoremap <leader>t diWi$<esc>pa$<esc>
+nnoremap <leader>v da"i<span="voice-"><esc>pi</span><esc>/voice-<CR>wa
 
 
 "

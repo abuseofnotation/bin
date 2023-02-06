@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-git checkout “$(git branch --sort=-committerdate | fzf | tr -d ‘[:space:]’)”
+git checkout $(git branch --sort=-committerdate | fzf | tr -d ‘[:space:]’)
