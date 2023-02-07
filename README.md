@@ -1,5 +1,24 @@
 Some handy scripts that I use.
 
+Fedi
+---
+`toot`
+---
+A simple script that toots it's standard input in Mastodon
+
+Web scraping
+===
+
+`web-random-page`
+---
+Given a domain, outputs the URL of a random page from that domain.
+
+`web-random-paragraph`
+---
+Given a webpage address, outputs a paragraph from that page.
+
+* Those two power this bot: [https://aethy.com/@abuseofnotation](https://aethy.com/@abuseofnotation)
+
 
 vim
 ===
@@ -73,7 +92,6 @@ Prints the git tree in the console.
 `git-jump`
 ---
 Opens all local branches, ordered by last commit using "fzf" and lets you chose one to checkout.
-
 
 
 Lynx

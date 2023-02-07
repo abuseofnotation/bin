@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+web-random-page abuseofnotation.github.io/ | web-random-paragraph | toot
