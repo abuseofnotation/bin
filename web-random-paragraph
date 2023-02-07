@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+read page
+lynx $page -dump -width 99999 | grep '.\{200\}' | shuf -n 1
+echo $page

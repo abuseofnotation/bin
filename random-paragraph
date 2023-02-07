@@ -1,1 +1,0 @@
-fdfind -e md . ~/pr | shuf -n 100 | xargs cat | grep '.\{100\}' |  shuf -n 1

@@ -1,7 +1,0 @@
-#!/bin/sh
-
-read name
-
-token=$(cat ~/.mastodon_token)
-
-curl https://mathstodon.xyz/api/v1/statuses -H "Authorization: Bearer $token" -F "status=$name"

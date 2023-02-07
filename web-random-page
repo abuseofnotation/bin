@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+wget --spider --force-html -r -l2 $1 2>&1 | grep '^--' | awk '{print $3}' | grep './$' |  shuf -n 1

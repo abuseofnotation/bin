@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+web-random-page boris-marinov.github.io/ | web-random-paragraph | toot

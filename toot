@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+read -d '' status
+
+echo $status
+
+token=$(cat ~/.mastodon_token)
+
+curl https://aethy.com/api/v1/statuses -H "Authorization: Bearer $token" -F "status=$status"
