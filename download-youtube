@@ -1,0 +1,1 @@
+youtube-dl --verbose  --extract-audio --audio-format mp3 $1 --add-header 'Cookie:' foo

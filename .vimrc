@@ -148,7 +148,7 @@ autocmd FileType javascript nmap <leader>n <esc>:!node %<CR>
 autocmd FileType javascript nnoremap <leader>t :w<CR> :!killall -9 node;node debug --es_staging node_modules/nodeunit/bin/nodeunit <CR>
 
 "eslint fix file
-autocmd FileType javascript nnoremap <leader>l :!npx eslint --fix %<CR>
+autocmd FileType javascript nnoremap <leader>l :!prettier -w %<CR>:e<CR>
 
 
 "
