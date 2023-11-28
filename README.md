@@ -6,20 +6,6 @@ Fedi
 ---
 A simple script that toots it's standard input in Mastodon
 
-Web scraping
-===
-
-`web-random-page`
----
-Given a domain, outputs the URL of a random page from that domain.
-
-`web-random-paragraph`
----
-Given a webpage address, outputs a paragraph from that page.
-
-* Those two power this bot: [https://aethy.com/@abuseofnotation](https://aethy.com/@abuseofnotation)
-
-
 vim
 ===
 
@@ -113,3 +99,22 @@ Same but with Wikipedia
 ---
 Same but with Merriam Webster dictionary.
 
+Web scraping
+===
+
+`web-random-paragraph-from-page`
+---
+
+Given a domain, outputs a random paragraph from that domain.
+
+This function powers this bot: [https://aethy.com/@abuseofnotation](https://aethy.com/@abuseofnotation)
+
+`web-random-page`
+---
+Given a domain, outputs the URL of a random page from that domain.
+
+`web-random-paragraph`
+---
+Given a webpage address, outputs a paragraph from that page.
+
+(those two, I originaly wrote for the bot, but I abandoned, them becasue the script had a very strong bias towards shorter articles )

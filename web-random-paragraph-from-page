@@ -1,0 +1,13 @@
+location="/tmp/download-all/"
+
+rm -rf /tmp/download-all
+wget  --force-html -r -l2 $1 -P /tmp/download-all
+
+function prepareFile {
+  while read line; do
+    url=${line//$location/""}
+    lynx $line -dump -width 9999999 | while read line; do echo "${line} -- https://${url}"; done
+  done
+}
+
+find $location -type f -name "*.html" | prepareFile | grep '.\{200\}' | shuf -n 1

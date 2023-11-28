@@ -1,4 +1,0 @@
-rm -rf /tmp/download-all
-wget  --force-html -r -l2 abuseofnotation.github.io -P /tmp/download-all
-
-find /tmp/download-all -type f | xargs lynx -dump -width 99999 | grep '.\{200\}'| shuf -n 1
