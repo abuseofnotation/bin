@@ -2,9 +2,15 @@
 
 cd ~/pr/category-theory-illustrated
 
+if tmux has-session -t cate 2>/dev/null; then
+  tmux attach-session -t cate
+  exit
+fi
+
 tmux new-session -d -s cate
 
-tmux send-keys -t cate 'vim .' ENTER
 tmux split-window -h
 tmux send-keys -t -cate 'bundle exec jekyll serve' ENTER
+tmux select-pane -t cate:0.0
+tmux send-keys -t cate 'vim _chapters/11_natural_transformations.md' ENTER
 tmux a

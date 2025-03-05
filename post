@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo '
+---
+title: 
+layout: microblog
+category: microblog
+tags: 
+---' >> $(date +%Y-%m-%d)-$1.md
+
+vim $(date +%Y-%m-%d)-$1.md

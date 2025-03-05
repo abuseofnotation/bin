@@ -1,0 +1,1 @@
+/usr/local/bin/yt-dlp --verbose $1 --add-header 'Cookie:' https://www.youtube.com/watch?v=dQw4w9WgXcQ

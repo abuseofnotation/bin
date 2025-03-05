@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+xclip -o >> ~/temp.md
+echo '' >> ~/temp.md
+echo '' >> ~/temp.md
