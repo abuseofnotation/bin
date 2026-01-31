@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'source';
+    src: url('source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source-light';
+    src: url('source-sans-pro/SourceSansPro-ExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: 'source', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'source-light', sans serif;
+}
+.humane {
+  font-size:90px;
+}
+.technology {
+  font-size:55px;
+}
+
+.header {
+  background-image: url(background.jpg);
+  background-size: cover;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+
+}
+.footer {
+  background-image: url(footer.webp);
+  background-size: cover;
+}
+
+.header .container {
+  padding:10%;
+}

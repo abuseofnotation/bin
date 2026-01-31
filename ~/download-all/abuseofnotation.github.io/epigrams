@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - Epigrams</title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+            <article class="post">
+    <h1>Epigrams</h1>
+
+    <div class="entry">
+      <p>Buying more stuff will not bring you closer to happiness, just like living longer years will not bring you closer to immortality.</p>
+
+<p>Everyone wants to be the best, noone wats to question the criteria that determine what the best is.</p>
+
+<p>I don’t have any problem with Jeff Bezos going in space, the only thing I dislike is that he came back.</p>
+
+<p>I assume that people who say that Karl Marx didn’t have a job are all writing monumental 1000-page studies as a hobby.</p>
+
+<p>Nobody cares about the average person’s opinion, but everyone is deeply concerned what “the people” think.</p>
+
+<p>Doing math leaves me feeling like a genius 10% of the time and like a complete idiot for the other 90%.</p>
+
+<p>Viewing people as merely normal and non-normal is like viewing drinks as alcoholic and non-alcoholic.</p>
+
+<p>Time is not money - you can convert time to money, but not the other way around.</p>
+
+<p>The fact that someone does not feel the same emotions as you, that does not make them less emotional.</p>
+
+<p>People often claim to come up with a new idea, instead of recognizing prior art and using a name that is already there, because they are eager to attach their names to something, out of sheer vanity (I call this “Jencel’s principle”)</p>
+
+<p>Keeping notes is a good idea if you want a very large quantity of mediocre ideas.</p>
+
+<p>Don’t try to impress others - they don’t care.</p>
+
+<p>If someone does not feel the same emotions as you, that does not make him less emotional.</p>
+
+<p>You won’t get good at something by practicing it for 10000 hours — you will get good by making 10000 mistakes.</p>
+
+<p>Anything worth doing is worth doing poorly — aim to create the crappiest imaginable version of a great work, rather than a flawless but mediocre work.</p>
+
+<p>The clearest sign that people do not feel content with themselves is their desire to convert others to be like them.</p>
+
+<p>And to think that we live in the best of all possible worlds, I mean, imagine what the rest of them look like.</p>
+
+<p>Scientism isn’t a religion - it’s a cult.</p>
+
+<p>When learning programming it’s important to write a lot of code and also to read a lot of code. Writing is to understand you are retarded and reading is to understand everyone else is retarded as well.</p>
+
+<p>Hannah Arendt’s principle of the banality of evil is also valid in the other way around: not only that evil is banal, but all banal things are evil i.e. a thing is banal if and only if it is evil.</p>
+
+<p>Any self-consistent system of knowledge can be reduced, at least theoretically, to a small number of clear elementary postulates and what follows from them. So, any system for which it is not immediately clear what these postulates are, is not self-consistent.</p>
+
+<p>The less you have, the more valuable it is, this is a vision circle that leaves you obsessed for not losing your nothing.</p>
+
+<p>Free time is the most precious resource that you can have in your life</p>
+
+<p>Note to self: In order to have better ideas, I have to stop wasting my time with trying to categorize the ideas I already have and fit them in boxes — you either spend your effort to appear as brilliant or be brilliant, no time for both.</p>
+
+<p>If you are feeling sad, you are thinking of yourself too much.</p>
+
+<p>The default fallacy is the bias of questioning the logic of people who make different choices, but not the logic of the people who make the “default” choice.</p>
+
+<p>Everything worth doing is worth doing badly.</p>
+
+<p>Never be impressed by someone’s ability to follow a rule.</p>
+
+<p>Vibe coding sucks, cause the whole point of programming is to be able to do your job without talking to anybody.</p>
+
+<p>Impostor syndrome occurs not when you feel unqualified for what you do, but when you don’t <em>want</em> to do it, when you don’t find it valuable/good/meaningful – if you want to do something, then the question of whether you are the best person to do it becomes secondary.</p>
+
+<p>Acting according to a plan of any kind, confines your actions to what you believe is possible at the time of the creation of the plan.</p>
+
+    </div>
+
+   
+  </article>
+
+  
+
+
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

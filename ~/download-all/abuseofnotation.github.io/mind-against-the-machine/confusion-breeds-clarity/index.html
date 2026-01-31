@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Mind against the machine - </title>
+      <link rel="stylesheet" type="text/css" href="/mind-against-the-machine/style.css">
+      <link rel="stylesheet" type="text/css" href="/mind-against-the-machine/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/mind-against-the-machine/voices.css">
+
+      <script src="/mind-against-the-machine/assets/require.js"></script>
+      <script src="/mind-against-the-machine/assets/out.js"></script>
+      <script>
+          require(['index'])
+      </script>
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/mind-against-the-machine/">
+          <h1><a href="/mind-against-the-machine/">Mind against the machine</a></h1>
+          </a>
+        </div>
+      </div>
+
+      <div class="container content">
+         
+<div class="book-title">
+  <a href="/mind-against-the-machine/confusion-breeds-clarity/">
+  <h1>Confusion breeds clarity</h1>
+  </a>
+</div>
+
+  <article class="chapter-preview">
+    <canvas class="art chapter-image" width="200px", height="100px" data-pixel="1" data-repeat="2000" data-colors="black,pink,grey">
+    <splasher data-size="intensoReversed" data-size-params="50" data-map="diagonals" data-params="1000"></splasher>
+    </canvas>
+  </article>
+
+  <div id="quotes">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <blockquote class="quote">
+        Didn't *you* want to kill yourself at some point? And if yes, than  what made you hesitant to do it? Your strong will to live? Or just simple fear?
+        <p>from <a href="/mind-against-the-machine/confusion-breeds-clarity/09-anna-and-cathy/">Back to the facility</a>
+        </p>
+    </blockquote>
+    
+  
+    
+    <blockquote class="quote">
+        ...and criticizing someone for being immature is the worst type of criticism there is, as with it you are basically saying that they are not as huge of a critic as you (or that they have too much desire for happiness perhaps?)
+        <p>from <a href="/mind-against-the-machine/confusion-breeds-clarity/10-child/">The sleepover</a>
+        </p>
+    </blockquote>
+    
+  
+    
+    <blockquote class="quote">
+        ...no matter what choice did I make, would always be unsure about it, and I would always be looking forward to an opportunity to change it even for a second, not so much because I regretted the choice itself, but because I disliked *the fact that I have to make it*, the fact that I could only be at one place at one time, to be one person, leading one and only one life.
+        <p>from <a href="/mind-against-the-machine/confusion-breeds-clarity/11-irony/">The sleepover contd</a>
+        </p>
+    </blockquote>
+    
+  
+    
+    <blockquote class="quote">
+        Or perhaps both of us were lucky, because we were not numb for this weird sensation, and because we can probably perceive countless other similar phenomena that don't exist for other people. But then again, perhaps we were crazy for having minds that stop and start whenever they want and often drift in unwanted directions, beautiful but useless, like most of the thoughts that they produced.
+        <p>from <a href="/mind-against-the-machine/confusion-breeds-clarity/12-kink/">Us and them</a>
+        </p>
+    </blockquote>
+    
+  
+    
+    <blockquote class="quote">
+        Perhaps the distinction between the vanilla and the perverse was just an invention of the established. Perhaps it was there just to enable some people to obscure the choices that they are making and to make it seem like they are making no choice at all, that they did what they did just because that's the way it is done in principle.
+        <p>from <a href="/mind-against-the-machine/confusion-breeds-clarity/13-dana/">Sex</a>
+        </p>
+    </blockquote>
+    
+  
+    
+    <blockquote class="quote">
+        If Alex, was in a similar situation, he would drive directly to her town as, unlike me, he was pursuing a clear and obtainable goal, which is a prerequisite for achieving something, but also a way to *limit* what you can achieve.
+        <p>from <a href="/mind-against-the-machine/confusion-breeds-clarity/14-doubt/">Cigarettes</a>
+        </p>
+    </blockquote>
+    
+  
+  </div>
+
+  <script>
+    var getRandomInt = (max) => {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+    var quote = document.getElementById('quotes')
+    var quotesArray = Array.prototype.slice.call(quote.children)
+
+    var quoteIndex = getRandomInt(quotesArray.length)
+    console.log({quoteIndex, quotesArray})
+    quotesArray.forEach((quote, i) => {
+          console.log({quoteIndex, quote, i})
+          if (i === quoteIndex) {
+            quote.setAttribute("style", 'display:block')
+            } else {
+            quote.setAttribute("style", 'display:none')
+            }
+    })
+  </script>
+
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/00-knapsack/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/00-knapsack/">The knapsack problem</a>
+        <i>How to write a book / P and NP / leaving home</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/01-alex/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/01-alex/">Meeting my roommate</a>
+        <i>Alex / Picking friends / Who am I / How switching places would solve both of our issues</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/02-hallway/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/02-hallway/">Hallway</a>
+        <i>Church and Turing / Being stupid</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/03-x/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/03-x/">X</a>
+        <i>Nerd stereotypes / How I got my nickname / Establishing connection with my younger self</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/04-smoke/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/04-smoke/">Good company</a>
+        <i>Social code / Anna / Catherine</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/05-fence/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/05-fence/">Fence</a>
+        <i>Outside / Not being punished / Discreet and continuous models</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/06-outside/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/06-outside/">Outside</a>
+        <i>This or nothing / The moon / Fractals / Me and Alex / Explanations / Is the world mathematical</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/07-annas-ego/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/07-annas-ego/">What are we in for</a>
+        <i>Anna's kinky alter ego / Marijuana</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/08-marijuanna/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/08-marijuanna/">What are we in for contd</a>
+        <i>The conformist choice / Taboos / Dichotomies /Marijuana</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/09-anna-and-cathy/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/09-anna-and-cathy/">Back to the facility</a>
+        <i>Anna and Cathy / Trying to be like other people / Sleeping with Anna</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/10-child/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/10-child/">The sleepover</a>
+        <i>Anna's childish behavior / Critics / Boring robots / Adoring Anna</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/11-irony/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/11-irony/">The sleepover contd</a>
+        <i>Irony / Heroes and deserters / Retreat to where? / Real and ideal / Choices</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/12-kink/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/12-kink/">Us and them</a>
+        <i>The uncut book pages / Envy</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/13-dana/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/13-dana/">Sex</a>
+        <i>Anna's fantasy / What makes us weird / The establishment and being normal</i>
+        </p>
+      </a>
+    </article>
+  
+    <article class="chapter-preview">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/14-doubt/">
+        <p><a href="/mind-against-the-machine/confusion-breeds-clarity/14-doubt/">Cigarettes</a>
+        <i>Alex's good night sleep / About me and Alex again / Sex and love / The proof that P does not equal NP</i>
+        </p>
+      </a>
+    </article>
+  
+
+  <!--
+  <a href="/mind-against-the-machine/confusion-breeds-clarity-full"><i>Full text (printable version)</i></a>
+  -->
+
+
+      </div>
+
+      <div class="footer">
+        <div class="container" id="contact">
+          <h1>Support this project</h1>
+          <p><a target="_blank" href="https://ko-fi.com/abuseofnotation">Ko-fi</a></p>
+          <p><a target="_blank" href="https://patreon.com/abuseofnotation">Patreon</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+
+          <h1>Created by Jencel Panic</h1>
+          <p><a target="_blank" href="/">personal blog</a></p>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a target="_blank" rel="me" href="https://mathstodon.xyz/abuseofnotation">mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+          <p><a target="_blank" href="https://github.com/abuseofnotation/time">Github</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+            <p>
+            <i>Made with 
+              <a  target="_blank" href="https://github.com/boris-marinov/jekyll-book-boilerplate">
+                Jekyll Book Boilerplate
+              </a>
+            </i>
+              <i>Illustrated with 
+              <a  target="_blank" href=" https://github.com/boris-marinov/splasher">
+                Splasher
+              </a>
+            </i>
+            </p>
+          
+         
+        </div>
+      </div>
+
+    </body>
+
+
+

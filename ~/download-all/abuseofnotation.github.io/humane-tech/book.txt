@@ -1,0 +1,316 @@
+
+It is a well-known engineering principle, that you should always use the *weakest* technology capable of solving your problem - the weakest technology is likely the cheapest, easiest to maintain, extend or replace and there are no sane arguments for using anything else. 
+
+We can argue that this is the principle behind the evolutionary process that designed *us* human beings - evolution always starts from rudimentary and the weak and then, only if needed, it proceeds towards greater strength and complexity.
+
+Technologies (as Marshal McLuhan theorized) can be perceived as *extensions of our bodies and minds*. Like, a pair of binoculars can be thought as an organ that extends our vision with additional lenses. And the written word is nothing more than an extension of our ability to talk and memorize. Technologies that embrace this view with all it's implications are what I call *humane technologies* and they are the subject of this book. My main thesis is that they have many advantages over technologies that focus too much on superficial criteria and ignore these principles (AKA *non-humane technologies*.)
+
+<!--more-->
+
+Humane technologies *solve problems in ways that don't create other problems*.
+===
+
+Inhumane technologies sometimes leaves us at a state where we have to *remind ourselves why exactly do we use them*. Yes, they benefit us in some ways, but these benefits always come with a cost which seems almost equal to the benefits.
+
+This dilemma doesn't exist with humane technologies - *we know exactly why we use them* and their disadvantages always seem superficial, compared to their advantages.
+
+Humane technologies *leave the user in control*.
+===
+
+Whether they are broken, or operating as intended, inhumane technologies often *look like they have a will of their own* and they often surprise you unpleasantly. With human technologies, on the contrary, *you always know exactly what is gonna happen*. And in case there is a problem, you often know what the issue is and how to fix it. Humane technologies are not black boxes. 
+
+Humane technologies *are timeless*.
+===
+
+Because they are often a result of a compromise, inhumane technologies are *bound to have a due date* - a time when some other alternative would prove to be more performat. Inhumane technologies tend to go out of fashion. Human technologies, on the other hand, are often ancient (due to their simplicity), and at the same time, due to their versatility, eternal.
+
+Humane technologies *are fulfilling to use*.
+===
+
+An inhumane technology is something that you *pick up to "do your job" and leave it as soon as you are done*, wondering when is a better alternative coming out. They are designed with a specific purpose in mind and they have no other uses. A humane technology often has a variety of purposes (with more to be discovered). We use them for more and more things, because using them feels good. We either cannot imagine our lives without them (if we have used them since birth), or *bless the day we found them*. 
+
+This is an attempt to trace the emergence of non-humane technologies in the context of capitalism. When I talk about capitalism, I won't be talking just about the *political system* and its characteristics such as the practice of free trade, the idea that the market regulates itself etc. Rather, I will talk about the *social structure* which enables this system to exist (talking about just the political system in isolation would be incomplete and, in most cases, decebtful.)
+
+What does that have to do with technology? We will see later (much later, you'll have to read the whole chapter.) But also note *that social structures are also technologies*, and very important ones at that.
+
+<!--more-->
+
+> “We, capable, led by the incompetent, are doing the impossible for the sake of the ungrateful. And we have done so much, for so long, with so little, that we are now qualified to do anything with nothing.”
+>
+> Konstantin Josef Jireček 
+
+
+Social structures, past and present. 
+===
+
+What do I mean by a social structure? For me it consists of three main elements which play along in order to keep the status quo: 
+
+- At the heart of every social structure is a *mythos*, an origin story a purpose-giving narrative - something which people believe in order to keep each other together as a society. As every mythos, this story is neither true nor false and its not meant to be evaluated by its truth or falsity. You can either live according to it or not. 
+
+- Then, there is the *political system* itself. Every political system has a ruling class. Much of the political system are the rules under which this group operates and based on which its members gain and lose power. The mythos should, in one way or another, justify the political system, otherwise, people just wouldn't want to play along and there would be no society. 
+
+- The third important element is a social group which I will call the "mediators". Those are the people who have the job to explain to the people how every decision of the ruling class fits into the big picture of the mythos, thus justifying it.
+
+The ruling class itself can help the mediators but it cannot do their job, by itself. Seeing the ruling class trying to take upon the role of the mediators is a sure sign that their actions are not really justifiable by the mythos. In other words, society has a problem which, although the ruling class would try to convince you that it can be solved by hiring and firing a few of its members, is really an indicator that the days of the political system, and even the mythos, are numbered. Along this line of thinking, we may deem the mediators the most important element of a social structure - and bad ruler can always be replaced, but if there are no people who are willing to support the system, the whole runing class is powerless.
+
+Monarchy
+---
+
+Let's test our little theory by examining monarchy - a social structure which is obsolete enough for us to have an unbiased perspective of it. 
+
+- The monarchy *mythos* goes like this: kings are (descendants of) gods. Therefore they not only know what is good for you, but alko know what is *right* i.e. what can guarantee you a spot in heaven. So obsolete monarchy is that it is hard for us to imagine how its *mythos* had any effect on people but try to look through the eyes of a person living in the middle-ages - poor, illiterate, working 12 hours a day for one bread, looking upon a man who lives in a wonderful castle, who has never worked in his life. Surely this person cannot be the same as you, right?
+
+- The *mediators* were the clergy, who have a hotline with God and which, once they get a response from him, give their blessing to the next king, using obscure rituals. 
+
+- The *political system* was simple - because the king knows best, he can appoint the ruling class by himself. 
+
+As simple and rudimentary this system was, it did work at many times and places. Its success is, for me, a testament to the fact that a system does not have to be complex in order to "work". The most important factor is probably the good balance between the ruling class and the mediators, i.e. having a clergy who has high morale and cares about the people.
+
+Democracy
+---
+
+What came after monarchy is the idea of a secular state and of democracy. Again, we will start with the mythos, which, as that the monarchy mythos, may seem surprising to us, but for different reasons.
+
+- Democracy's *mythos* is the idea that people are equal and that they themselves have not only the ability, but the right to decide what's best for them - it is an idea which seems obvious, but it really isn't and even today there are few societies where really everyone are considered equal and no-one is excluded. 
+
+- The *system* of democracy is that the ruling class is appointed by the people based solemnly on skill. 
+
+- The role of the mediator is played by the *media* - the free press, accompanied by the education institutions, which holds the ruling class accountable and criticizes it.
+
+It is hard to criticize democracy, as it looks like (and probably is) exactly like the social structure that we should be uniting ourselves around, but when comparing it with monarchy, we can see one fatal flaw - democracy is incomplete. In particular, its *mythos* lacks a firm ideological grounds. While monarchy always rests on the firm ideology of a religion, democracy just allows everyone to follow their own doctrines and does not give a direction as to how a state should function. Under democracy, we agree on what is good, but not on what is right for us. It does not tell us why are we together which, as obsolete as it sounds, is absolutely instrumental for having a functional society. 
+
+An example of societies without a firm ideology are the authoritarian regimes of the 20th century, like the Third Reich. Although the leaders of such regimes talk about ideology all the time, their "ideology" consists of just a couple of slogans, whose constant repetition cannot make up for their insubstantiality, nor can the criminalization of their criticism make up for their many inconsistencies.
+
+A social structure and its ideology are not only related - they are the same thing, just as "the medium is the message", as McLuhan says. A new ideology can easily drive a change in the social structure and the lack of a proper social structure could immediately make an ideology obsolete. In other words, *if we want to have a functional society, we have the have an ideology.*
+
+
+Capitalism - democracy's bastard child
+---
+
+I would call the current ideology which supplements our democratic society capitalism (or "consumerism" in order to differentiate it from the purely economic aspect of the former term). In terms of economy, capitalism is just the ability of people to own and trade goods freely - something a form of which existed for centuries. In terms of ideology, I'd say it is characterized with *the practice of putting a price tag on everything, as the ultimate merit of value.* This precisely where the story of non-humane technologies start, but in order to understand what exactly happened, we have to examine how did it evolve to the form in which it did.
+
+The process of forming a new ideology after the decline of aristocracy wasn't a straightforward one - people did not overthrow monarchy for ideological, but for economical reasons. They were still accepting many of the Christian values, but they weren't ready to wait until they die for a better life - they wanted that better life ASAP. 
+
+- In other words, when building the new democratic society, people were driven by survival instincts. When turning into a full-blown *ideology*, these instincts became the new values of the new democratic society: human rights, security, stability, progress and of course happiness. And as times passed, these values converged into one thing - money. How and why did that happen is a question which can be disputed, but the fact that it happened, for me, is obvious - nowadays money is so synonymus with survival that threads like pollution and climate change which are not caused by the shortage of money are perceived as marginal and non-existing, and threads like obesity which are clearly caused by overconsumption are combated by more consumption (pills, fitness cards, etc.) All second-level values, which I mentioned before are also perceived as problems which can be solved with money, both on the level of the individual and of society as a whole and all solutions are ignored.
+
+- The capitalism mythos is the "scientific theory" that human beings have unlimited wants and needs. A theory which, as far as I'm concerned, is not only non-scientific (what are some experiments which can  falsify it), but also (from my standpoint) pure wrong - how can a person who possesses limited time, limited energy, attention span etc. have unlimited needs?
+
+Capitalism uses democracy's social framework to create the social structure that we know today. 
+
+- Democracy tells us that people are equal and free, but capitalism tells us why are they free and what should they do with their freedom - strive to aquire more wealth (our needs are infinite, so more is always better.) 
+- Democracy tells us that we should choose who would rule us, but capitalism gives us the criteria we should use, 
+- the mediator is still the media, but media which is dominated by advertising which in addition to individual products promotes the whole consumerist culture. 
+
+And people are kept obedient to the state not by an army, but by their addiction to all the different commodities which the structure provides them with.
+
+The role of technology under capitalism
+===
+
+Technology was always made to service the needs of humans, but in capitalism it's role is different, because *technology is part of the mythos of the social system*. While before, technology was seen as just means for achieving a given end, now it constitutes an end to itself it is *the engine for propelling economic growth.* As a result of that, people now are trying to invent new technologies all the time, and to use technology for solving non-technological issues. Such practices are catalyst for the development of non-humane technologies.
+
+The rise of non-humane technologies
+---
+
+In the same way in which (as per the old journalist joke) the important events that happen on a given day are just enough to fill the pages of a newspaper, huge tech companies seem to come up with new improved products exactly once or twice per year. That happens always. At no point did Tim Cook, opened the Apple keynote with "Sorry guys, we developed nothing new this year, hopefully we will think of something next time." 
+
+So, while tech companies do come up with ways to improve our lives once in a while, what they ship at the other time are either pure gimmicks, or products and features *that would benefit them as an organization* at the expense of their users. 
+
+This is what we can call a *non-human* technology, one that does little to improve the lives of the organization's clients (actual humans), but does a lot to advance the business of the organization that sells the product. 
+
+Non-human technologies range from, gimmicks - useless features that are just there to convince you to buy the new version of the product, to features that might be harmful for you, but they will better the organization's position in the market. Such technologies (non-humane) are now the *main driver of economic growth*, which is no wonder as *they are designed to trigger economic growth*. 
+
+A simple example, that pops to mind right now is the ability to pay on ATM's using your phone of smartwatch - this technology doesn't improve your life in any way, (remember how we had to carry those *heavy* credit cards around whenever we went), but quite the reverse - it locks you to using specific smartphones and specific payment platforms.
+
+But users would buy the new product, simply because it is new, simply for the sake of participating, simply because this is the way to go.
+
+
+Conclusion
+---
+
+It may look hard to categorize each technology as humane and which is non-humane, and doing so is not the point of this. But it's worth it to think about it. For example, technology that saves energy is clearly good, and technologies that can disappear without causing any significant distress to us are not.
+
+We are going to kick off this chapter with a comparison between cars and bicycles. Until about 40 years ago, cars were considered the symbol of progress and of the direction where technology is heading, and to some extend they still are, however people are becoming increasingly aware that "there is something rotten" with cars. The topic is also related to capitalism - cars wouldn't exist without capitalism (and you might say that capitalism as we know it also depends in many ways on cars). Cars are, of course, a non-humane technology.
+
+<!--more-->
+
+Cars VS bikes
+===
+
+Here are some of the downsides of using cars: 
+
+- Cars are based on technology, which in many cases is more complex that it needs to be. 
+- The car is expensive, probably the most expensive good which a person can buy. 
+- The more people in a given city have cars, the harder it is to travel in and out of the city, not only by car but by using any other means of transportation (car traffic is *fragile*, as Nassim Taleb puts it.)
+- Cars are amongst the most dangerous modes of transportation. 
+- Cars also pollute our environment. 
+- Without causing it directly are probably one of the top reasons for the issue with obesity.
+
+A much better alternative to cars, especially for city commuting, are bikes:
+
+- Bikes are healthy and eco-friendly, 
+- They have good benefits for physical and mental health. 
+- Bikes are cheap, accessible and also simple - most people can fix most of their issues with their bikes by themselves. 
+- There is a great sense of community between bikers, whereas car drivers are generally very rude with one another.
+
+The biggest downside of using bikes: bikers are much more affected by their environment - they cannot make due without good infrastructure - they need bike lanes, places to store their bikes etc. They have to rely on the strength of their bodies to get to where they are headed, they have to rely on other people, complete strangers to keep them safe, when riding at the street.
+
+Unlike bikes, cars seem like a mode of transportation which generally shields its passengers from their environment: once you are in a car, you can move great distances relatively autonomously and without regard for the environment in which you are moving in. Cars give you the privilege to even ignore certain issues which you would otherwise have. You can, for example, live in a very dangerous or depressing neighborhood, but that wouldn't make much of a difference for you if you are only traveling there by car.
+
+But though the protection that cars provide is real, the feeling of independence that they induce is a sham - the possession of a car brings more dependencies than any other consumer product: oil companies, insurance companies, repair shops etc. all exist because of our car-related needs, needs that not only cost us a great amount of our labor to serving those organizations' interests but, more importantly, increase amount of labor that we should perform, period. 
+
+In effect, the superficial independence which cars give us, is at the cost of a *much more deeper dependence*. A dependence which is not between people, but between individuals and organizations that are directly and indirectly involved in the car business. Those organizations that have an agenda on their own and ways to preserve themselves even at the cost of the well-being of their clients. This dependence, as we said is the main characteristic of technologies that are not humane, and it cannot be justified by any of the benefits that the technology brings. We will look why in the next section.
+
+The influence of non-humane technology to our environment
+===
+
+Many technologies that are not humane are justified with the following point: "Sure, I agree that tech X is unpleasant/polluting/ugly, but look how *efficient* it is. If we use it we would produce so much stuff/save so much time that it is worth it."
+
+I am not saying that this kind of thinking is always wrong, but we have to consider how the technology choices that we make influence our environment. That is, we have to consider that *non-humane technologies are hostile towards humans and the environment that is shaped by such technologies is also hostile.* For cars this effect is painfully obvious - the hostility of car-centered cities is well studied by people like *Jan Gehl* who is one of the founders of the "new urbanism" movement that advocates creating infrastructures that prioritize cyclists and pedestrians. And many other non-humane technologies, produce similar results in other respects. A world that is dominated by non-humane technologies is a non-humane world, and any superficial benefits that such technologies bring, cannot justify the damage they inflict.
+
+If social structures are viewed as technologies, then *capitalism itself can be seen as a non-humane technology by many people*, so it's no wonder that that many times people defend capitalism with the argument that I outlined above - although they find it less than favorable, they put up with it due to the benefits it brings. Here the counter-argument that I outlined above applies - the superficial benefits that are brought by capitalism in terms of efficiency cannot justify the much deeper problems that it brings (i.e. yes there is more stuff, but it is the wrong stuff.)
+
+Capitalism again
+---
+
+The fact that people find capitalism less than favorable is for me proven (ironically) by their greed and their thirst for more money *money being often seen as a way to escape from all of capitalism's dependencies*. This might sound counterintuitive, as many people tell us that the people's greed is precisely the reason capitalism works, but it is not. Example: Should you take the job that is most fit for you, or the one which pays better? Some people would try to convince you is that more money is always better by suggesting that if you make enough money you can do 'whatever you want'". This seems like a weird thought. Although we need money to survive, you theoretically don't have to be rich to do what you want. Unless what you want, is *to escape*, to not have to participate in society, as it is organized now. Having a low-paying job that fulfills you should be completely normal in a healthy environment. In a healthy environment, *everyone would already be doing what they want*, because in a healthy environment, people would want to do things that are meaningful and helpful for their society. It is only people living in an unhealthy, non-humane environment who have to struggle in order to be able to do what they want. Simply because what they want is to escape from participating in this society.
+
+Technological escapism
+===
+
+We started by reviewing cars and their ability shield you from reality. This is an instance of a technology that is built to help you cope with the inhumane environment, that is created either by itself and other technologies. 
+
+For example, when you leave in a big city, you have to drive your car in order to go out of town for a few hours or days. In this instance cars provide you with a means of escape from the inhumane environment that they themselves created. 
+
+Or the problem with us having to spend more time in our cars, as cities get more car-centric, can be solved by building bigger and more comfortable cars (which will also pollute more, cost more and take more space.)
+
+Also, I assume air conditioners would be getting more popular, as the temperatures become more and more uncomfortable due to climate change (which is caused in part by air conditioners.)
+
+A most recent example of this phenomena is the Facebook project to create a virtual world (called the Metaverse). This is a typical escapist technology which, instead of trying to address some shortcomings of our world, seeks to replace it completely by a very bad copy of it (and one that is expensive and fragile.)
+
+A side note - I think that the Metaverse is probably the most inhumane technology that can ever exist even more harmful that algorithmic social networks. If using a normal social network has been proven harmful and addictive by so many researches, then what will be the effects of this Metaverse to the people? The fact that nobody is asking this question tells you all you need to know about capitalism and inhumane technologies.
+
+You can also learn a lot about inhumane technologies by examining Facebook's internal slogan: *"Move fast and break things."* In 5 words, this slogan tells us more about non-human technologies than my 500-word introduction: Do not to wait for the right technology to be developed. Do not fear the consequences of what you do. Don't think about where exactly are you going and why. Don't think about the long-term effects of what you do. Just "move fast and break things."
+
+
+Most of us agree that climate change is real. There are still many unanswered questions related to it, (as "How dangerous would it be?", "To what extend it is caused by us?" etc.), but while all these would be good to know, we have more urgent things to do - if I tell you that there is a stone that is about to fall on your head that weights between 1 and 100 kilograms, your reaction wouldn't be to try to spend time determining the exact size of the stone, neither would you ask who's fault it is that it is there. 
+
+<!--more-->
+
+Obviously the solution of the problem has to do with *technology* and so many organizations are trying to jump on that bandwagon and invent new less-polluting technologies that we call *green technologies*. But many of these technologies are green only by name - they don't have enough impact on the carbon emissions to constitute a solution to climate change and by claiming to doing so, they are essentially exploiting the people's desire to save the planet in order to make profit.
+
+Developing new technology is not a bad thing, but let's not forget that *developing new technology is what got us here in the first place* - if it weren't for the technologies developed in the last 100-200 years, climate change wouldn't be an issue. In fact, we can prevent climate change by starting to live the way our great grandparents lived.
+
+We won't do that? OK, luckily for us there are technologies that allow us to mitigate the issue, while continuing to live exactly the way we are living right now. Or not.
+
+Fake green technology
+===
+
+When we should consider a green technology fake? I consider it fake if it fails to fulfill its promise to help us cope with the climate disaster. So, being slightly less-polluting than some of it's alternatives does not qualify a technology as green. A good example of a fake green technology are *electric cars*. Yes, electric cars are more efficient than gasoline-powered cars. No, if everyone started driving electric cars, the problem with climate change won't be solved. In fact, the situation would be just about the same, especially given the fact that most electricity doesn't come from green sources. Electric cars have a lot of other problems that normal cars have, like the problem that they occupy too much space.
+
+Fake green technologies are dangerous:
+
+1. They give their users an impression that they are doing enough to stop climate change.
+2. They don't allow for real green technologies to become popular.
+
+So fake green technologies, especially if they are marketed in the way that Elon Munsk does it, do more harm than good.
+
+Real green technology
+===
+
+A good alternative to electric cars are... electric bikes. Or normal ones for that matter. Not all humane technologies are green. However, *non-humane technologies cannot be green*, because of the manufacturing costs (if not for other reason) - manufactoring goods is very energy consuming and inhumane technologies don't last long - they break, they become obsolete all the time and so they are dependent on endless assembly lines that manufacture new models. 
+
+So, the real solution to the climate crisis is understanding the idea of humane technologies: instead of less-wasteful production, we should have less production. Instead of less-polluting products, we should have less products. 
+
+*Article reposted from the [Abuse of Notation](/blog) blog.*
+
+It is a well-known engineering principle, that you should always use the *weakest* technology capable of solving your problem - the weakest technology is likely the cheapest, easiest to maintain, extend or replace and there are no sane arguments for using anything else.
+
+The main problem with this principle is marketing - few people would sell you a 10$ product that can solve your problem for ever, when they can sell you a 1000$ product, with 10$ per month maintenance cost, that will become obsolete after 10 years. If you listen to the "experts" you would likely end up not with the simplest, but with the *most advanced* technology.
+
+And with software the situation is particularly bad, because the simplest technologies often cost zero, and so they have zero marketing budget. And since nobody would be benefiting from convincing you to use something that does not cost anything, nobody is actively selling those. In this post, I will try to fill that gap by reviewing some technologies for web publishing that are based on *plain text* and putting forward their benefits. Read on to understand why and how you should write everything you write in plain text files and self-publish them on your own website.
+
+<!--more-->
+
+Plain text
+---
+
+The problem of text is one of those problems where the simplest of all solutions works great - plain text files do the job. I've yet to see a use-case where considering any other technology is worth it. 
+
+And similar is the case with simple static HTML websites - a simple static page is better than all publishing platforms that can ever be created.
+
+Anything you write and that you want to last should be put on plain text files.
+
+Markdown
+---
+
+But wait, doesn't working in plain text require you to learn some *complex* markup languages where you have to learn some cryptic *commands* just to bold your text? Well, not entirely. For example there is Markdown, which is pretty simple. Here is how it looks:
+
+```
+Here is a heading
+=== 
+
+Here is a paragraph.
+
+Here is another one.
+
+You can also put *emphasis* on words.
+
+And insert [links](https://boris-marinov.github.io).
+
+```
+
+You would realize that the paragraph above contains everything you need to know for most books and blog posts. Other styling (tables, quotes, etc.) are equally easy to do, and once you learn the basics you would find that writing markdown is faster than applying styling by using the mouse.
+
+And also, all my blog posts exist as *readable* text files. Here is the [text file for this post](https://raw.githubusercontent.com/boris-marinov/boris-marinov.github.io/master/_posts/blog/2022-02-06-text.md).
+
+Vim
+---
+
+While I can write a blog post, or even a whole book in notepad, but there is no reason to do so - there are thousands of quality text editors that will do a better job. There is no wrong answer as to which to use (except emacs :DDD.) And because you are using an open markup format, *you can try them all*.
+
+The one I use is called [vim](/vim-awesome), but since it takes time to getting used to I won't be preaching it to you (you can click the link to read all about why I use it.) A more beginner-friendly editor is [Sublime text](https://www.sublimetext.com/), for example. You can even get a Word-style editor that supports markdown or the markup format that you use.
+
+git
+---
+
+If you use Word for big texts, you probably have used some kind of version control. For text files, we have *git* which is the same thing, except *a thousand times more powerful* e.g. you can go back as far as you like, you can create different branches, where different people make different changes, you can merge several different versions of a file into one automatically. As with text editors, there are a thousand interfaces for working with git. And a thousand places where you can host your project, publicly or privately.
+
+Pandoc
+---
+
+If you don't like markdown, there are many other markup format that you can use. And there is this tool called [Pandoc](https://pandoc.org/) that allows you to convert any of them to any other. 
+
+Pandoc can also convert a markdown document to a lot of different output formats - you can generate *HTML* for your website, you can generate an *epub* book that you can read in your e-reader or sell on Amazon or something. You can even generate Microsoft Word files, if you are a masochist.
+
+Jekyll
+---
+
+Once you author some things on markdown, you might want to publish them, for example on the web. For this you have a lot of options: there is HTML via Pandoc, there might be some blog platforms that support markdown, but a lot cooler thing that you can do is to create your very own blog or website. For this there are programs called *static website generators* that do just that - create websites from a bunch of markdown files. [Jekyll](https://jekyllrb.com/) is the one that I use. It's cool - you can create sections and books by putting files in different directories, there are ready-made themes that you can use, and you can tweak them if you know some HTML. 
+
+Github pages
+---
+
+Finally after you own a website you just have to host it somewhere. You can buy hosting, and have a very own domain name. Or, if you don't want to spend money, you can just deploy it to some static file hosting platform of your choice like *Github pages*. Github pages is very easy to use because it is integrated with *Jekyll* and git which makes the workflow very easy: 
+
+You just create a new project in Github and enable Jekyll support. As the name suggests, Github projects are actually *git project* which can be synchronized with some folders on your local drive via any Git software. And if you don't want to deal with local files, you can author texts from the Github page directly. If you want to start right away, you can use a pre-made theme. If you like the theme I use for my books, you can check [an article and the code that I use for my books](https://github.com/boris-marinov/jekyll-book-boilerplate).
+
+Comparisons to other stacks - what have we lost and what have we gained
+===
+
+My first blog was in blogspot. One day, I accidentally deleted it.
+
+Then I made [a blog in wordpress.com](https://snowballz.wordpress.com/)- just checked it, it's still there, except that all images are dead.
+
+Then I had a custom Wordpress website with a domain name and all, but I decided to remove it.
+
+I authored my first book in Adobe InDesign because I wanted it to look good (and no, you cannot do that in Word.)
+
+I would *never use any of these technologies and platforms*.
+
+1. Firstly, the thing with the deleting - yeah, I might be an idiot, but the same thing can happen if the platform deletes your account without notice. That can't happen with *git*, as I can synchronize all my files with my hard-drive of all my computers and re-upload them. And I cannot accidentally delete individual files either, because of the infinite version control. 
+
+2. Second, migrating to other platforms - if I want to export some of the [genius writing](https://snowballz.wordpress.com/) I did as a teenager, from Wordpress.com to *some other platform* I cannot do that now. With static websites, I can switch to a different platform in a matter of seconds without losing any of my content.
+
+3. Book publishing - I can do that from markdown in a number of ways. For my [Category Theory book](/category-theory-illustrated), I exported the files to LaTex using Pandoc. I can export directly to pdf using the same program, or even in Word (if I was mad.)
+
+4. And last but not least, even when the Internet dies the world ends and we are back to using floppy disks, I will still have the original text files.

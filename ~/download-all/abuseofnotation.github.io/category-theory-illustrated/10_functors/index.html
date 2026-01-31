@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Category Theory Illustrated - Functors</title>
+      <link rel="stylesheet" type="text/css" href="/category-theory-illustrated/style.css">
+
+      <link rel="stylesheet" type="text/css" href="/category-theory-illustrated/custom-style.css">
+
+      <link rel="stylesheet" type="text/css" href="https://abuseofnotation.github.io/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+
+</script>
+
+<script type="text/javascript" id="MathJax-script" 
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+    </head>
+
+    <body>
+
+      <div class="header">
+
+      
+        <div class="container">
+          <a href="/category-theory-illustrated/">
+          <img src="/category-theory-illustrated/logo.svg" class="logo">
+          </a>
+        </div>
+      
+      </div>
+
+      <div class="content container page-Functors">
+        <!--<h1>Functors</h1> -->
+        
+        <div class="prev-next">
+        
+          <a class="button" href="/category-theory-illustrated/05_logic/">&laquo;prev</a>
+        
+        
+          <a class="button" href="/category-theory-illustrated/11_natural_transformations/">next&raquo;</a>
+        
+        </div>
+
+        <h1 id="functors">Functors</h1>
+
+<p>From this chapter on, we will change the tactic a bit (as I am sure you are tired of jumping through different subjects) and we will dive at full throttle into the world of categories, using the structures that we saw so far as context. This will allow us to generalize some of the concepts that we examined in these structures and thus make them (the concepts) valid for all categories.</p>
+
+<h1 id="categories-we-saw-so-far">Categories we saw so far</h1>
+
+<p>So far, we saw many different categories and category types. Let’s review them once more:</p>
+
+<h2 id="the-category-of-sets">The category of sets</h2>
+
+<p>We began by reviewing the mother of all categories — <em>the category of sets</em>.</p>
+
+<p><img src="../10_functors/category_sets.svg" alt="The category of sets" /></p>
+
+<p>We also saw that it contains within itself many other categories, such as the category of types in programming languages.</p>
+
+<h2 id="special-types-of-categories">Special types of categories</h2>
+
+<p>We also learned about other algebraic objects that turned out to be just <em>special types of categories</em>, like categories that have just one <em>object</em> (monoids, groups) and categories that have only one <em>morphism</em> between any two objects (preorders, partial orders).</p>
+
+<p><img src="../10_functors/category_types.svg" alt="Types of categories" /></p>
+
+<h2 id="other-categories">Other categories</h2>
+
+<p>We also defined a lot of <em>categories based on different concepts</em>, like the ones based on logics/programming languages, but also some “less-serious ones”, as for example the color-mixing partial order/category.</p>
+
+<p><img src="../10_functors/category_color_mixing.svg" alt="Category of colors" /></p>
+
+<h2 id="finite-categories">Finite categories</h2>
+
+<p>And most importantly, we saw some categories that are <em>completely made up</em>, such as my soccer player hierarchy. Those are formally called <em>finite categories</em>.</p>
+
+<p><img src="../10_functors/finite_categories.svg" alt="Finite categories" /></p>
+
+<p>Although they are not useful by themselves, the idea behind them is important — we can draw any combination of points and arrows and call it a category, in the same way that we can construct a set out of every combination of objects.</p>
+
+<h2 id="examining-some-finite-categories">Examining some finite categories</h2>
+
+<p>For future reference, let’s see some important finite categories.</p>
+
+<p>The simplest category is $0$ (enjoy the minimalism of this diagram).</p>
+
+<p><img src="../10_functors/finite_zero.svg" alt="The finite category 0" /></p>
+
+<p>The next simplest category is $1$ — it is comprised of one object and no morphisms besides its identity morphism (which we don’t draw, as usual)</p>
+
+<p><img src="../10_functors/finite_one.svg" alt="the finite category 1" /></p>
+
+<p>If we increment the number of objects to two, we see a couple of more interesting categories, like for example the category $2$ containing two objects and one morphism.</p>
+
+<p><img src="../10_functors/finite_two.svg" alt="the finite category 2" /></p>
+
+<hr />
+
+<p><strong>Task 1:</strong> There are just two more categories that have 2 objects and at most one morphism between two objects, draw them.</p>
+
+<p><img src="../10_functors/finite_two_task.svg" alt="the finite category 2" /></p>
+
+<hr />
+
+<p>And finally the category $3$ has 3 objects and also 3 morphisms (one of which is the composition of the other two).</p>
+
+<p><img src="../10_functors/finite_three.svg" alt="the finite category 3" /></p>
+
+<h1 id="categorical-isomorphisms">Categorical isomorphisms</h1>
+
+<p>Many of the categories that we saw are similar to one another, as for example, both the color-mixing order and categories that represent logic have a <em>greatest</em> and a <em>least</em> object. To pinpoint such similarities, and understand what they mean, it is useful to have formal ways to connect categories with one another. The simplest type of such connection is the good old isomorphism.</p>
+
+<h2 id="set-isomorphisms">Set isomorphisms</h2>
+
+<p>In chapter 1 we talked about <em>set isomorphisms</em>, which establish an equivalence between two sets. In case you have forgotten, a set isomorphism is a <em>two-way function</em> between two sets.</p>
+
+<p><img src="../10_functors/set_isomorphism.svg" alt="Set isomorphism" /></p>
+
+<p>It can alternatively be viewed as two “twin” functions such that each of which equals identity, when composed with the other one.</p>
+
+<h2 id="order-isomorphisms">Order isomorphisms</h2>
+
+<p>Then, in chapter 4, we encountered <em>order isomorphisms</em> and we saw that they are like set isomorphisms, but with one extra condition — aside from just being there, the functions that define the isomorphism have to preserve the order of the object e.g. the greatest object of one order should be connected to the greatest object of the other one, the least object of one order should be connected to the least object of the other one, and same for all objects that are in between.</p>
+
+<p><img src="../10_functors/order_isomorphism.svg" alt="Order isomorphism" /></p>
+
+<p>Or more formally put, for any $a$ and $b$ if we have $a ≤ b$ we should also have $F(a) ≤ F(b)$ (and vise versa).</p>
+
+<h2 id="categorical-isomorphisms-1">Categorical isomorphisms</h2>
+
+<p>Now, we will generalize the definition of an order isomorphism, so it also applies to all other categories (i.e. to categories that may have more than one morphism between two objects):</p>
+
+<blockquote>
+  <p>Given two categories, an isomorphism between them is an invertible mapping between the underlying sets of objects, <em>and</em> an invertible mapping between the morphisms that connect them, which maps each morphism from one category to a morphism <em>with the same signature</em>.</p>
+</blockquote>
+
+<p><img src="../10_functors/category_isomorphism.svg" alt="Category isomorphism" /></p>
+
+<p>After examining this definition closely, we realize that, although it <em>sounds</em> a bit more complex (and <em>looks</em> a bit messier) than the one we have for orders <em>it is actually the same thing</em>.</p>
+
+<p>It is just that the so-called “morphism mapping” between categories that have just one morphism for any two objects are trivial, and so we can omit them.</p>
+
+<p><img src="../10_functors/category_order_isomorphism_2.svg" alt="Order isomorphism" /></p>
+
+<p><strong>Task 2:</strong> What is the morphism mapping for orders?</p>
+
+<!--
+We always map the single morphism of the source category to the single morphism of the target category (which is guaranteed to exist, due to the *order-preserving* condition)
+-->
+
+<p>However, when we can have more than one morphism between two given objects, we need to make sure that each morphism in the source category has a corresponding morphism in the target one, and for this reason we need not only a mapping between the categories’ objects, but one between their morphisms.</p>
+
+<p><img src="../10_functors/category_order_isomorphism.svg" alt="Category isomorphism" /></p>
+
+<p>By the way, what we just did (taking a concept that is defined for a more narrow structure (orders) and redefining it for a more broad one (categories)) is called <em>generalizing</em> of the concept.</p>
+
+<h2 id="the-problem-with-categorical-isomorphisms">The problem with categorical isomorphisms</h2>
+
+<p>By examining them more closely, we realize that categorical isomorphisms are not so hard to define. However there is another issue with them, namely that they <em>don’t capture the essence of what categorical equality should be</em>. I have devised a very good and intuitive explanation why is it the case, that this <del>margin</del> section is too narrow to contain. So we will leave it for the next chapter, where we will also devise a more apt way to define a <em>two-way connection</em> between categories.</p>
+
+<p>But first, we need to examine <em>one-way connections</em> between them, i.e. <em>functors</em>.</p>
+
+<p>PS: Categorical isomorphisms are also <em>very rare in practice</em> — the only one that comes to mind is the Curry-Howard-Lambek isomorphism from the previous chapter. That’s because if two categories are isomorphic then there is no reason at all to treat them as different categories — they are one and the same.</p>
+
+<!--
+comics:
+OK, I think I got it --- isomorphisms are when you have two similar pictures and you connect the dots.
+
+Pretty much.
+-->
+
+<h1 id="what-are-functors">What are functors</h1>
+
+<p>The logician Rudolf Carnap coined the term “functor” as part of his project to formalize the syntax for the natural languages such as English in order to create a precise way for us to talk about science. Originally, a functor meant a word or phrase whose meaning can be customized by combining it with a numerical value, such as the phrase “the temperature at $x$ o’clock”, which has a different meaning depending on the value of $x$.</p>
+
+<p>In other words, a functor is a phrase that <em>acts as a function</em>, only not a function between sets, but one between <em>linguistic concepts</em> (such as times and temperature).</p>
+
+<p><img src="../10_functors/functor_carnap.svg" alt="Functor, as envisioned by Rudolf Carnap." /></p>
+
+<p>Later, one of the inventors of category theory Sanders Mac Lane borrowed the word, to describe a something that <em>acts as function between categories</em>, which he defined in the following way:</p>
+
+<blockquote>
+  <p>A functor between two categories (let’s call them $A$ and $B$) consists of two mappings — a mapping that maps each <em>object</em> in $A$ to an object in $B$ and a mapping that maps each <em>morphism</em> between any objects in $A$ to a morphism between objects in $B$, in a way that <em>preserves the structure</em> of the category.</p>
+</blockquote>
+
+<p><img src="../10_functors/functor.svg" alt="Functor" /></p>
+
+<p>Now let’s unpack this definition by going through each of its components.</p>
+
+<h2 id="object-mapping">Object mapping</h2>
+
+<p>In the definition above, we use the word “mapping” to avoid misusing the word “function” for something that isn’t exactly a function. But in this particular case, calling the mapping a function would barely be a misuse — if we forget about morphisms and treat the source and target categories as sets, the object mapping is nothing but a regular old function.</p>
+
+<p><img src="../10_functors/functor_objects.svg" alt="Functor for objects" /></p>
+
+<p>A more formal definition of object mapping involves the concept of an <em>underlying set</em> of a category: Given a category $A$, the underlying set of $A$ is a set that has the objects of $A$ as elements. Utilizing this concept, we say that the object mapping of a functor between two categories is <em>a function between their underlying sets</em>. The definition of a function is still the same:</p>
+
+<blockquote>
+  <p>A function is a relationship between two sets that matches each element of one set, called the <em>source set</em> of the function, with exactly one element from another set, called the <em>target set</em> of the function.</p>
+</blockquote>
+
+<h2 id="morphism-mapping">Morphism mapping</h2>
+
+<p>The second mapping that forms the functor is a mapping between the categories’ morphisms. This mapping resembles a function as well, but with the added requirement that each morphism in $A$ a given source and target must be mapped to a morphism with the corresponding source and target in $B$, as per the object mapping.</p>
+
+<p><img src="../10_functors/functor_morphisms.svg" alt="Functor for morphisms" /></p>
+
+<p>A more formal definition of a morphism mapping involves the concept of the <em>homomorphism set</em>: this is a set that contains all morphisms that go between two given objects in a given category. When utilizing this concept, we say that a mapping between the morphisms of two categories consists of a <em>set of functions between their respective homomorphism sets</em>.</p>
+
+<p><img src="../10_functors/functor_morphisms_formal.svg" alt="Functor for morphisms" /></p>
+
+<p>Notice how the concepts of <em>homomorphism set</em> and of <em>underlying set</em> allowed us to “escape” to set theory when defining categorical concepts and define everything using functions?</p>
+
+<h2 id="functor-laws">Functor laws</h2>
+
+<p>So these are the two mappings (one between objects and one between morphisms) that constitute a functor. But not every pair of such two mappings is a functor. As we said, in addition to existing, the mappings should <em>preserve the structure</em> of the source category into the target category. To see what that means, we revisit the definition of a category from chapter 2:</p>
+
+<blockquote>
+  <p>A category is a collection of <em>objects</em> (we can think of them as points) and <em>morphisms</em> (arrows) that go from one object to another, where:</p>
+  <ol>
+    <li>Each object has to have the identity morphism.</li>
+    <li>There should be a way to compose two morphisms with an appropriate type signature into a third one, in a way that is associative.</li>
+  </ol>
+</blockquote>
+
+<p>So this definition translates to the following two <em>functor laws</em></p>
+
+<ol>
+  <li>
+    <p>Functions between morphisms should <em>preserve identities</em> i.e. all identity morphisms should be mapped to other identity morphisms.
+ <img src="../10_functors/functor_laws_identity.svg" alt="Functor" /></p>
+  </li>
+  <li>
+    <p>Functors should also <em>preserve composition</em> i.e. for any two morphisms $f$ and $g$, the morphism that corresponds to their composition $F(g•f)$ in the source category should be mapped to the morphism that corresponds to the composition of their counterparts in the target directory, so $F(g•f) = F(g)•F(f)$.</p>
+  </li>
+</ol>
+
+<p><img src="../10_functors/functor_laws_composition.svg" alt="Functor" /></p>
+
+<p>And these laws conclude the definition of functors — a simple but, as we will see shortly, very powerful concept.</p>
+
+<p>To see <em>why</em> is it so powerful, let’s check some examples.</p>
+
+<h2 id="functors-in-everyday-language">Functors in everyday language</h2>
+
+<p>There is a common figure of speech (which is used  all the time in this book) which goes like this:</p>
+
+<blockquote>
+  <p>If $a$ is like $F a$, then $b$ is like $F b$.</p>
+</blockquote>
+
+<p>Or “$a$ is related to $F a$, in the same way as $b$ is related to $F b$,” e.g. “If schools are like corporations, then teachers are like bosses”.</p>
+
+<p>This figure of speech is nothing but a way to describe a functor in our day-to-day language: what we mean by it is that there is a certain set of connections (or category-theory terms a “morphisms”) between schools and teachers, that is similar to the connections between corporations and bosses i.e. that there is some kind of structure-preserving map that connects the category of school-related things, to the category of work-related things which maps schools ($a$) to corporations ($F a$) and teacher ($b$) to bosses ($F b$), and which is such that the connections between schools and teachers ($a \to b$) are mapped to the connections between corporations and bosses ($F a \to F b$).</p>
+
+<h2 id="diagrams-are-functors">Diagrams are functors</h2>
+
+<blockquote>
+  <p>“A sign is something by knowing which we know something more.” — Charles Sanders Peirce</p>
+</blockquote>
+
+<p>We will start with an example of a functor that is very <em>meta</em> — the diagrams/illustrations in this book.</p>
+
+<p>You might have noticed that diagrams play a special role in category theory — while in other disciplines their function is merely complementary i.e. they only show what is already defined in another way, here <em>the diagrams themselves serve as definitions</em>.</p>
+
+<p>For example, in chapter 1 we presented the following definition of functional composition.</p>
+
+<blockquote>
+  <p>The composition of two functions $f$ and $g$ is a third function $h$ defined in such a way that this diagram commutes.</p>
+</blockquote>
+
+<p><img src="../10_functors/functions_compose_general.svg" alt="Functional composition - general definition" /></p>
+
+<p>We all see the benefit of defining stuff by means of diagrams as opposed to writing lengthy definitions like</p>
+
+<blockquote>
+  <p>“Suppose you have three objects $a$, $b$ and $c$ and two morphisms $f: b \to c$ and $g: a \to b$…”</p>
+</blockquote>
+
+<p>However, it (defining stuff by means of diagrams) presents a problem — definitions in mathematics are supposed to be formal, so if we want to use diagrams as definitions we must first <em>formalize the definition of a diagram itself</em>.</p>
+
+<p>So how can we do that? One key observation is that diagrams look as finite categories, as, for example, the above definition looks in the same way as the category $3$.</p>
+
+<p><img src="../10_functors/finite_three.svg" alt="the finite category 3" /></p>
+
+<p>However, this is only part of the story as finite categories are just structures, whereas diagrams are <em>signs</em>. They are “something by knowing which we know something more.”, as Peirce famously put it (or “…which can be used in order to tell a lie”, in the words of Umberto Eco).</p>
+
+<p>For this reason, aside from a finite category that encodes the diagram’s structure, the definition of a diagram must also include a way for “interpreting” this category in some other context i.e. they must include <em>functors</em>.</p>
+
+<p><img src="../10_functors/diagram_functor.svg" alt="diagram as a functor" /></p>
+
+<p>This is how the concept of functors allows us to formalize the notion of diagrams:</p>
+
+<blockquote>
+  <p>A <em>diagram</em> is comprised of one finite category (called an <em>index category</em>) and a functor from it to some other category.</p>
+</blockquote>
+
+<p>If you know about semiotics, you may view the source and target categories of the functor as <em>signifier</em> and <em>signified</em>.</p>
+
+<p>And so, you can already see that the concept of a functor plays a very important role in category theory. Because of it, diagrams in category theory can be <em>specified formally</em> i.e. they are categorical objects <em>per se</em>.</p>
+
+<p>You might even say that they are categorical objects <em>par excellence</em> (TODO: remove that last joke).</p>
+
+<!--
+(TODO: By the way, the fact that a diagram commutes means just that the morphism in the finite category are sometimes composites of one another).
+-->
+
+<h2 id="maps-are-functors">Maps are functors</h2>
+
+<blockquote>
+  <p>A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness. — Alfred Korzybski</p>
+</blockquote>
+
+<p>Functors are sometimes called “maps” for a good reason — maps, like all other diagrams, are functors. If we consider some space, containing cities and roads that we travel by, as a category, in which the cities are objects and roads between them are morphisms, then a road map can be viewed as category that represent some region of that space, together with a functor that maps the objects in the map to real-world objects.</p>
+
+<p><img src="../10_functors/preorder_map_functor.svg" alt="A map and a preorder of city pathways" /></p>
+
+<p>In maps, morphisms that are a result of composition are often not displayed, but we use them all the time — they are called <em>routes</em>. And the law of preserving composition tells us that every route that we create on a map corresponds to a real-world route.</p>
+
+<p><img src="../10_functors/preorder_map_functor_route.svg" alt="A map and a preorder of city pathways" /></p>
+
+<p>Notice that in order to be a functor, a map does not have to list <em>all</em> roads that exist in real life, and <em>all</em> traveling options (“the map is not the territory”), the only requirement is that <em>the roads that it lists should be actual</em> — this is a characteristic shared by all many-to-one relationships (i.e. functions).</p>
+
+<!--
+Functors can also go from complex to simple
+---
+
+So far, we saw functors that go from a simple category, into a more complex one, which aim to *select* some objects from the target category*.
+
+But functors can go the other way too --- from complex to simple --- those are the functors which *sort* the object of the source category into the categories that constitute the target.
+
+
+Even more interestingly, we often encounter often special pairs of functors, consisting of one *selective* and one *sorting* functor that go between two categories, that kinda reverse each other. 
+
+-->
+
+<h2 id="human-perception-might-be-functorial">Human perception might be functorial</h2>
+
+<p>As we saw, in addition to category theory, functors appear in many disciplines that study the human mind, such as logic, linguistics, semiotics and the like. I thought about why is it so in a <a href="https://abuseofnotation.github.io/logic-thought">blog post</a> that I wrote. My response to that question is that human perception, human thinking, is itself functorial: to perceive the world around us, we are going through a bunch of functors that go from more raw “low-level” mental models to more abstract “high-level” ones.</p>
+
+<p>We may say that perception starts with raw sensory data. From it, we go, (using a functor) to a category containing some basic model of how the world works, mapping the objects we are seeing to some concepts that we formed in our mind.</p>
+
+<p><img src="../10_functors/chain.svg" alt="Perception is functorial" /></p>
+
+<p>Then we are connecting this model to another, even more abstract model (or models), which provide us with a higher-level overview of the situation that we are in, again using functorial connection (technically these are functors from subcategories).</p>
+
+<p><img src="../10_functors/logic_thought.svg" alt="Perception is functorial" /></p>
+
+<p>You can view this as a progression of connections that go from simpler to more abstract (i.e. from categories with less morphisms to categories with more morphisms).</p>
+
+<p>These connections are functorial in nature, because they work purely in terms of <em>structure</em>: the idea of a given object has nothing in common with the object itself (e.g. the idea of a biscuit isn’t round, sweet etc). What ideas have in common with the objects of representation is that the connections they have between one another mimic some connections a real-life biscuit has with other objects.</p>
+
+<p>All this is, of course, just a speculation, but how else would we be capable of forming thoughts, e.g. to imagine a person riding a bike and bumping in a tree, when no part of our brains (nor the impulses they create) resembles in any way people/bikes/trees?</p>
+
+<p>The answer is structure — thoughts have the structure of the situation, that’s why they refer to it (although they cannot refer to any of the elements by itself).</p>
+
+<h1 id="functors-in-monoids">Functors in monoids</h1>
+
+<p>So, after this slight detour, we will return to our usual modus operandi.</p>
+
+<p>Hey, do you know that in group theory, there is this cool thing called <em>group homomorphism</em> (or <em>monoid homomorphism</em> when we are talking about monoids) — it is a function between the groups’ underlying sets which preserves the group operation.</p>
+
+<p>So, for example, If the time of the day right now is 00:00 o’clock (or 12 PM) then what would the time be after $n$ hours? The answer to this question can be expressed as a function with the set of integers as source and target.</p>
+
+<p><img src="../10_functors/group_homomorphism_function.svg" alt="Group homomorphism as a function" /></p>
+
+<p>This function is interesting — it preserves the operation of (modular) addition: if, 13 hours from now the time will be 1 o’clock and if 14 hours from now it will be 2 o’clock, then the time after (13 + 14) hours will be (1 + 2) o’clock.</p>
+
+<p><img src="../10_functors/group_homomorphism.svg" alt="Group homomorphism" /></p>
+
+<p>Or to put it formally, if we call it (the function) $F$, then we have the following equation: $F(a + b) = F(a) + F(b)$ (where $+$ in the right-hand side of the equation means modular addition). Because this equation holds, the $F$ function is a <em>group homomorphism</em> between the group of integers under addition and the group of modulo arithmetic with base 11 under modular addition (where you can replace 11 with any other number).</p>
+
+<p>The groups don’t have to be so similar for there to be a homomorphism between them. Take, for example, the function that maps any number $n$ to 2 to the <em>power of $n$,</em> so  $n \to 2ⁿ$ (here, again, you can replace 2 with any other number). This function gives a rise to a group homomorphism between the group of integers under addition and the integers under multiplication, or $F(a + b) = F(a) \times F(b)$.</p>
+
+<p><img src="../10_functors/group_homomorphism_addition_multiplication.svg" alt="Group homomorphism between different groups" /></p>
+
+<p>Wait, what were we talking about, again? Oh yeah — group homomorphisms are functors. To see why, we switch to the category-theoretic representation of groups and revisit our first example and (to make the diagram simpler, we use $mod2$ instead of $mod11$).</p>
+
+<p><img src="../10_functors/group_homomorphism_functor.svg" alt="Group homomorphism as a functor" /></p>
+
+<p>It seems that when we view groups/monoid as one-object categories, a group/monoid homomorphism is just a functor between these categories. Let’s see if that is the case.</p>
+
+<h2 id="object-mapping-1">Object mapping</h2>
+
+<p>Groups/monoids have just one object when viewed as categories, so there is also only one possible object mapping between any couple of groups/monoids — one that maps the (one and only) object of the source group to the object of the target group (not depicted in the diagram).</p>
+
+<h2 id="morphism-mapping-1">Morphism mapping</h2>
+
+<p>Because of the above, the morphism mapping is the only relevant component of the group homomorphism. In the category-theoretic perspective, group objects (like $1$ and $2$ $3$ etc.) correspond to morphisms (like $+1$, $+2$ $+3$ etc.) and so the morphism mapping is just mapping between the group’s objects, as we can see in the diagram.</p>
+
+<h2 id="functor-laws-1">Functor laws</h2>
+
+<p>The first functor law trivial, it just says that the one and only identity object of the source group (which corresponds to the identity morphism of its one and only object) should be mapped to the one and only identity object of the target group For groups, this even follows immediately from the second law and for monoids, it has to be added as an extra condition.</p>
+
+<p>And if we remember that the group operation of combining two objects corresponds to <em>functional composition</em> if we view groups as categories, we realize that the group homomorphism equation $F(a + b) = F(a) \times F(b)$ is just a formulation of the second functor law: $F(g•f) = F(g)•F(f)$.</p>
+
+<p>And many algebraic operations satisfy this equation, for example the functor law for the group homomorphism between $n \to 2ⁿ$ is just the famous algebraic rule, stating that $gᵃ gᵇ= gᵃ⁺ᵇ$.</p>
+
+<p><strong>Task 3:</strong> Prove that the first functor law (preservation of identities) of groups can be proven from the second law. Note that this is valid for groups, but not monoids.</p>
+
+<h1 id="functors-in-orders">Functors in orders</h1>
+
+<p>And now let’s talk about a concept that is completely unrelated to functors, nudge-nudge (hey, bad jokes are better than no jokes at all, right?) In the theory of orders, we have the concept of functions between orders (which is unsurprising, given that orders, like monoids/groups, are based on sets) and one very interesting type of such function, which has applications in calculus and analysis, is a <em>monotonic function</em> (also called <em>monotone map</em>). This is a function between two orders that *preserves the order of the objects in the source order, in the target order. So a function $F$ is monotonic when for every $a$ and $b$ in the source order, if $a ≤ b$ then $F(a) ≤ F(b)$.</p>
+
+<p>For example, the function that maps the current time to the distance traveled by some object is monotonic because the distance traveled increases (or stays the same) as time increases.</p>
+
+<p><img src="../10_functors/monotone_map.svg" alt="A monotonic function" /></p>
+
+<p>If we plot this or any other monotonic function on a line graph, we see that it goes just one direction (i.e. just up or just down).</p>
+
+<p><img src="../10_functors/monotone_map_plot.svg" alt="A monotonic function, represented as a line-graph" /></p>
+
+<p>Now we are about to prove that monotonic functions are functors too, ready?</p>
+
+<h2 id="object-mapping-2">Object mapping</h2>
+
+<p>Like with categories, the object mapping of an order is represented by a function between the orders’ underlying sets.</p>
+
+<h2 id="morphism-mapping-2">Morphism mapping</h2>
+
+<p>With monoids, the object mapping component of functors was trivial. Here is the reverse: the morphism mapping is trivial - given a morphism between two objects from the source order, we map that morphism to the morphism between their corresponding objects in the target order. The fact that the monotonic function respects the order of the elements, ensures that the latter morphism exists.</p>
+
+<h2 id="functor-laws-2">Functor laws</h2>
+
+<p>It is not hard to see that monotone maps obey the first functor law as identities are the only morphisms that go between a given object and itself.</p>
+
+<p>And the second law ($F(g \circ f) = F(g) \circ F(f)$) also follows trivially — we just have to prove that if function $F$ preserves order, i.e. that if</p>
+
+\[a ≤ b \to F(a) ≤ F(b)\]
+
+<p>and</p>
+
+\[b ≤ c \to F(a) ≤ F(b)\]
+
+<p>then obviously</p>
+
+\[F(a) ≤ F(c)\]
+
+<p><strong>Task 4:</strong> Show why the law holds.</p>
+
+<h1 id="linear-functions">Linear functions</h1>
+
+<p>OK, enough with this abstract nonsense, let’s talk about “normal” functions — ones between numbers.</p>
+
+<p>In calculus, there is this concept of <em>linear functions</em> (also called “degree one polynomials”) that are sometimes defined as functions of the form $f(x) = xa$ i.e. ones that contain no operations other than multiplying the argument by some constant (designated as $a$ in the example).</p>
+
+<p>But if we start plotting some such functions we will realize that there is another way to describe them — their graphs are always comprised of straight lines.</p>
+
+<p><img src="../10_functors/linear_functions.svg" alt="Linear functions" /></p>
+
+<p><strong>Task 5:</strong> Why are the graphs of linear functions comprised of straight lines?</p>
+
+<p>Another interesting property of these functions is that most of them <em>preserve</em> addition, that is for any $x$ and $y$, you have $f(x) + f(y) = f(x + y)$. We already know that this equation is equivalent to the second functor law. So linear functions are just <em>functors between the group of natural numbers under addition and itself.</em> As we will see later, they are example of functors in the <em>category of vector spaces</em>.</p>
+
+<p><img src="../10_functors/linear_function_functor.svg" alt="Linear functions" /></p>
+
+<p><strong>Task 6:</strong> Show that linear functions preserve addition.</p>
+
+<p>And if we view that natural numbers as an order, linear functions are also functors as well, as all functions that are plotted with straight lines are obviously monotonic.</p>
+
+<p>Note, however, that not all functions that are plotted straight lines preserve addition — functions of the form $f(x) = x * a + b$ in which $b$ is non-zero, are also straight lines (and are also called linear) but they don’t preserve addition.</p>
+
+<p><img src="../10_functors/linear_function_non_functor.svg" alt="Linear functions" /></p>
+
+<p>For those, the above formula looks like this: $f(x) + b + f(y) + b = f(x + y) + b$.</p>
+
+<!--
+
+The category of topological spaces
+---
+
+The smoothness of the mapping means that paths may stretch or collapse but not break. 
+-->
+
+<h1 id="functors-in-programming-the-list-functor">Functors in programming. The list functor</h1>
+
+<p>Types in a given programming language form a category, and in that category there are some functors that programmers use every day, such as the list functor, that we will use as an example. The list functor is an example of a functor that maps the realm of simple (primitive) types and functions to the realm of more complex (generic) types and functions.</p>
+
+<p><img src="../10_functors/functor_programming.svg" alt="A functor in programming" /></p>
+
+<p>But let’s start with the basics: defining the concept of a functor in programming context is as simple as changing the font we use in our formulas from “modern” to “monospaced”. And also, using the more “programmy” terms listed in the table in chapter 2.</p>
+
+<blockquote>
+  <p>A functor between two categories (let’s call them <code class="language-plaintext highlighter-rouge">A</code> and <code class="language-plaintext highlighter-rouge">B</code>) consists of a mapping that maps each <del>object</del> <em>type</em> in <code class="language-plaintext highlighter-rouge">A</code> to a type in <code class="language-plaintext highlighter-rouge">B</code> and a mapping that maps each <del>morphism</del> <em>function</em> between types in <code class="language-plaintext highlighter-rouge">A</code> to a function between types in <code class="language-plaintext highlighter-rouge">B</code>, in a way that preserves the structure of the category.</p>
+</blockquote>
+
+<p>Comparing these definitions makes us realize that mathematicians and programmers are two very different communities, that are united by the fact that they both use functors (and by their appreciation of peculiar typefaces).</p>
+
+<h2 id="type-mapping">Type mapping</h2>
+
+<p>The first component of a functor is a mapping that converts one type (let’s call it <code class="language-plaintext highlighter-rouge">A</code>) to another type (<code class="language-plaintext highlighter-rouge">B</code>). So it is <em>like a function, but between types</em>. Such constructions are supported by almost all programming languages that have static type checking in the first place — they go by the name of <em>generic types</em> . A generic type is nothing but a function that maps one (concrete) type to another (this is why generic types are sometimes called <em>type-level functions</em>).</p>
+
+<p><img src="../10_functors/functor_programming_objects.svg" alt="A functor in programming - type mapping" /></p>
+
+<p>Note that although the diagrams they look similar, a <em>type-level</em> function is completely different from a <em>value-level</em> function, e.g. a value-level polymorphic function from <code class="language-plaintext highlighter-rouge">a</code>, to <code class="language-plaintext highlighter-rouge">List&lt;a&gt;</code> (or in mathy Haskell-inspired notation $forall\ a. a \to List\ a$) converts a <em>value</em> of type <code class="language-plaintext highlighter-rouge">a</code> to a value of type <code class="language-plaintext highlighter-rouge">List&lt;a&gt;</code> and is different from the <em>type-level</em> function <code class="language-plaintext highlighter-rouge">List&lt;A&gt;</code> as that one converts a <em>type</em> $a$ to a <em>type</em> $List\ a$ (e.g. the type <code class="language-plaintext highlighter-rouge">string</code> to the type $List\ string$, $number$ to $List\ number$ etc.). We will review value-level polymorphic functions at the end of the chapter.</p>
+
+<h2 id="function-mapping">Function mapping</h2>
+
+<p>So the type mapping of a functor is simply a generic type in a programming language (we can also have functors between two generic types, but we will review those later). So what is the <em>function mapping</em> — this is a mapping that convert any function operating on simple types, like $string \to number$ to a function between their more complex counterparts e.g. $List\ string \to List\ number$.</p>
+
+<p><img src="../10_functors/functor_programming_morphisms.svg" alt="A functor in programming - function mapping" /></p>
+
+<p>In programming languages, this mapping is represented by a higher-order function called <code class="language-plaintext highlighter-rouge">map</code> with a signature (using Haskell notation), $(a \to b) \to (Fa \to Fb)$, where $F$ represents the generic type.</p>
+
+<p>Note that, although any possible function that has this type signature (that that obeys the functor laws) gives rise to a functor, <em>not all such functors are useful</em>. Usually, there is only one of them that makes sense for a given generic type and that’s why we talk about <em>the</em> list functor, and we define <code class="language-plaintext highlighter-rouge">map</code> directly in the in the generic datatype, as a method.</p>
+
+<p>In the case of lists and similar structures, the <em>useful</em> implementation of <code class="language-plaintext highlighter-rouge">map</code> is the one that applies the original (simple) function to all elements of the list.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Array&lt;A&gt; {
+  map (f: A ➞ B): Array&lt;B&gt; {
+    let result = [];
+    for (obj of this) {
+      result.push(f(obj));
+    }
+    return result;
+  }
+}
+</code></pre></div></div>
+
+<h2 id="functor-laws-3">Functor laws</h2>
+
+<p>Aside from facilitating code reuse by bringing in all standard functions of simple types in a more complex context, <code class="language-plaintext highlighter-rouge">map</code> allows us to work in a way that is predictable, courtesy of the functor laws, which in programming context look like this.</p>
+
+<p>Identity law:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a.map(a =&gt; a) == a
+</code></pre></div></div>
+<p>Composition law:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a.map(f).map(g) == a.map((a) =&gt; g(f(a)))
+</code></pre></div></div>
+
+<p><strong>Task 7:</strong> Use examples to convince yourself that the laws are followed.
+What are functors for
+===</p>
+
+<p>Now, that we have seen so many examples of functors, we finally can attempt to answer the million-dollar question, namely what are functors for and why are they useful? (often formulated also as “Why are you wasting your/my time with this (abstract) nonsense?”)</p>
+
+<p>Well, we saw that <em>maps are functors</em> and we know that <em>maps are useful</em>, so let’s start from there.</p>
+
+<p>So, why is a map useful? Well, it obviously has to do with the fact that the points and arrows of the map corresponds to the cities and the roads in the place you are visiting in i.e. due to the very fact that it is a functor, but there is a second aspect as well - maps (or at least those of them that are useful) are <em>simpler to work with</em> than the actual things they represent. For example, road maps are useful, because they are <em>smaller</em> than the territory they represent, so it is much easier to go look up the routes between two given places by following a map, than to actually travel through all of them in real life.</p>
+
+<p>And functors in programming are used for similar reason - functions that involve simple types like <code class="language-plaintext highlighter-rouge">string</code>, <code class="language-plaintext highlighter-rouge">number</code>, <code class="language-plaintext highlighter-rouge">boolean</code> etc. are … simple, and least when compared with functions that work with lists and other generic types. Using the <code class="language-plaintext highlighter-rouge">map</code> function allows us to operate on such types without having to think about them and to derive functions that transform them, from functions that transform simple values. In other words, functors are means of <em>abstraction</em>.</p>
+
+<p>Of course, not all routes on the map and no functions that between generic datatypes can be derived just by functions between the types they contain. This is generally true for many “useful” functors: because their source categories are “simpler” than the target, some of the morphisms in the target have no equivalents in the source i.e. making the model simpler inevitably results in losing some of its capabilities. This is a consequence of “the map is not the territory” principle (“every abstraction is a leaky abstraction”, as Joel Spolsky puts it).</p>
+
+<h1 id="pointed-functors">Pointed functors</h1>
+
+<p>Now, before we close it off, we will review one more functor-related concept that is particularly useful in programming - <em>pointed endofunctors.</em></p>
+
+<h2 id="endofunctors">Endofunctors</h2>
+
+<p>To understand what pointed endofunctors are, we have to first understand what are <em>endofunctors</em>, and we already saw some examples of those in the last section. Let me explain: from the way the diagrams there looked like, we might get the impression that different type families belong to different categories.</p>
+
+<p><img src="../10_functors/functor_programming.svg" alt="A functor in programming" /></p>
+
+<p>But that is not the case - all type families from a given programming language are actually part of one and the same category - the category of <em>types</em>.</p>
+
+<p><img src="../10_functors/functor_programming_endo.svg" alt="A functor in programming" /></p>
+
+<p>Wait, so this is permitted? Yes, these are exactly what we call <em>endofunctors</em> i.e. ones that have one and the same category as source and target.</p>
+
+<h2 id="the-identity-functor">The identity functor</h2>
+
+<p>So, what are some examples of endofunctors? I want to focus on one that will probably look familiar to you - it is the <em>identity functor</em> of each category, the one that maps each object and morphism to itself.</p>
+
+<p><img src="../10_functors/identity_functor.svg" alt="Identity  functor" /></p>
+
+<p>And it might be familiar, because an identity functor is similar to an identity morphism - it allow us to talk about value-related stuff without actually involving values.</p>
+
+<h2 id="pointed-functors-1">Pointed functors</h2>
+
+<p>Finally, the identity functor, together with all other functors to which the identity functor can be <em>naturally transformed</em> are called <em>pointed functors</em> (i.e. a functor is pointed if there exist a natural transformation from the identity functor to it). As we will see shortly, the list functor is a pointed functor.</p>
+
+<p><img src="../10_functors/pointed_functor.svg" alt="Pointed functor" /></p>
+
+<p>We still haven’t discussed what does it mean for one functor to be naturally transformed to another one (although the commuting diagram above can give you some idea), however, if we concentrate solely on the category of types in programming languages, then <em>a natural transformation is just a polymorphic function</em> e.g. this one is $a \to List\ a$, that preserves the structure of the types i.e. one for which this diagram commutes. 
+<img src="../10_functors/pointed_functor_set.svg" alt="Pointed functor in Set" /></p>
+
+<p>In the case of this functor, the function in question is $a \to [\ a\ ]$ — the function that puts every value in a “singleton” list.</p>
+
+<p>We will stop here, as natural transformations are a complex thing, and we want to examine them in a whole chapter (the next one).</p>
+
+<h1 id="the-category-of-small-categories">The category of small categories</h1>
+
+<p>Ha, I got you this time (or at least I <em>hope</em> I did) - you probably thought that I won’t introduce another category in this chapter, but this is exactly what I am going to do now. And (surprise again) the new category won’t be the category of functors (don’t worry, we will introduce that in the next chapter). Instead, we will examine the category of (small) categories, that has all the categories that we saw so far as objects and functors as its morphisms, like $Set$ - the category of sets, $Mon$, the category of monoids, $Ord$, the category of orders etc.</p>
+
+<p><img src="../10_functors/category_of_categories.svg" alt="The category of categories" /></p>
+
+<p>We haven’t yet mentioned the fact that functors compose (and in an associative way at that), but since a functor is just a bunch of functions, it is no wonder that it does.</p>
+
+<p><strong>Task 8:</strong> Go through the functor definition and see how do functors compose.</p>
+
+<p><strong>Task 9:</strong> What are the initial and terminal object of the category of small categories.</p>
+
+<h2 id="categories-all-the-way-down">Categories all the way down</h2>
+
+<p>The recursive nature of category theory might sometimes leave us confused: we started by saying that categories are <em>composed of objects and morphisms</em>, but now we are saying that there are <em>morphisms between categories</em> (functors). And on top of that, there is a category where <em>the objects are categories themselves</em>. Does that mean that categories are an example of… categories? Sounds a bit weird on intuitive level (as for example biscuits don’t contain other biscuits and houses don’t use houses as building material), but it is actually the case. Like, for example, every monoid is a category with just one object, but at the same time, monoids can be seen as belonging to one category - the category of monoids, where they are connected by monoid homomorphisms. We also have the category of groups, for example, which contains the category of monoids as a subcategory, as all monoids are groups etc.</p>
+
+<p>Category theory does <em>categorize</em> everything, so, from a category-theoretic standpoint, all of maths is <em>categories all the way down</em>. Whether you would treat a given category as a universe or as a point depends solely on the context. Category theory is an <em>abstract</em> theory. That is, it does not seek to represent an actual state of affairs, but to provide a language that you can use to express many different ideas.</p>
+
+<!--
+
+-->
+
+
+
+        <div class="prev-next">
+        
+          <a class="button" href="/category-theory-illustrated/05_logic/">&laquo;prev</a>
+        
+        
+          <a class="button" href="/category-theory-illustrated/11_natural_transformations/">next&raquo;</a>
+        
+        </div>
+        
+      </div>
+
+
+
+      <div class="footer" style="background-color:#39bcedff">
+        <div class="container">
+          <h1>Support this project</h1>
+          <p><a target="_blank" href="https://ko-fi.com/abuseofnotation">Ko-fi</a></p>
+          <p><a target="_blank" href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a target="_blank" href="https://abuseofnotation.gumroad.com/">Gumroad</a></p>
+           
+        </div>
+      </div>
+
+
+      <div class="footer" style="background-color:#dc7100">
+        <div class="container chapters">
+          <h1>Subscribe for updates</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+          <input style="height: 40px;" type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input style="height: 46px;" type="submit" class="read-more" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <div class="container chapters">
+          <h1>Contents</h1>
+          
+            <p><a href="/category-theory-illustrated/00_about/">About</a></p>
+          
+            <p><a href="/category-theory-illustrated/01_set/">Sets</a></p>
+          
+            <p><a href="/category-theory-illustrated/02_category/">Categories</a></p>
+          
+            <p><a href="/category-theory-illustrated/03_monoid/">Monoids</a></p>
+          
+            <p><a href="/category-theory-illustrated/04_order/">Orders</a></p>
+          
+            <p><a href="/category-theory-illustrated/05_logic/">Logic</a></p>
+          
+            <p><a href="/category-theory-illustrated/10_functors/">Functors</a></p>
+          
+            <p><a href="/category-theory-illustrated/11_natural_transformations/">Natural transformations</a></p>
+          
+          <!--
+          <h1>Download</h1>
+          <p><a href="/category-theory-illustrated/category-theory-illustrated.epub">as epub</a></p>
+          <p><a href="/category-theory-illustrated/category-theory-illustrated.txt">as txt</a></p>
+          -->
+        </div>
+      </div>
+
+
+      <div class="footer" style="background-color:#39bcedff">
+        <div class="container">
+          <h1>Created by Jencel Panic</h1>
+          <p><a target="_blank" href="/">personal blog</a></p>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+          <p><a target="_blank" href="https://github.com/abuseofnotation/category-theory-illustrated">Github</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <p>
+          <i>
+            Made with <a target="_blank" href="https://github.com/boris-marinov/jekyll-book-boilerplate"> Jekyll Book Boilerplate</a>. 
+
+            Drawn in <a target="_blank" href="https://inkscape.org">Inkscape</a>. 
+
+            Set in <a target="_blank" href="https://ko-fi.com/s/4cad3c65e7">Mell Sans</a>. 
+          </i>
+          </p>
+
+
+        </div>
+      </div>
+      <div class="footer" style="background-color:#dc7100">
+        <div class="container">
+          <p>
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </body>
+
+
+

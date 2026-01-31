@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+              
+    
+
+    
+    <h1>programming articles</h1>
+      
+
+    <article class="post">
+      <h1><a href="/text/">Human technology: Text files</a></h1>
+
+      <div class="entry">
+        <p>It is a well-known engineering principle, that you should always use the <em>weakest</em> technology capable of solving your problem - the weakest technology is likely the cheapest, easiest to maintain, extend or replace and there are no sane arguments for using anything else.</p>
+
+<p>The main problem with this principle is marketing - few people would sell you a 10$ product that can solve your problem for ever, when they can sell you a 1000$ product, with 10$ per month maintenance cost, that will become obsolete after 10 years. If you listen to the “experts” you would likely end up not with the simplest, but with the <em>most advanced</em> technology.</p>
+
+<p>And with software the situation is particularly bad, because the simplest technologies often cost zero, and so they have zero marketing budget. And since nobody would be benefiting from convincing you to use something that does not cost anything, nobody is actively selling those. In this post, I will try to fill that gap by reviewing some technologies for web publishing that are based on <em>plain text</em> and putting forward their benefits. Read on to understand why and how you should write everything you write in plain text files and self-publish them on your own website.</p>
+
+
+      </div>
+      <a href="/text/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/if/">Structured programming: how to write proper if statements</a></h1>
+
+      <div class="entry">
+        <p>The <code class="language-plaintext highlighter-rouge">if</code> statement (or <code class="language-plaintext highlighter-rouge">if</code> expression) is the cornerstone of every modern programming language - it is so pervasive that we rarely think about how exactly should we use it, or how it is meant to be used. But despite its popularity, <code class="language-plaintext highlighter-rouge">if</code> wasn’t always there, and it wasn’t as pervasive as nowadays, so its role is, I’d argue, still somewhat misunderstood. So in this article, I will examine some mistakes that we can easily avoid in order to improve on our code.</p>
+
+
+      </div>
+      <a href="/if/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/fp/">Why is functional programming awesome</a></h1>
+
+      <div class="entry">
+        <p>I really am not the best person to author such an article (I am not that into programming anymore, and I never was a real expert in it), however I am doing it, because I have been waiting for someone else to write it for years and kept noticing the following phenomena:</p>
+
+<ol>
+  <li>People who understand functional programming, cannot make themselves understood by the general (programming) public.</li>
+  <li>Many of the people who are able to make themselves understood by the public, don’t understand enough for them to be worth listening (all functional programming articles that are understandable don’t go much farther than “You should use pure functions, man!”.</li>
+</ol>
+
+<p>Roughly the same thing has been called  “the curse of the monad” by some people: “Once you understand it, you lose the ability to explain it”. It is clear now that monads are not something you get in an afternoon, but I think you can get some idea of what FP (functional programming) is. Or, you know, in a year or so. But in order to spend that time you need some motivation. You probably need someone to tell you why exactly do you need to know about FP? Why is it awesome, so to say. And so my article begins.</p>
+
+
+      </div>
+      <a href="/fp/" class="read-more">Read More</a>
+    </article>
+
+      
+
+      <h2><a href="/blog" >all articles</a></h2>
+    
+
+    
+
+    <h1>programming shorts</h1>
+
+    <article class="post">
+
+      
+      <h2><a href="/pl-design/">The level of progress in programming language design</a></h2>
+
+      <div class="entry">
+        <p>The level of progress in programming language design:
+Shortly after the first ever programming language was created, it’s author said that the language’s whole paradigm is flawed and we should do functional programming instead*.</p>
+
+<p>That was 46 years ago.</p>
+
+<p>We still use the same paradigm.</p>
+
+<p>*<a href="https://dl.acm.org/doi/10.1145/359576.359579">Can programming be liberated from the von Neumann style?</a></p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/agda/">Agda</a></h2>
+
+      <div class="entry">
+        <p><em>At the Agda headquaters:</em></p>
+
+<p>“OK, guys, so our user pool consists only of folks who already know Haskell and Emacs Is there a way to narrow it down more?”</p>
+
+<p>“I got it, what if we allow unicode, so they also have to also know Latex ?”</p>
+
+<p>“Brilliant!”</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/haskell/">Haskell</a></h2>
+
+      <div class="entry">
+        <p>“Oh, in Haskell this app is just a one-liner!”</p>
+
+<p>The one-liner:</p>
+
+<p><code class="language-plaintext highlighter-rouge">app a b c d e= runMonadT &lt;(@)&gt; ( (LiftValue a b c)   *!*  stop) . \a -&gt; d(a) $ e</code></p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/bash-language/">Bash</a></h2>
+
+      <div class="entry">
+        <p>I think that bash is so popular because it is so terrible language and hard to work with, that every time you make something work you feel like a wizard and your dopamine is to the roof</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/unix-lambda/">Unix and Lambda</a></h2>
+
+      <div class="entry">
+        <p>Searching for a good way to say it, but basically, those who don’t understand Unix indeed are doomed to reinvent it. However, those who don’t understand Lambda are doomed to just always remain half-blind when it comes to programming, just roaming and not knowing what they are missing.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/timezones/">Timezones</a></h2>
+
+      <div class="entry">
+        <blockquote>
+  <p>“May you become an expert in time zones!”
+Ancient programmers curse</p>
+</blockquote>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/love-opensource/">We love opensource</a></h2>
+
+      <div class="entry">
+        <p>Companies’ pages:</p>
+
+<p>“We love open source!”</p>
+
+<p>Companies’ Github profiles:</p>
+
+<p>“5 followers”</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/data-theories/">Data</a></h2>
+
+      <div class="entry">
+        <p>People like to be reminded:</p>
+
+<blockquote>
+  <p>“data never speak for themselves”</p>
+</blockquote>
+
+<p>But of course it doesn’t, after all, the objects of the dataset, the phenomena being investigated etc. are all defined using some theory, never forget that i.e. you have the theories even <em>before</em> you have the data (how can it speak of itself then?)</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/deep-work/">Deep work in digital setting</a></h2>
+
+      <div class="entry">
+        <p>I arranged my desktops, inspired by the workspace organization method in  “Deep Work”: to <em>entryway</em>, <em>preparation area</em> and <em>core workspace</em>.</p>
+
+<p>The idea: have 3 virtual desktops, or three computers each of which corresponds to a level of focus in your work.</p>
+
+<p>Desktop 1 - Entryway - can serve as an area for transitioning from the outside world to your work environment. Here we should store all distracting windows (social media, porn etc.), as well as administrative stuff, like issue trackers.</p>
+
+<p>Desktop 2 - Preparation Area: Should be arranged to prepare your mind for deep work. It might include some relevant resources (books, specialized message boards, inspirational galleries), as well as some experimental projects.</p>
+
+<p>Desktop 3 - Core Workspace: This space should be dedicated solely to deep work. It should be free from any potential distractions and have just the tools you use (consoles, IDE’s drawing Software, you know what you use)</p>
+
+<p>The idea is to only go from one desktop to the one next to it, without fast context switches.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/old-tech/">Old tech</a></h2>
+
+      <div class="entry">
+        <p>Most people, after owning a laptop, or another piece of tech for more than 2 years:</p>
+
+<p>“Yeah, this things is getting outdated, doesn’t support XYZ, I guess it’s time for a replacement…”</p>
+
+<p>Me, after my 10-year laptop fails:</p>
+
+<p>“THIS IS BULLSHIT!”</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/critical-non-critical/">Critical and non-critical functionalities</a></h2>
+
+      <div class="entry">
+        <p>Engineering protip: Know the difference between critical and non-critical functionalities of your product, e. g. between why your product MUST do and why it SHOULD e.g. for cars engines are critical, stereos are non-critical.</p>
+
+<p>Critical parts of the product should be designed to be simple and durable.  Non-critical parts should be cheap and easy to replace and remove. The failure of non-critical stuff should <em>never</em> affect critical stuff.</p>
+
+<p>Critical parts are your “core business”, as business people say — they give you competitive advantage.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/dependent-types/">On dependent types</a></h2>
+
+      <div class="entry">
+        <p>Dependent types are super confusing, but at the same time they feel easier than normal ones.</p>
+
+<p>I guess that makes sense for every advanced concept - as a concept wouldn’t exist if it isn’t making things easier when you finally get it.</p>
+
+<p>I think that they are hard to learn because we consider them as something fancy, but they actually are the simpler thing, and it’s normal, first-order types that are weird.</p>
+
+<p>With first-order types, you have two things — types and values, dependent types there is only one thing, type e.g. “Number” is a type of “Set” in the same way that 1 is a type of “Number”.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/federated-networks/">On federated networks</a></h2>
+
+      <div class="entry">
+        <p>If done right, a federated network like Mastodon would be much more reliable and cheap to run than a centralized one: when the scale is big, the network <em>has</em> to be federated under the hood anyways (i.e. you have to have several caches in different locations, several database nodes that copy data from one to the other, several moderation teams etc.) and so the network that is federated by design has many advantages over the one that pretends to be centralized.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/programming-paradigms/">1 + 1 and programming paradigms</a></h2>
+
+      <div class="entry">
+        <p>You can understand a log about different programming paradigms from the way in which they implement <code class="language-plaintext highlighter-rouge">1 + 1</code>:</p>
+
+<ul>
+  <li>In <em>imperative</em> languages, such as C, it is just <code class="language-plaintext highlighter-rouge">1 + 1</code> - arithmetics is build in.</li>
+  <li>In <em>object-oriented</em> languages like Smalltalk and Ruby, it is <code class="language-plaintext highlighter-rouge">1.+(1)</code> - plus is a method of the object <code class="language-plaintext highlighter-rouge">1</code>.</li>
+  <li>In <em>functional</em> languages, like Haskell, it is actually <code class="language-plaintext highlighter-rouge">+(1, 1)</code> - plus is an inflix operator, which is actually a function.
+In Lisp you just cannot write <code class="language-plaintext highlighter-rouge">(+ 1  1)</code> directly.</li>
+</ul>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/cs-hard/">Hard things in computer science</a></h2>
+
+      <div class="entry">
+        <p>Finally got the final list of the three hard things in computer science:</p>
+
+<ol>
+  <li>Naming artifacts</li>
+  <li>
+    <Item unavailable="">
+</Item>
+  </li>
+  <li>Concurrent</li>
+  <li>Off by one errors.
+data processing</li>
+</ol>
+
+
+      </div>
+
+    </article>
+
+    
+
+    
+
+    <h2><a href="/shorts">all shorts</a></h2>
+    <h2><a href="/tags">all topics</a></h2>
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

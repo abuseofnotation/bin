@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+              
+    
+
+    
+    <h1>technology articles</h1>
+      
+
+    <article class="post">
+      <h1><a href="/text/">Human technology: Text files</a></h1>
+
+      <div class="entry">
+        <p>It is a well-known engineering principle, that you should always use the <em>weakest</em> technology capable of solving your problem - the weakest technology is likely the cheapest, easiest to maintain, extend or replace and there are no sane arguments for using anything else.</p>
+
+<p>The main problem with this principle is marketing - few people would sell you a 10$ product that can solve your problem for ever, when they can sell you a 1000$ product, with 10$ per month maintenance cost, that will become obsolete after 10 years. If you listen to the “experts” you would likely end up not with the simplest, but with the <em>most advanced</em> technology.</p>
+
+<p>And with software the situation is particularly bad, because the simplest technologies often cost zero, and so they have zero marketing budget. And since nobody would be benefiting from convincing you to use something that does not cost anything, nobody is actively selling those. In this post, I will try to fill that gap by reviewing some technologies for web publishing that are based on <em>plain text</em> and putting forward their benefits. Read on to understand why and how you should write everything you write in plain text files and self-publish them on your own website.</p>
+
+
+      </div>
+      <a href="/text/" class="read-more">Read More</a>
+    </article>
+
+      
+
+      <h2><a href="/blog" >all articles</a></h2>
+    
+
+    
+
+    <h1>technology shorts</h1>
+
+    <article class="post">
+
+      
+      <h2><a href="/critical-non-critical/">Critical and non-critical functionalities</a></h2>
+
+      <div class="entry">
+        <p>Engineering protip: Know the difference between critical and non-critical functionalities of your product, e. g. between why your product MUST do and why it SHOULD e.g. for cars engines are critical, stereos are non-critical.</p>
+
+<p>Critical parts of the product should be designed to be simple and durable.  Non-critical parts should be cheap and easy to replace and remove. The failure of non-critical stuff should <em>never</em> affect critical stuff.</p>
+
+<p>Critical parts are your “core business”, as business people say — they give you competitive advantage.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/capitalism-innovation/">Capitalism and innovation</a></h2>
+
+      <div class="entry">
+        <p>Hard to defend the thesis that capitalism promotes innovation, when the main social discourse surrounding any innovation is how to deal with the people who would lose their jobs because of it.</p>
+
+<p>Realize how ridiculous this looks in the grand schema of things: someone comes up with marvelous new technology that solves all your issues and your first reaction as a society is “but what would the people who used to work on that issue do for a living?”</p>
+
+
+      </div>
+
+    </article>
+
+    
+
+    
+
+    <h2><a href="/shorts">all shorts</a></h2>
+    <h2><a href="/tags">all topics</a></h2>
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

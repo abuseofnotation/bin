@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+              
+    
+
+    
+
+    
+
+    <h1>science shorts</h1>
+
+    <article class="post">
+
+      
+      <h2><a href="/second-incompleteness-theorem/">On Godel's Second Incompleteness Theorem</a></h2>
+
+      <div class="entry">
+        <p>I never understood what’s the deal with for Godel’s Second Incompleteness theorem in logic.</p>
+
+<p>The consistency of a theory cannot be proved within the theory itself.</p>
+
+<p>Duh! Did anyone thought that it could?</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/cs-hard/">Hard things in computer science</a></h2>
+
+      <div class="entry">
+        <p>Finally got the final list of the three hard things in computer science:</p>
+
+<ol>
+  <li>Naming artifacts</li>
+  <li>
+    <Item unavailable="">
+</Item>
+  </li>
+  <li>Concurrent</li>
+  <li>Off by one errors.
+data processing</li>
+</ol>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/good-theories/">Good theories</a></h2>
+
+      <div class="entry">
+        <p>Whenever I think about good physical theories, I immediately  think of Boltzmann’s statistical mechanics, not because he basically discovered the science of atoms and molecules, but simply because every time I see an ice cube in a glass, I see the particles, the Brownian motion, the way the heat and coldness dissolve etc.</p>
+
+<p>And category theory is similar - it may not be a tool that I use to solve some important problems, that were otherwise unsolvable, but it is a tool that broadens my perception of the world, which is much more important and fruitful.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/science-philosophy-math/">Science philosophy and mathematics</a></h2>
+
+      <div class="entry">
+        <p>Science is just a subdiscipline of philosophy, the scientific method is an application to what philosophers call critical thinking.</p>
+
+<p>Critical thinking is just asking yourself the question “What would be the consequence if a given thing that we accept as true is actually false?” over and over again.</p>
+
+<p>The scientific method is the practice of applying this question to empirical observations.</p>
+
+<p>Mathematics is another subdiscipline of philosophy that studies how far can you go once you accept a given set of postulates as true (while the rest of philosophy is mostly concerned with <em>which things</em> are true).</p>
+
+<p>So science is mathematics + a little philosophy. This came because I learned that when writing “Principia Mathematica”, Newton was influenced by two books - “Principia Philosophiæ” by Rene Descartes, from which he took the subject matter (and the name) and “The Elements” by Euclid, from which he took the method of reasoning.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/strong-ai-godel/">On Godel-related strong AI refutations</a></h2>
+
+      <div class="entry">
+        <p>Penrose’s theory and all other Godel-related strong-AI refutations are stupid: “Human mind is different from a computer because humans are capable of detecting logically inconsistent theories and logical paradoxes and think outside the box in order to know that they are paradoxes.”</p>
+
+<p>This is not true at all - our mind actually does nothing more than what a computer operating system would do if it sees a process that occupies a lot of memory and doesn’t produce a result - it would kill the process (or the thought that leads to paradox.)  We aren’t able to escape an infinite cycle because we are more capable than computers - we are merely equipped with heuristics necessary to escape from a situation that does not benefit us in any way (sometimes).</p>
+
+
+      </div>
+
+    </article>
+
+    
+
+    
+
+    <h2><a href="/shorts">all shorts</a></h2>
+    <h2><a href="/tags">all topics</a></h2>
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

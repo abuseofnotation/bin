@@ -1,0 +1,96 @@
+
+
+@font-face {
+    font-family: 'MellDisplay';
+    src: url('mell/MellDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MellDisplay';
+    src: url('mell/MellDisplay-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MellDisplay';
+    src: url('mell/MellDisplay-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MellDisplay';
+    src: url('mell/MellDisplay-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'MellSans';
+    src: url('mell/MellSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MellSans';
+    src: url('mell/MellSans-RegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MellSans';
+    src: url('mell/MellSans-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MellSans';
+    src: url('mell/MellSans-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'MellMono';
+    src: url('mell/MellMono-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MellMono';
+    src: url('mell/MellMono-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MellMono';
+    src: url('mell/MellMono-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MellMono';
+    src: url('mell/MellMono-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+

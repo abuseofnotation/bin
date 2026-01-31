@@ -1,0 +1,64 @@
+:root {
+  --color: #57a445;
+}
+
+body {
+  font-size: 25px;
+  font-family: "MellSans", sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('RubikMonoOne.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MellMono', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.page-index img {
+  border: 2px solid #ccc;
+}
+
+.header {
+  background-color: white;
+}
+
+.footer {
+  color: white;
+  background-color:  #8967acff;
+}
+
+.button {
+  background-color:  #8967acff;
+}
+
+.chapters {
+  font-size: 50px;
+}
+
+
+.content h1 {  
+  font-size: 60px;
+  font-weight: bold;
+  color: #009fda;
+}
+
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+  color: rgb(55, 55, 55);
+}

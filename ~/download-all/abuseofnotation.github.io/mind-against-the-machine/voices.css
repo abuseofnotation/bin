@@ -1,0 +1,68 @@
+ [class*="voice"] {
+  /* display:block; */
+  font-size: 25px;
+  font-family: 'generic';
+  color: blue;
+ }
+
+
+
+
+
+@font-face {
+    font-family: 'alex';
+    src: url('fonts/characters/alex.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.voice-alex {
+  font-family: 'alex';
+  font-size: 18px;
+  color: green;
+}
+
+@font-face {
+    font-family: 'maxim';
+    src: url('fonts/characters/maxim.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.voice-maxim {
+  font-family: 'maxim';
+  color: black;
+}
+
+
+@font-face {
+    font-family: 'anna';
+    src: url('fonts/characters/anna.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.voice-anna {
+  font-family: 'anna';
+}
+
+
+@font-face {
+    font-family: 'cathy';
+    src: url('fonts/characters/cathy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.voice-cathy {
+  font-family: 'cathy';
+}
+
+
+
+@font-face {
+    font-family: 'generic';
+    src: url('fonts/characters/generic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Mind against the machine - The knapsack problem</title>
+      <link rel="stylesheet" type="text/css" href="/mind-against-the-machine/style.css">
+      <link rel="stylesheet" type="text/css" href="/mind-against-the-machine/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/mind-against-the-machine/voices.css">
+
+      <script src="/mind-against-the-machine/assets/require.js"></script>
+      <script src="/mind-against-the-machine/assets/out.js"></script>
+      <script>
+          require(['index'])
+      </script>
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/mind-against-the-machine/">
+          <h1><a href="/mind-against-the-machine/">Mind against the machine</a></h1>
+          </a>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="chapter-one">
+
+    <div class="book-title">
+      <a href="/mind-against-the-machine/confusion-breeds-clarity/">
+      <h1>Confusion breeds clarity</h1>
+      </a>
+    </div>
+
+        <div class="artwork">
+          <canvas class="art" width="200px" height="250px" data-pixel="1" data-colors="gray,pink,darkblue">
+          <plasher data-size="constant" data-size-params="100" data-map="constant" data-params="20000"></plasher> <plasher data-size="constant" data-size-params="50" data-map="constant" data-params="20000"></plasher> <plasher data-size="constant" data-size-params="20" data-map="constant" data-params="1000"></plasher> <plasher data-size="constant" data-size-params="10" data-map="constant" data-params="5"></plasher> <plasher data-size="constant" data-size-params="5" data-map="constant" data-params="5"></plasher> <plasher data-size="constant" data-size-params="2" data-map="constant" data-params="5"></plasher> <plasher data-size="constant" data-size-params="1" data-map="constant" data-params="5"></plasher>
+
+          </canvas>
+          <h1>The knapsack problem</h2>
+        </div>
+
+        <h2>How to write a book / P and NP / leaving home</h2>
+
+        <div class="prev-next">
+        
+        
+          <a class="button" href="/mind-against-the-machine/confusion-breeds-clarity/01-alex/">next&raquo;</a>
+        
+        </div>
+
+        <div class="scope"></div>
+<p>The Knapsack problem can be described in the following way (and yes, I do realize that this is not the best way to start a book, but bear with me (or don’t, it’s your choice, obviously), as the problem is very interesting, plus there will be a sex scene at the end and this part is, like, suuuper relevant for understanding its context): you have a backpack (“knapsack” is another word for backpack), with a given volume, say 10 liters (or we can say “10 gallons”, if you are American (although, “yuck”)), and a bunch of objects that you want to put there, each object with a different volume, say 1 liter, 2 liters, 3 liters and 5 liters and you want to fill it up, leaving no empty space. And you want to devise a general way to determine which objects you want to take, which works in all cases i.e. an algorithm.</p>
+
+<p>You can, for example, start putting objects from lightest to heaviest - in this case you would put 1 liter and then 2 liters and then 3, but then you wouldn’t be able to take the big 5 liter object. You can start from heaviest to lightest, then you would take 5, 3 and 2 and you would fill the 10 liter backpack to its full capacity, so this is a solution, but for this case, but not for others, e.g. if you have a 6 liter object instead of the 1 liter one (so 2, 3, 5, and 6) - in this case, the lightest-first <em>would</em> work. Of course, there are more complex solutions that would work in both cases, however, no solution that works in <em>all</em> cases have been found so far (except just trying all possible combinations of objects).</p>
+
+<p>Checking if a given set of objects constitutes a solution to the knapsack problem is easy - you just have to sum a few numbers. But actually “finding” a solution for it, is a lengthy process (for just 5 objects you have 5 * 4 * 3 * 2 * 1 = 120 combinations that you have to try out). That puts the Knapsack problem in a very special class of algorithmic problems called “NP”. What’s even more interesting is that most problems in “NP” are “NP-complete” - this means that if you find a solution for one of such problems, then you’d have found a solution for all other problems of that class, so it’s like all of them are different formulation of one and the same problem.</p>
+
+<p>Most people think that there is no such solution (that P is not equal to NP), and that is indeed the logical conclusion of the fact that no one managed to prove otherwise for more than 50 years. But on the other hand, it seems that there must be, right? Because else what is this weird problem doing in the middle of the computation complexity ladder, neither here nor there? It must be there for a reason. Because of this, I still think that it’s worth trying to solve the Knapsack problem, and I sometimes do that after school or during it. This is a like a hobby for me. I started doing it before I knew most of this stuff, actually. But even after understanding it and knowing that it is probably impossible, I am still a believer - one thing that I know is that, in math, nothing is coincidental, so if it looks like there is a way, then there must be one.</p>
+
+<p>A real-life scenario where I thought that I’d test this problem was when I left my family home for the first time and I had to fit all my possessions that I wanted to take with me in a backpack. I decided that I would take all the objects that I wanted to take and to try many different combinations until I find the most efficient one, however, I abandoned this plan even before I started packing, as a thought came to me which was quite depressing - even if I knew how to solve the knapsack problem, I wouldn’t help me much with packing my belongings and deciding what to take. As hugely important this problem was, it suddenly seemed minuscule, even compared to my little dilemmas, the attachments that I had to some of my stuff, and my <em>lack of information</em> as to the place where I was going.</p>
+
+
+        <div class="prev-next">
+        
+        
+          <a class="button" href="/mind-against-the-machine/confusion-breeds-clarity/01-alex/">next&raquo;</a>
+        
+        </div>
+  <!--
+
+  
+  <article class="chapter-preview  chapter-underline ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/00-knapsack/">The knapsack problem</a>
+        <i>How to write a book / P and NP / leaving home</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/01-alex/">Meeting my roommate</a>
+        <i>Alex / Picking friends / Who am I / How switching places would solve both of our issues</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/02-hallway/">Hallway</a>
+        <i>Church and Turing / Being stupid</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/03-x/">X</a>
+        <i>Nerd stereotypes / How I got my nickname / Establishing connection with my younger self</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/04-smoke/">Good company</a>
+        <i>Social code / Anna / Catherine</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/05-fence/">Fence</a>
+        <i>Outside / Not being punished / Discreet and continuous models</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/06-outside/">Outside</a>
+        <i>This or nothing / The moon / Fractals / Me and Alex / Explanations / Is the world mathematical</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/07-annas-ego/">What are we in for</a>
+        <i>Anna's kinky alter ego / Marijuana</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/08-marijuanna/">What are we in for contd</a>
+        <i>The conformist choice / Taboos / Dichotomies /Marijuana</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/09-anna-and-cathy/">Back to the facility</a>
+        <i>Anna and Cathy / Trying to be like other people / Sleeping with Anna</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/10-child/">The sleepover</a>
+        <i>Anna's childish behavior / Critics / Boring robots / Adoring Anna</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/11-irony/">The sleepover contd</a>
+        <i>Irony / Heroes and deserters / Retreat to where? / Real and ideal / Choices</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/12-kink/">Us and them</a>
+        <i>The uncut book pages / Envy</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/13-dana/">Sex</a>
+        <i>Anna's fantasy / What makes us weird / The establishment and being normal</i>
+        </p>
+
+    </article>
+  
+  <article class="chapter-preview ">
+        <p>
+
+        <a href="/mind-against-the-machine/confusion-breeds-clarity/14-doubt/">Cigarettes</a>
+        <i>Alex's good night sleep / About me and Alex again / Sex and love / The proof that P does not equal NP</i>
+        </p>
+
+    </article>
+  
+  -->
+</div>
+
+      </div>
+
+      <div class="footer">
+        <div class="container" id="contact">
+          <h1>Support this project</h1>
+          <p><a target="_blank" href="https://ko-fi.com/abuseofnotation">Ko-fi</a></p>
+          <p><a target="_blank" href="https://patreon.com/abuseofnotation">Patreon</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+
+          <h1>Created by Jencel Panic</h1>
+          <p><a target="_blank" href="/">personal blog</a></p>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a target="_blank" rel="me" href="https://mathstodon.xyz/abuseofnotation">mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+          <p><a target="_blank" href="https://github.com/abuseofnotation/time">Github</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+            <p>
+            <i>Made with 
+              <a  target="_blank" href="https://github.com/boris-marinov/jekyll-book-boilerplate">
+                Jekyll Book Boilerplate
+              </a>
+            </i>
+              <i>Illustrated with 
+              <a  target="_blank" href=" https://github.com/boris-marinov/splasher">
+                Splasher
+              </a>
+            </i>
+            </p>
+          
+         
+        </div>
+      </div>
+
+    </body>
+
+
+

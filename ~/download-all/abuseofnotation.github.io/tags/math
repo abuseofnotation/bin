@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+              
+    
+
+    
+
+    
+
+    <h1>math shorts</h1>
+
+    <article class="post">
+
+      
+      <h2><a href="/continuous/">Is the world discrete or continuous</a></h2>
+
+      <div class="entry">
+        <blockquote>
+  <p>I have always been awed and confused by the apparent divide between number theory and the other algebraic fields of mathematics. Look closely between any two regions of mathematical study and you will find numerous dualities weaving a dense web of interconnection. Yet, number theory seems to exhibit a repelling force to the rest of math. Mathematical objects such as the Riemann Hypothesis build a bridge to number theory by exploiting the periodicity of continuous functions. While I only have a cursory understanding of it, the Langlands Problem is a massive effort to construct formidable and durable machinery for answering number theoretic questions using algebraic reasoning, but it remains one of the largest pieces of active work in Mathematics today and we don’t have good answers yet.</p>
+</blockquote>
+
+<blockquote>
+  <p>What I mean by “algebraic” is that, for much of mathematics, a little goes a long way. By defining very simple constructs such as sets and binary operations with an amount of properties you could count on one hand, we can reconcile models so powerful that they predicted the existence of Black Holes before we ever directly imaged one. These are powerful ideas, and yet, they are also elegant and convenient. Simple concepts such as Eigenvalues combined with infinite linear operators like differentials allow us to build bridges, predict quantum systems’ behavior, and even probe the dynamics of biological populations.</p>
+</blockquote>
+
+<blockquote>
+  <p>Yet, in number theory, simple questions such as “is every even integer greater than 2
+the sum of two prime numbers?” have been unsolved for hundreds (and in some cases, thousands) of years. We can make clever use of Modular Arithmetic along with inductive techniques to prove results in many cases, but often it is not intuitive when a given question in number theory will be easy to solve or impossible.</p>
+</blockquote>
+
+<p><a href="https://kylehovey.github.io/blog/the-integers-in-our-continuum">Source</a></p>
+
+<p>This subject is very fruitful. I always thought that the world itself is continuous (like the Reals )and our understanding of it is discrete (like the integers) i.e. discrete is an approximation, like neuron firings are discrete, and we only speak discrete, so this is why the integers exist.</p>
+
+<p>Kant speaks a lot about the concept of a number as an a-priori concept of our mind, and I believe that by “number” he means “integer” (at least when he refers to the category of quantity).</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/nothing-to-prove/">Nothing to prove</a></h2>
+
+      <div class="entry">
+        <p>“I think I will stop doing logic, I feel like I have nothing to prove.”</p>
+
+      </div>
+
+    </article>
+
+    
+
+    
+
+    <h2><a href="/shorts">all shorts</a></h2>
+    <h2><a href="/tags">all topics</a></h2>
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

@@ -1,0 +1,155 @@
+body {
+  line-height: 1.5;
+  margin: 0;
+  font-size: 20px;
+}
+
+.header {
+  color:white;
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2%;
+}
+
+.footer {
+  color:white;
+  background-color: gray;
+  width: 100%;
+  font-size: 40px;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.footer a {
+  color: white;
+}
+
+pre {
+  background-color: gray;
+  color:#fff;
+  padding: 7px 7px 7px 10px;
+  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  margin: 20px 0 20px 0;
+  font-family: 'Source Code Pro', monospace;
+  white-space: pre-wrap;
+}
+
+blockquote {
+  border-left: 4px dotted #666;
+  padding: 0 10px;
+  color: #666;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0px;
+}
+
+h1 {  
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  color: rgb(55, 55, 55);
+}
+
+
+a {
+  color: gray;
+  cursor: pointer;
+}
+
+table {
+  border: 3px solid black;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed
+}
+table td, table th {
+  border: 1px solid black;
+  padding: 5px 4px;
+}
+table tbody td {
+}
+table thead {
+  background: blue;
+  color: white;
+  border-bottom: 3px solid black;
+}
+table thead th {
+  font-weight: bold;
+  text-align: left;
+}
+table tfoot {
+  font-weight: bold;
+  border-top: 3px solid black;
+}
+
+img {
+  width: 100%;
+}
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 2.5;
+}
+.icon {
+  font-size: 26px;
+}
+
+@media print {
+  .header {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .widget {
+    display: none;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MellDisplay';
+  font-weight: bold;
+}
+
+code {
+  font-family: 'MellMono';
+}
+.highlight {
+  font-family: 'MellMono';
+}
+
+body {
+  font-family: 'MellSans';
+}
+
+input {
+  font-family: 'MellSans';
+  font-size: 20px;
+}
+
+.textfield {
+  height: 68px;
+}
+.article-image {
+  width: 100%;
+}

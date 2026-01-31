@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Category Theory Illustrated - About</title>
+      <link rel="stylesheet" type="text/css" href="/category-theory-illustrated/style.css">
+
+      <link rel="stylesheet" type="text/css" href="/category-theory-illustrated/custom-style.css">
+
+      <link rel="stylesheet" type="text/css" href="https://abuseofnotation.github.io/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+
+</script>
+
+<script type="text/javascript" id="MathJax-script" 
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+    </head>
+
+    <body>
+
+      <div class="header">
+
+      
+        <div class="container">
+          <a href="/category-theory-illustrated/">
+          <img src="/category-theory-illustrated/logo.svg" class="logo">
+          </a>
+        </div>
+      
+      </div>
+
+      <div class="content container page-About">
+        <!--<h1>About</h1> -->
+        
+        <div class="prev-next">
+        
+        
+          <a class="button" href="/category-theory-illustrated/01_set/">next&raquo;</a>
+        
+        </div>
+
+        <p style="text-align: center">
+    In memory of 
+</p>
+
+<p style="text-align: center">
+Francis William Lawvere 
+</p>
+
+<p style="text-align: center">
+1937 - 2023
+</p>
+
+<div style="page-break-after: always; opacity: 0 ; height: 400px"> 
+\pagebreak 
+</div>
+
+<p style="text-align: right">
+"Try as you may,
+</p>
+
+<p style="text-align: right">
+you just can't get away,
+</p>
+
+<p style="text-align: right">
+from mathematics"
+</p>
+
+<p style="text-align: right">
+Tom Lehrer 
+</p>
+
+<div style="page-break-after: always; opacity: 0 ; height: 400px"> 
+\pagebreak 
+</div>
+
+<h1 id="the-story-behind-this-book">The story behind this book</h1>
+
+<p>I was interested in math as a kid, but was always messing up calculations, so I decided it was not my thing and started pursuing other interests, like writing and visual art.</p>
+
+<p>A little later I got into programming and I found that this was similar to the part of mathematics that I enjoyed. I started using functional programming in an effort to explore the similarity and to improve myself as a developer. I discovered category theory a little later.</p>
+
+<p>Some 5 years ago I found myself jobless for a few months and decided to publish some of the diagrams that I drew as part of the notes I kept when was reading “Category Theory for Scientists” by David Spivak. The effort resulted in a rough version of the first two chapters of this book, which I published online.</p>
+
+<p>A few years after that some people found my notes and encouraged me write more. They were so nice that I forgot my imposter syndrome and got to work on the next several chapters.</p>
+
+<h1 id="on-math">On math</h1>
+
+<p>Ever since Newton’s Principia, the discipline of mathematics is viewed in the somewhat demeaning position of “science and engineering’s workhorse” — only “useful” as a means for helping scientists and engineers to make technological and scientific advancements, i.e., it is viewed as just a tool for solving “practical” problems.</p>
+
+<p>Because of this, mathematicians are in a weird and, I’d say, unique position of always having to defend what they do with respect to its value for <em>other disciplines</em>. I again stress that this is something that would be considered absurd when it comes to any other discipline.</p>
+
+<p>People don’t expect any return on investment from <em>physical theories</em>, e.g., no one bashes a physical theory for having no utilitarian value.</p>
+
+<p>And bashing philosophical theories for being impractical would be even more absurd — imagine bashing Wittgenstein, for example:</p>
+
+<blockquote>
+  <p>“All too well, but what can you do with the picture theory of language?” 
+“Well, I am told it does have its applications in programming language theory…”</p>
+</blockquote>
+
+<p>Or someone being sceptical to David Hume’s scepticism:</p>
+
+<blockquote>
+  <p>“That’s all fine and dandy, but your theory leaves us at square one in terms of our knowledge. What the hell are we expected to do from there?”</p>
+</blockquote>
+
+<p>Although many people don’t necessarily subscribe to this view of mathematics as a workhorse, we can see it encoded inside the structure of most mathematics textbooks — each chapter starts with an explanation of a concept, followed by some examples, and then ends with a list of problems that this concept solves.</p>
+
+<p>There is nothing wrong with this approach, but mathematics is so much more than a tool for solving problems. It was the basis of a religious cult in ancient Greece (the Pythagoreans), it was seen by philosophers as means to understanding the laws which govern the universe. It was, and still is, a language which can allow for people with different cultural backgrounds to understand each other. And it is also art and a means of entertainment. It is a mode of thinking, Or we can even say it is thinking itself. Some people say that “writing is thinking”, but I would argue that writing, when refined enough, and free from any kind of bias in on the side of the author, automatically becomes <em>mathematical writing</em> — you can almost convert the words into formulas and diagrams.</p>
+
+<p>Category theory embodies all these aspects of mathematics, so I think it’s very good grounds to writing a book where all of them shine — a book that isn’t based on solving of problems, but exploring concepts and seeking connections between them. A book that is, overall, pretty.</p>
+
+<h1 id="who-is-this-book-for">Who is this book for</h1>
+
+<p>So, who is this book for? Some people would phrase the question as “Who <em>should</em> read this book”, but if you ask it this way, then the answer is “nobody”. Indeed, if you think in terms of “should”, mathematics (or at least the type of mathematics that is reviewed here) won’t help you much, although it is falsely advertised as a solution to many problems (whereas it is, in fact, (as we established) something much more).</p>
+
+<p>Let’s take an example — many people claim that Einstein’s theories of relativity are essential for GPS-es to work properly. Due to relativistic effects, the clocks on GPS satellites tick faster than identical clocks on the ground.</p>
+
+<p>They seem to think that if the theory didn’t exist, the engineers that developed the GPSes would have faced this phenomenon in the following way:</p>
+
+<blockquote>
+  <p>Engineer 1: Whoa, the clocks on the satellites are off by X nanoseconds!</p>
+
+  <p>Engineer 2: But that’s impossible! Our mathematical model predicts that they should be correct.</p>
+
+  <p>Engineer 1: OK, so what do we do now?</p>
+
+  <p>Engineer 2: I guess we need to drop this project until we have a viable mathematical model that describes time in the universe.</p>
+</blockquote>
+
+<p>Although I am not an expert in special relativity, I suspect that the way this conversation would have developed would be closer to the following:</p>
+
+<blockquote>
+  <p>Engineer 1: Whoa, the clocks on the satellites are off by X nanoseconds!</p>
+
+  <p>Engineer 2: This is normal. There are many unknowns.</p>
+
+  <p>Engineer 1: OK, so what do we do now?</p>
+
+  <p>Engineer 2: Just adjust it by X and see if it works. Oh, and tell that to some physicist. They might find it interesting.</p>
+</blockquote>
+
+<p>In other words, we can solve problems without any advanced math, or with no math at all, as evidenced by the fact that the Egyptians were able to build the pyramids without even knowing Euclidean geometry. And with that I am not claiming that math is so insignificant, that it is not even good enough to serve as a tool for building stuff. Quite the contrary, I think that math is much more than just a simple tool. So going through any math textbook (and of course especially this one) would help you in ways that are much more vital than finding solutions to “complex” problems.</p>
+
+<p>Some people say that we don’t use maths in our daily life. But, if true, that is only because other people have solved all hard problems for us and the solutions are encoded on the tools that we use, however not knowing math means that you will be forever a consumer, bound to use those existing tools and solutions and thinking patterns, not being able to do anything on your own.</p>
+
+<p>And so “Who is this book for” is not to be read as who should, but who <em>can</em> read it. Then, the answer is “everyone”.</p>
+
+<h1 id="about-category-theory">About category theory</h1>
+
+<p>Like we said, the fundaments of mathematics are the fundaments of thought. Category theory allows us to formalize those fundaments that we use in our daily (intellectual) lives.</p>
+
+<p>The way we think and talk is based on intuition that develops naturally and is a very easy way to get our point across. However, intuition also makes it easy to be misunderstood — what we say usually can be interpreted in many ways, some of which are wrong. Misunderstanding of these kinds are the reason why biases appear. Moreover, certain people (called “sophists” in ancient Greece) would introduce biases on purpose in order to twist the discourse in the direction that suits them.</p>
+
+<p>It’s in such situations, that people often resort to <em>formulas</em> and <em>diagrams</em> to refine their thoughts. Diagrams (even more than formulas) are ubiquitous in science and mathematics.</p>
+
+<p>Category theory formalizes the concept of diagrams and their components — arrows and objects — to create a language for presenting all kinds of ideas. In this sense, category theory is a way to unify knowledge, both mathematical and scientific, and to unite various modes of thinking with common terms.</p>
+
+<p>As a consequence of that, category theory and diagrams are also a very understandable way to communicate a formal concept clearly, something I hope to demonstrate in the following pages.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>In this book we will visit various such modes of knowledge and along the way, see all kinds of mathematical objects, viewed through the lens of categories.</p>
+
+<p>We start with <em>set theory</em> in chapter 1, which is the original way to formalize different mathematical concepts.</p>
+
+<p>Chapter 2 we will make a (hopefully) gentle transition from sets to <em>categories</em> while showing how the two compare and (finally) introducing the definition of category theory.</p>
+
+<p>In the next two chapters, 3 and 4, we jump into two different branches of mathematics and introduce their main means of abstraction, <em>groups and orders</em>, observing how they connect to the core category-theoretic concepts that we introduced earlier.</p>
+
+<p>Chapter 5 also follows the main formula of the previous two chapters, getting to the heart of the matter of why category theory is a universal language, by showing its connection with the ancient discipline of <em>logic</em>. As in chapters 3 and 4, we start with a crash course in logic itself.</p>
+
+<p>The connection between all these different disciplines is examined in chapter 6, using one of the most interesting category-theoretical concepts — the concept of a functor.</p>
+
+<p>In chapter 7 we review another more interesting and more advanced categorical concept, the concept of a <em>natural transformation</em>.</p>
+
+<h1 id="acknowledgments">Acknowledgments</h1>
+
+<p>Thanks to my wife Dimitrina, for all her support.</p>
+
+<p>My daughter Daria, my “anti-author” who stayed seated on my knees when I was writing the second and third chapters and mercilessly deleted many sentences, most of them bad.</p>
+
+<p>Thanks to my high-school arts teacher, Mrs Georgieva who told me that I have some talent, but I have to work.</p>
+
+<p>Thanks to Prathyush Pramod who encouraged me to finish the book and is also helping me out with it.</p>
+
+<p>And also to everyone else who submitted feedback and helped me fix some of the numerous errors that I made — knowing myself, I know that there are more.</p>
+
+
+        <div class="prev-next">
+        
+        
+          <a class="button" href="/category-theory-illustrated/01_set/">next&raquo;</a>
+        
+        </div>
+        
+      </div>
+
+
+
+      <div class="footer" style="background-color:#39bcedff">
+        <div class="container">
+          <h1>Support this project</h1>
+          <p><a target="_blank" href="https://ko-fi.com/abuseofnotation">Ko-fi</a></p>
+          <p><a target="_blank" href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a target="_blank" href="https://abuseofnotation.gumroad.com/">Gumroad</a></p>
+           
+        </div>
+      </div>
+
+
+      <div class="footer" style="background-color:#dc7100">
+        <div class="container chapters">
+          <h1>Subscribe for updates</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+          <input style="height: 40px;" type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input style="height: 46px;" type="submit" class="read-more" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <div class="container chapters">
+          <h1>Contents</h1>
+          
+            <p><a href="/category-theory-illustrated/00_about/">About</a></p>
+          
+            <p><a href="/category-theory-illustrated/01_set/">Sets</a></p>
+          
+            <p><a href="/category-theory-illustrated/02_category/">Categories</a></p>
+          
+            <p><a href="/category-theory-illustrated/03_monoid/">Monoids</a></p>
+          
+            <p><a href="/category-theory-illustrated/04_order/">Orders</a></p>
+          
+            <p><a href="/category-theory-illustrated/05_logic/">Logic</a></p>
+          
+            <p><a href="/category-theory-illustrated/10_functors/">Functors</a></p>
+          
+            <p><a href="/category-theory-illustrated/11_natural_transformations/">Natural transformations</a></p>
+          
+          <!--
+          <h1>Download</h1>
+          <p><a href="/category-theory-illustrated/category-theory-illustrated.epub">as epub</a></p>
+          <p><a href="/category-theory-illustrated/category-theory-illustrated.txt">as txt</a></p>
+          -->
+        </div>
+      </div>
+
+
+      <div class="footer" style="background-color:#39bcedff">
+        <div class="container">
+          <h1>Created by Jencel Panic</h1>
+          <p><a target="_blank" href="/">personal blog</a></p>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+          <p><a target="_blank" href="https://github.com/abuseofnotation/category-theory-illustrated">Github</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <p>
+          <i>
+            Made with <a target="_blank" href="https://github.com/boris-marinov/jekyll-book-boilerplate"> Jekyll Book Boilerplate</a>. 
+
+            Drawn in <a target="_blank" href="https://inkscape.org">Inkscape</a>. 
+
+            Set in <a target="_blank" href="https://ko-fi.com/s/4cad3c65e7">Mell Sans</a>. 
+          </i>
+          </p>
+
+
+        </div>
+      </div>
+      <div class="footer" style="background-color:#dc7100">
+        <div class="container">
+          <p>
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </body>
+
+
+

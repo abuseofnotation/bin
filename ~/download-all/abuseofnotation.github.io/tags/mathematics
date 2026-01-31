@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+              
+    
+
+    
+    <h1>mathematics articles</h1>
+      
+
+    <article class="post">
+      <h1><a href="/logic-communication/">How does knowledge work: using logic to model real-world communication</a></h1>
+
+      <div class="entry">
+        <p><em>Hello and welcome to the moment that you (yes, all two of you) have been waiting for - the second installment of “How does knowledge work”. This is exciting right? Riight?</em></p>
+
+<p><em>We all communicate, or at least we think we do. And I mean communicate in the broadest sense, from spoken communication to written to visual, from informal to formal (in the sense of logically-formal). We will look into all of that and we will present a whole theory of how communication happens that is based on <a href="/logic-thought">the first installment of “How does knowledge work”</a> where we basically established a logical framework for modeling how the human mind works.</em></p>
+
+<p><em>You remember that, right? Right? Well, maybe the reason you fell asleep was that you actually were more interested in how people communicate with one another. Could this be it? Well, listen up, it’s actually interesting. Plus what better things you have to do? Communicate with actual people? But how would you know that you are actually communicating with them, if you are not familiar with the logical foundations of human communication?</em></p>
+
+<p><em>Hello?</em></p>
+
+
+      </div>
+      <a href="/logic-communication/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/logic-thought/">How does knowledge work: using logic to model real-world thinking</a></h1>
+
+      <div class="entry">
+        <blockquote>
+  <p>“Hello, and welcome to another episode of “Logic for Y’all”. Today we are going to tackle a rather controversial topic - “Using logic to model real-world thinking”. Asked to comment on it, most people went: “Pff, logic!” and our resident logicians prepared the following summary: “Pff, the real world!”. But still, among our listeners, there were some wannabe philosophers who insisted that this is the most important thing ever, so it appears that we have no choice but to get someone to talk about it (there will be booze at the end). So let’s give a warm welcome to the only guy who agreed to speak about this boring topic, Jencel Paniiic!”</p>
+</blockquote>
+
+
+      </div>
+      <a href="/logic-thought/" class="read-more">Read More</a>
+    </article>
+
+      
+
+      <h2><a href="/blog" >all articles</a></h2>
+    
+
+    
+
+    <h1>mathematics shorts</h1>
+
+    <article class="post">
+
+      
+      <h2><a href="/good-theories/">Good theories</a></h2>
+
+      <div class="entry">
+        <p>Whenever I think about good physical theories, I immediately  think of Boltzmann’s statistical mechanics (the theory of entropy, you can say), not because he basically discovered the science of atoms and molecules, but simply because every time I see an ice cube in a glass, I see the particles, the Brownian motion, the way the heat and coldness dissolve etc.</p>
+
+<p>I don’t think about the number of grand important open issues that were solved by this theory, but I think about way the way that a person like me can use it in their thinking. Like for example that one time when  my frined told me to leave the oven opened after using it, because they wanted for the heat in the oven to warm the room, and I explained to them that the heat from the oven will <em>always</em> warm the room, simply because it had nowhere else to go.</p>
+
+<p>And I think of category theory in a similar way — not as a tool that delivers results I use to solve some important problems, that were otherwise unsolvable, but it is a tool that broadens my perception of the world, which is much more important and fruitful. I don’t <em>care</em> if all problems which are solved by category theory happen to also be solved by other mathematical theories, nor how many of them are actually solved this way, I care only about the categories and functors in my head.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/dependent-types/">On dependent types</a></h2>
+
+      <div class="entry">
+        <p>Dependent types are super confusing, but at the same time they feel easier than normal ones.</p>
+
+<p>I guess that makes sense for every advanced concept - as a concept wouldn’t exist if it isn’t making things easier when you finally get it.</p>
+
+<p>I think that they are hard to learn because we consider them as something fancy, but they actually are the simpler thing, and it’s normal, first-order types that are weird.</p>
+
+<p>With first-order types, you have two things — types and values, dependent types there is only one thing, type e.g. “Number” is a type of “Set” in the same way that 1 is a type of “Number”.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/second-incompleteness-theorem/">On Godel's Second Incompleteness Theorem</a></h2>
+
+      <div class="entry">
+        <p>I never understood what’s the deal with for Godel’s Second Incompleteness theorem in logic.</p>
+
+<p>The consistency of a theory cannot be proved within the theory itself.</p>
+
+<p>Duh! Did anyone thought that it could?</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/science-philosophy-math/">Science philosophy and mathematics</a></h2>
+
+      <div class="entry">
+        <p>Science is just a subdiscipline of philosophy, the scientific method is an application to what philosophers call critical thinking.</p>
+
+<p>Critical thinking is just asking yourself the question “What would be the consequence if a given thing that we accept as true is actually false?” over and over again.</p>
+
+<p>The scientific method is the practice of applying this question to empirical observations.</p>
+
+<p>Mathematics is another subdiscipline of philosophy that studies how far can you go once you accept a given set of postulates as true (while the rest of philosophy is mostly concerned with <em>which things</em> are true).</p>
+
+<p>So science is mathematics + a little philosophy. This came because I learned that when writing “Principia Mathematica”, Newton was influenced by two books - “Principia Philosophiæ” by Rene Descartes, from which he took the subject matter (and the name) and “The Elements” by Euclid, from which he took the method of reasoning.</p>
+
+
+      </div>
+
+    </article>
+
+    
+
+    
+
+    <h2><a href="/shorts">all shorts</a></h2>
+    <h2><a href="/tags">all topics</a></h2>
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

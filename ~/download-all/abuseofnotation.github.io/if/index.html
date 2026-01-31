@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - Structured programming: how to write proper if statements</title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/if.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+            <article class="post">
+    <h1>Structured programming: how to write proper if statements</h1>
+
+    <div class="entry">
+      <p>The <code class="language-plaintext highlighter-rouge">if</code> statement (or <code class="language-plaintext highlighter-rouge">if</code> expression) is the cornerstone of every modern programming language - it is so pervasive that we rarely think about how exactly should we use it, or how it is meant to be used. But despite its popularity, <code class="language-plaintext highlighter-rouge">if</code> wasn’t always there, and it wasn’t as pervasive as nowadays, so its role is, I’d argue, still somewhat misunderstood. So in this article, I will examine some mistakes that we can easily avoid in order to improve on our code.</p>
+
+<!--more-->
+
+<h1 id="before-we-begin-my-perspective-on-programming">Before we begin: My perspective on programming</h1>
+
+<p>This is an opinionated text, i.e. it contains my opinions and although I have many arguments that back them, they are ultimately based on <em>my</em> core beliefs about what programming is and should be, so take them as advice, as opposed to a dogma. And here are some of the things on which this advice is based on, structured as postulates.</p>
+
+<blockquote>
+  <p>Code is for humans (and programmers are humans too).</p>
+</blockquote>
+
+<p>A form of this appears in a little book known in the hacker community as “SICP”, but I don’t know if they were the first to state it. It means that programs are not just instructions for performing a given task - they are text, and as such they should be subject to the same stylistical rules as other text is.</p>
+
+<blockquote>
+  <p>Code should be as bug-free as possible (and easy to debug as well).</p>
+</blockquote>
+
+<p>This one looks pretty self-explanatory, but the key point is that we have to dedicate effort to make it such, by constantly thinking not only about ways in which the code might go wrong, but also about ways to diagnose potential problems.</p>
+
+<p>I guess I should say something about why I believe these things. Simple - because all other approaches just fail because of the human factor, e.g. any code, that is written without regard for style is bound to become legacy when the person who supports it leaves. Likewise, maintaining code that lacks structure results in bugs (which often can be fixed only by imposing more structure).</p>
+
+<p>Lastly, people often contrast good structure and readability with speed. Firstly, the comparison is a bit unfair, because a well-structured is easier to optimize. And for cases in which it is really the case, in 99% the gain is so little that nobody cares, so the emphasis should remain on readability and structure even then. This is when I would throw this very famous quote by DEK:</p>
+
+<blockquote>
+  <p>Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97 % of the time: pre mature optimization is the root of all evil.
+<a href="http://www.kohala.com/start/papers.others/knuth.dec74.html">source</a></p>
+</blockquote>
+
+<p>Keep in mind that he wrote this when computers were a thousand times slower than today, so we should care about maintainability even more.</p>
+
+<h1 id="short-history-of-the-if-statement">Short history of the <code class="language-plaintext highlighter-rouge">if</code> statement</h1>
+
+<p>Once upon a time, all there was was the assembly language where people didn’t have braces and had to use <code class="language-plaintext highlighter-rouge">jump</code> instructions instead. For those who don’t know what jump does, if you imagine that somewhere in the virtual machine, or the interpreter, that runs your code there is a variable that denotes which line of code should be executed next, then <code class="language-plaintext highlighter-rouge">jump</code> is a functionality that basically allows you to set that variable to whatever value you please - it is like a portal that allows you to go to from any place of the program to any other place. For example, a typical <code class="language-plaintext highlighter-rouge">if</code> statement that looks like this when written with jumps:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compare input to waterlevel
+if less, jump to A
+if equal, jump to B
+jump to C
+
+A:
+turn motor on
+jump to C
+
+B:
+turn motor off
+C:
+...
+</code></pre></div></div>
+<p><a href="https://stackoverflow.com/questions/40602029/how-to-write-if-else-in-assembly">Source for the assembly pseudocode</a></p>
+
+<p>You can see from this example that, although powerful, jumps are much harder to work with than <code class="language-plaintext highlighter-rouge">if</code>-s, although they can sometimes make your code a bit shorter, they will 100% make it less readable which is hardly a good deal - if the important thing is for code to bug free, so you’d always prefer to have a longer and more readable piece of code, than one which is shorter but harder to understand. This realization led to the rise of what was at the time called “structural programming” paradigm, which was based on the idea that the power of jumps should not be exposed to the programmer - a point which was brought by Edsger W. Dijkstra in the seminal essay <a href="http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html">Go To Statement Considered Harmful</a> (<code class="language-plaintext highlighter-rouge">goto</code> is the equivalent of a <code class="language-plaintext highlighter-rouge">jump</code> instruction statements in non-assembly language context). Simultaneously, the idea of a <em>block</em> (or a “compound statement”) meaning a collection statements that perform a common task (usually denoted today by wrapping them in curly braces) was pushed forward, and the two ideas gave birth to the <code class="language-plaintext highlighter-rouge">if</code> statement that we know today (that <a href="https://craftofcoding.wordpress.com/2017/04/29/the-evolution-of-if-i-from-fortran-i-to-algol-60/">first appeared in the <em>Algol 60</em> programming language</a>):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (input less than waterlevel) {
+  turn motor on
+} else if (input equal to waterlevel) {
+turn motor off
+} else {
+...
+</code></pre></div></div>
+
+<p>The adoption of structured programming was a long process which began with people even questioning whether structured programs are even capable of encoding all possible computations, but today, although some people are <a href="https://stackoverflow.com/questions/46586/goto-still-considered-harmful">still defending the use of goto</a>, it (the process) is largely finished - <code class="language-plaintext highlighter-rouge">goto</code> is banished and the structured style of programming is so pervasive across modern languages that the term “structured” is not used any more, simply because there is nothing to contrast it with.</p>
+
+<p>And to reiterate, the reasons for this are quite obvious - using braces makes our code much more akin to the way we usually talk and write with each other: we often say</p>
+
+<blockquote>
+  <p>“if A then B otherwise C”</p>
+</blockquote>
+
+<p>we never say things like,</p>
+
+<blockquote>
+  <p>“if A then go to the previous page and start reading from line 12”.</p>
+</blockquote>
+
+<p>(I wonder if the programmers who defend the use of <code class="language-plaintext highlighter-rouge">goto</code> write and talk like that?)</p>
+
+<p>This already leads me to the first rule that I always follow.</p>
+
+<h1 id="rule-1---do-not-use-return-for-control-flow">Rule 1 - DO NOT use <code class="language-plaintext highlighter-rouge">return</code> for control-flow</h1>
+
+<p>A leftover from the <code class="language-plaintext highlighter-rouge">goto</code>-driven style of programming is the possibility of so-called “early exit” - the ability to quit the execution of a given function or method from any place of it’s body (most-oftenly by using the keyword <code class="language-plaintext highlighter-rouge">return</code>) as opposed to executing the function to the end. So again if we consider our plain old <code class="language-plaintext highlighter-rouge">if</code> <code class="language-plaintext highlighter-rouge">else</code> statement:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (input less than waterleve) {
+    turn motor on
+} else {
+    turn motor off
+}
+...
+</code></pre></div></div>
+<p>Using <code class="language-plaintext highlighter-rouge">return</code> we can write it like this</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (input less than waterleve) {
+    return turn motor on
+} 
+turn motor off
+...
+</code></pre></div></div>
+
+<p>When used like this, <code class="language-plaintext highlighter-rouge">return</code> is directly translatable to a <code class="language-plaintext highlighter-rouge">goto</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (input less than waterleve) {
+    turn motor on
+    Jump to C
+}
+turn motor off
+C:
+...
+</code></pre></div></div>
+
+<p>Why not write like this? We already established that <code class="language-plaintext highlighter-rouge">goto</code> is bad and I’d argue that mixing the two approaches is even worse in some respects, as it might fool you that the code is structured when it really isn’t. Furthermore, the early exit makes our code as confusing as any other <code class="language-plaintext highlighter-rouge">goto</code>-containing code when translated to natural language. Imagine someone saying:</p>
+
+<blockquote>
+  <p>“Bring me a coffee if you get home early.”</p>
+</blockquote>
+
+<p>and then imagine them saying.</p>
+
+<blockquote>
+  <p>“If you don’t get home early ignore everything I’d say after this sentence. Bring me a coffee.”</p>
+</blockquote>
+
+<p>So if your language supports it, always rely on the implicit <code class="language-plaintext highlighter-rouge">return</code> instead of explicitly ending your execution. If not, the simple rule you can follow is that you should either return from all branches of the <code class="language-plaintext highlighter-rouge">if</code> statement or from none of them.</p>
+
+<h2 id="combining-ifs-with-functions">Combining <code class="language-plaintext highlighter-rouge">if</code>’s with functions</h2>
+
+<p>The most common type of situation that I have seen the premature <code class="language-plaintext highlighter-rouge">return</code> pattern is for handling errors. Imagine for example a very long function with some validation at the beginning. Many people would write:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>signup (user) {
+
+  if (username is valid ) {
+      throw invalid username
+  } 
+
+  create account for user
+  sign user up
+  initialise some other stuff
+  write action in log
+  send emails
+  ...
+}
+</code></pre></div></div>
+
+<p>This is a very subtle variant of the issue I am describing (made even more subtle by the fact that <code class="language-plaintext highlighter-rouge">throw</code> is used instead of a <code class="language-plaintext highlighter-rouge">return</code>). The correct way would be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>signup (user) {
+
+  if (username is valid ) {
+      throw invalid username
+  } else {
+      create account for user
+      sign user up
+      initialise some other stuff
+      write action in log
+      send emails
+    ...
+  }
+}
+</code></pre></div></div>
+
+<p>but people would prefer having the main function code directly in the body in order to avoid indentation (especially if there is a lot of it already). According to them (and they have a point) the error handling is somewhat outside of the domain of the function, we can perhaps say that they are at different levels of abstraction. In cases like this, we should use <em>functions</em> to structure our code and to keep the different levels of abstraction separate.</p>
+
+<p>Functions are everything that random sequences of statement are not and can never be - they <em>have names</em>, they have <em>a separate scope</em> (blocks also have their own scope, but they also inherit the scope of the parent block), and most importantly they are <em>easy to debug</em> (e.g. you have the name of the thing that went wrong right there on the top of the stack trace. So let’s look at how the code above can be made to work with functions. I think this is a very cool and underused pattern that allows you to lose the indentation without sacrificing your structure.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+signup (user) {
+  if (username is valid ) {
+      throw invalid username
+  } else {
+      return signup internal (user)
+  }
+}
+
+signup internal (user) { // or _signup as some people name it
+  create account for user
+  sign user up
+  initialise some other stuff
+  write action in log
+  send emails
+...
+}
+</code></pre></div></div>
+
+<h1 id="rule-2---do-not-conflate-multiple-logical-conditions-in-a-single-statement">Rule 2 - DO NOT conflate multiple logical conditions in a single statement</h1>
+
+<p>This is another bad pattern that, we might say, has the same root cause as the first one - in their effort to keep things simple and concise, people don’t include all the structure that needs to be there in a robust piece of code.</p>
+
+<p>In <code class="language-plaintext highlighter-rouge">if</code> statements we often have to deal with multiple conditions that are dependent on one another. And sometimes in such cases, people try to deal with all of them in one statement with multiple branches and <code class="language-plaintext highlighter-rouge">else if</code>-s. I argue that it’s actually better to have <em>one statement per condition</em> and to nest statements to get the control flow we want.</p>
+
+<p>An example is worth a thousand words here:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  if (a and not b) {
+      do this
+  } else if (a) {
+      do that
+  } 
+
+  if (b) {
+      do the other thing
+  }
+
+</code></pre></div></div>
+
+<p>This is the typical mess that we end up when we just add stuff to our code without refactoring it, and although it does not look that bad, it is nearly impossible to understand. I feel sorry for the person would have to debug this thing in order to fix the issues that it would no doubt cause, and I am firmly convinced that the only smart thing that they can do is to separate the code that deals with <code class="language-plaintext highlighter-rouge">a</code> and the code that deals with <code class="language-plaintext highlighter-rouge">b</code> into two separate statements like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  if (a) {
+      if (b) {
+          do that
+          do the other thing
+      } else {
+          do this
+      }
+  } else {
+      if (b) {
+          do the other thing
+      } else {
+          // ???
+      }
+  } 
+  
+</code></pre></div></div>
+
+<p>You can see that this block now starts to look like a piece of logic, as opposed to a random pile of conditionals. We can now reason about it, for example we can point out that not all combinations of values of <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code> are handled, but more on that later. In short, our code does not work like a Rube Goldberg machine any more.</p>
+
+<p>Some people would argue that having to repeat the <code class="language-plaintext highlighter-rouge">do the other thing</code> block in two branches is a deficiency but I beg to disagree - the two branches represent two different cases and the fact that we handle those two cases in the same way is hardly a reason for us not to enumerate them explicitly - we lose a little bit of conciseness but we gain a great deal in terms of readability and robustness.</p>
+
+<p>But what if we have to repeat more than one line? As I said above, wrap that into a function.</p>
+
+<h1 id="rule-3---do-not-leave-unhandled-cases">Rule 3 - DO NOT leave unhandled cases</h1>
+
+<p>We all know that <code class="language-plaintext highlighter-rouge">if</code> statements should handle all possible cases and doing so is very easy, especially if we keep one condition per statement, we just have to ensure that every <code class="language-plaintext highlighter-rouge">if</code> statement has an <code class="language-plaintext highlighter-rouge">else</code> clause which would handle the cases where the other condition or conditions are not satisfied. Although simple, this rule is sometimes broken. What do we do, for example, when there is <em>nothing</em> that we should do in a given case? Imagine, for example, that we have a “Sing Up” button that can be disabled and that does not work if it is disabled. The specification might say something like “if the button is disabled, do nothing.” Turning this requirement into code in a straightforward manner, would result into this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>on signup click() {
+  if (signup enabled ) {
+      signupuser
+  } else {
+  }
+</code></pre></div></div>
+
+<p>Our implementation will be correct, but I’d argue that <em>the specification is wrong</em> - as a user, I hate it when I click stuff and don’t get any feedback (and you would start hating you too, if your users start contacting you with annoying questions). You have nothing to lose and everything to win if you just throw an alert there.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>on signup click() {
+  if (signup enabled ) {
+      signupuser
+  } else {
+    show popup "signup is disabled because ${reason}'
+  }
+</code></pre></div></div>
+
+<p>Aside from making your program better, this line might be useful for debugging - imagine that some user clicks the Signup button and nothing happens. This would mean that there is a bug somewhere in the code path. But if the path contains more than one <code class="language-plaintext highlighter-rouge">if</code> statements with no <code class="language-plaintext highlighter-rouge">else</code>-s then there would be no way for you to know which of them went wrong. Having some kind of marker of what happened, no matter if it is a message that a user sees, if it’s front-end code, or an exception that you can look up in your logs, if it’s in the back-end would ensure makes all such issues trivial to fix.</p>
+
+<p>Another case when people make this mistake is the situation where you have a bunch of cases that you handle in different ways and you don’t really expect for something else to happen (this pattern is even more pervasive if you break the rule about conflating multiple conditions in one statements).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  if (a === 1) {
+      do this
+  } else if (a === 2) {
+      do that
+  } else {
+      // What do do here?
+  }
+</code></pre></div></div>
+
+<p>My advice here is to do <em>something</em> - return a value, throw an exception, any exception, leave a breadcrumb that when the time comes would help you what went wrong.</p>
+
+<h1 id="rule-4---do-not-encode-data-in-if-statements">Rule 4 - DO NOT encode data in <code class="language-plaintext highlighter-rouge">if</code> statements</h1>
+
+<p>No matter how punctual are we with our <code class="language-plaintext highlighter-rouge">if</code> statements, the logic of our programs ultimately depends on the business requirements, which often seem ugly when implemented directly. In these cases, you might help yourself by encoding some of those requirements in datastructures, or even a DSL, and to write your code around those datastructures. Suppose you have the following requirement.</p>
+
+<blockquote>
+  <p>When the user signs up, charge them for membership. Membership costs 10 dollars for people below 18 years old and 20 for people who are older. Oh, and also pro members pay 2 dollars extra, unless they are subscribed for more than 5 years, in this case they pay 1.</p>
+</blockquote>
+
+<p>Again, going straight from requirement to code would result in a somewhat messy block (note that there are two subsequent <code class="language-plaintext highlighter-rouge">if</code>-s - something which I see as an anti-pattern).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  if (less than 18) {
+      charge 10
+  } else {
+      charge 20 
+  }
+
+  if (pro) {
+      if (subscribed for 5) {
+          charge 1
+      } else {
+          charge 2
+      }
+  }
+</code></pre></div></div>
+<p>A way to avoid this is to encode this logic as data. Let’s go back to the requirements and create a table with all the conditions. The table would look something like this:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>age min</td>
+      <td>age max</td>
+      <td>subscribed for min</td>
+      <td>subscribed for max</td>
+      <td>pro</td>
+      <td>price</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>18</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>999</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>999</td>
+      <td>5</td>
+      <td>999</td>
+      <td>true</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>999</td>
+      <td>0</td>
+      <td>5</td>
+      <td>true</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>After that, we can easily use this table to get the price for a given user, for example with the following functional piece:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rellevant charges = all charges
+  filter(age min &lt; user.age &lt; age max )
+  filter(subscribed for min &lt; user.subscribed for  &lt; subscribed for max)
+  filter(pro membershup and plan.isPro
+
+total = sum rellevant charges 
+</code></pre></div></div>
+
+<p>Not only did we manage to make our code very beautiful, we already have a mechanism to edit the rules without code changes.</p>
+
+<h2 id="data-driven-error-handling">Data-driven error handling</h2>
+
+<p>Let’s see one more example of how we can utilize data structures for control-flow. This one has to do with error handling. We often have multiple ways in which things can go wrong and we are encoding them with <code class="language-plaintext highlighter-rouge">if</code>s, like this.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (error1) {
+   return Error: error1
+} else if (error2) {
+   return Error: error2
+} else {
+   doStuff()
+}
+</code></pre></div></div>
+
+<p>Although this approach does not contradict the non-conflation rule (as it is only valid for conditions that are <em>dependent on one another</em>) it has certain disadvantages in terms of readability, not to mention the inability to return a list of all errors, which is sometimes preferred.  If we view error checks as functions that take an input and return a result indicating whether the input is valid under a given criteria, then we can encode them as a table, similar to the one in the previous example, except that here rows will feature custom logic.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>error checks = [
+  name: Below 18, check: (user) =&gt; user.age &lt; 18
+  name: is not pro , check: (user) =&gt; !user.isPro
+]
+</code></pre></div></div>
+
+<p>As I mentioned, this makes it easy to gather all the errors and return them as an array:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>errors = error checks
+    filter(error.check(user))
+if (errors &gt; 0) {
+    throw errors
+} else {
+    do stuff
+}
+</code></pre></div></div>
+
+<p>And that’s it, for now. I would like to thank <a href="https://lobste.rs/s/z17zyg/structured_programming_how_write_proper">the lobste.rs community</a> for suggesting improvements and for pointing out some mistakes in the original code examples. There are some <a href="https://lobste.rs/s/z17zyg/structured_programming_how_write_proper">interesting comments</a> there.</p>
+
+    </div>
+
+   
+   <div class="date">
+      Written on January 13, 2021
+    </div>
+   
+  </article>
+
+  
+        <h2>More on <a href="/tags/programming">programming</a></h2>
+  
+
+
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

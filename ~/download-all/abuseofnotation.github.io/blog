@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+          <div class="container">
+  
+    <article class="post">
+
+      <h1><a href="/boolean-thinking/">The case against boolean logic</a></h1>
+
+      <div class="entry">
+        <p>In my last post about generality, I tried to show how our ambition to discover ideas that are all-encompassing and eternal makes our worldview crumble, leaving us unable to think clearly even about simple issues with obvious solutions. Today, I want to discuss another instance of the same problem, in a simpler and more direct way. You can think of this essay as a prequel to “<a href="/universal-knowledge/">When Universality Breaks</a>.”</p>
+
+
+      </div>
+
+      <a href="/boolean-thinking/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/moral-law/">Why should I care? or why punks are correct and old wise philosophers are wrong</a></h1>
+
+      <div class="entry">
+        <p>Last week I learned that Robert Paul Wolff, the philosopher who got interested in anarchism and marxism, died and I wanted to write something dedicated to him — this was the first reason I started writing this. The second one, was to finally finish an essay that I have in my /temp folder for at least 10 years, which my 20-year-old self titled “Why should I care?”. This essay, which came about as a regular attempt to say “Fuck authority!” remained unfinished, as I didn’t feel I was prepared to arrive at the necessary conclusions. Now, I realize why — my thoughts were in strong conflict with most all philosophy ever published, notably the moral philosophy of Kant. And the position of a 20-year-old who is saying everyone else are wrong, is too anti-intellectualistic me to take.</p>
+
+<p>But now I know that I do have some allies, like the aforementioned Robert Paul Wolff, who tackles the same issues in his paper/blog post <a href="https://robertpaulwolff.blogspot.com/2017/11/the-completion-of-kants-moral.html">THE COMPLETION OF KANT’S MORAL PHILOSOPHY IN THE TENETS OF THE RECHTSLEHRE</a>. And that guy from Plato’s Republic (more on him later). So, I will attempt to finally express my thoughts of whether we are obliged to participate in society, and to treat all people, and their problems, in a way that society wants us to treat.<br />
+As an experiment, I decided to leave what I wrote before unchanged and unedited, and then continue with my current thoughts. So here we go:</p>
+
+
+      </div>
+
+      <a href="/moral-law/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/logic-communication/">How does knowledge work: using logic to model real-world communication</a></h1>
+
+      <div class="entry">
+        <p><em>Hello and welcome to the moment that you (yes, all two of you) have been waiting for - the second installment of “How does knowledge work”. This is exciting right? Riight?</em></p>
+
+<p><em>We all communicate, or at least we think we do. And I mean communicate in the broadest sense, from spoken communication to written to visual, from informal to formal (in the sense of logically-formal). We will look into all of that and we will present a whole theory of how communication happens that is based on <a href="/logic-thought">the first installment of “How does knowledge work”</a> where we basically established a logical framework for modeling how the human mind works.</em></p>
+
+<p><em>You remember that, right? Right? Well, maybe the reason you fell asleep was that you actually were more interested in how people communicate with one another. Could this be it? Well, listen up, it’s actually interesting. Plus what better things you have to do? Communicate with actual people? But how would you know that you are actually communicating with them, if you are not familiar with the logical foundations of human communication?</em></p>
+
+<p><em>Hello?</em></p>
+
+
+      </div>
+
+      <a href="/logic-communication/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/laplace/">Determinism and free will are compatible</a></h1>
+
+      <div class="entry">
+        <p>This is just a short post that aims to show that determinism and free will are totally compatible with one another.</p>
+
+
+      </div>
+
+      <a href="/laplace/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/text/">Human technology: Text files</a></h1>
+
+      <div class="entry">
+        <p>It is a well-known engineering principle, that you should always use the <em>weakest</em> technology capable of solving your problem - the weakest technology is likely the cheapest, easiest to maintain, extend or replace and there are no sane arguments for using anything else.</p>
+
+<p>The main problem with this principle is marketing - few people would sell you a 10$ product that can solve your problem for ever, when they can sell you a 1000$ product, with 10$ per month maintenance cost, that will become obsolete after 10 years. If you listen to the “experts” you would likely end up not with the simplest, but with the <em>most advanced</em> technology.</p>
+
+<p>And with software the situation is particularly bad, because the simplest technologies often cost zero, and so they have zero marketing budget. And since nobody would be benefiting from convincing you to use something that does not cost anything, nobody is actively selling those. In this post, I will try to fill that gap by reviewing some technologies for web publishing that are based on <em>plain text</em> and putting forward their benefits. Read on to understand why and how you should write everything you write in plain text files and self-publish them on your own website.</p>
+
+
+      </div>
+
+      <a href="/text/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/universal-knowledge/">Where universality breaks: about Kant's triads and the dual to Laplace's demon</a></h1>
+
+      <div class="entry">
+        <p>Hi. Let’s wait for more people to show up… Or it’s just us? OK. So listen up, I wrote this very cool post that gathers almost all my mathematical and philosophical interests in one place…</p>
+
+<p>OK, whaterver, if you are not interested I will stop.</p>
+
+<p>OK, let’s try again _ clears throat _ “The age-old mystery of Kant’s triads has baffled academics for centuries: what is the significance of the third element that finishes each of his triad. And is it possible that the categories were given to Kant by aliens?”</p>
+
+<p>What, now it’s <em>too</em> dramatic? No, impossible, Kant never used any drugs! OK, whatever, I give up, no more introductions for these articles, let’s just get on with it!</p>
+
+
+      </div>
+
+      <a href="/universal-knowledge/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/if/">Structured programming: how to write proper if statements</a></h1>
+
+      <div class="entry">
+        <p>The <code class="language-plaintext highlighter-rouge">if</code> statement (or <code class="language-plaintext highlighter-rouge">if</code> expression) is the cornerstone of every modern programming language - it is so pervasive that we rarely think about how exactly should we use it, or how it is meant to be used. But despite its popularity, <code class="language-plaintext highlighter-rouge">if</code> wasn’t always there, and it wasn’t as pervasive as nowadays, so its role is, I’d argue, still somewhat misunderstood. So in this article, I will examine some mistakes that we can easily avoid in order to improve on our code.</p>
+
+
+      </div>
+
+      <a href="/if/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/gettier/">Epistemology for you all: Was Gettier a fraud?</a></h1>
+
+      <div class="entry">
+        <p>Yesterday, while browsing through the Wikipedia page on epistemology I came across the following excerpt:</p>
+
+<blockquote>
+  <p>Edmund Gettier is best known for his 1963 paper entitled “Is Justified True Belief Knowledge?”, which called into question the theory of knowledge that had been dominant among philosophers for thousands of years.[19] This, in turn, called into question the actual value of philosophy if such an obvious and easy counterexample to a major theory could exist without anyone noticing it for thousands of years.</p>
+</blockquote>
+
+<p>I did not know anything about either Edmund Gettier or the referred paper, but the way this paragraph attacked not only all philosophers but philosophy as a discipline left me infuriated, so without doing much research, I deleted it from the article, stating that “you can easily see many examples of philosophers claiming similar issues”. If I wanted to get into more detail, I would have added that I don’t think that there is such thing as a “dominant theory” in philosophy and especially such that has no counterexamples - philosophy, after all, is about arguments, so you really want to you can always construct arguments to support even the stupidest thesis (which was what I was planning to do if someone attacked me for messing with Wikipedia’s epistemology page).</p>
+
+
+      </div>
+
+      <a href="/gettier/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/the-case-of-the-case/">The case of "The case". Why did I spend 7 years writing a 27000-word novel</a></h1>
+
+      <div class="entry">
+        <p>A couple of months ago I finished the first part of my first self-published novel which I had started writing 7 years ago, at the age of 25 (I am 32 now if you are too lazy to do the math). I am not a fast writer, but I can still write the same amount of words in a few months, so why did it took me so long? This is the story.</p>
+
+
+      </div>
+
+      <a href="/the-case-of-the-case/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/logic-thought/">How does knowledge work: using logic to model real-world thinking</a></h1>
+
+      <div class="entry">
+        <blockquote>
+  <p>“Hello, and welcome to another episode of “Logic for Y’all”. Today we are going to tackle a rather controversial topic - “Using logic to model real-world thinking”. Asked to comment on it, most people went: “Pff, logic!” and our resident logicians prepared the following summary: “Pff, the real world!”. But still, among our listeners, there were some wannabe philosophers who insisted that this is the most important thing ever, so it appears that we have no choice but to get someone to talk about it (there will be booze at the end). So let’s give a warm welcome to the only guy who agreed to speak about this boring topic, Jencel Paniiic!”</p>
+</blockquote>
+
+
+      </div>
+
+      <a href="/logic-thought/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/quantum/">Applying anthropic reasoning to the many-worlds hypothesis of quantum mechanics</a></h1>
+
+      <div class="entry">
+        <blockquote>
+  <p>Disclaimer: I am not a physicist, so please take the physics-related aspect of this article with a grain of salt.</p>
+</blockquote>
+
+<p>According to Wikipedia, survivorship bias is “the logical error of concentrating on the people or things that made it past some selection process and overlooking those that did not, typically because of lack of visibility”. The textbook example is the mistake made by a person who predicts that the world is very unlikely to be destroyed in a nuclear war because they have seen many such threads in the past but none of them had any consequences. What this person does not take into account is that if a nuclear war <em>did</em> take place in the past, then they would be much less likely to exist and therefore much less likely to <em>make that prediction in the first place</em>. In other words, out of all the realities where a nuclear war was about to take place, we can only exist in the one where it didn’t actually happen and that is why we don’t see the others.</p>
+
+<p>A related concept is that of the anthropic principle, which concentrates on the fact that our universe should be allowed to accommodate for intelligent life.</p>
+
+<p>Sometimes the results of the selection process aren’t being erased like a nuclear war would erase the world - they are just not visible for <em>you</em>. Say, for example, you read that a toast always lands with the butter-side down, and decide to test it. You take a “fair toast” and you start dropping it on purpose. But to your surprise, the toast always lands with the butter side up 20 times in a row - exactly the opposite of what you expected. But before you announce your discovery to the world and think of it as universally-valid, you have to determine, the following - how many people are testing the butter-side down hypothesis? Indeed, this number does not have anything to do with the result of <em>your</em> toast turning experiment, but it has everything to do with the chance that <em>someone</em> gets that same result and announces it. The more people experimenting with toasts right now, the bigger the chance of one of them getting an unusual result (and therefore the less significant this result is). In this case, the fallacy is easy to test by just gathering many different instances of the experiment and comparing results (i.e. the scientific method).</p>
+
+<p>If we concentrate on the Many-Worlds interpretation of quantum mechanics, we see that it leads to an instance of survivorship bias that is as pervasive as the one from my second example and as hard to detect as the one from my first example - we, the inhabitance of universe X (as I would call the universe we are entangled with), make all of our assumptions about the true nature of reality without regard for the fact that we are observing only one of the, possibly infinitely-many, universes that exist. Every time quantum entanglement occurs, a selection process is carried out, in which the observer (i.e. you) is placed in a state that is chosen at random. All other states are isolated from him, hence the lack of visibility is also total.</p>
+
+<p>The issues with the concept of causality are summarized in the so-called “problem of induction” which states that there is no concrete evidence that the future should resemble the past e.g. the sun rising yesterday does not prove that it will rise also today. The only reason why we are able to formulate theories about the world, such as the one I am laying on now, is because the world is <em>consistent</em> empirically speaking - same results come up again and again when we do a given experiment. If that weren’t the case, the concept of knowledge would not exist at all, as you cannot know anything about an object that does not obey some laws (deterministically or probabilistically). And you can know even less about a <em>world</em> that does not obey laws, so finding ourselves in such a world completely destroy our ability to <em>know</em> anything and form theories about it, just like an atom bomb would destroy the world literally.</p>
+
+<p>Antrophically speaking, a reality that is not lawful would not allow for intelligent life to develop.</p>
+
+<p>Therefore, everything that we as observers deduce about reality, in terms of cause and effect, is not truly fundamental - it is just a description of universe X (which is how I would call the universe we are entangled with), that is, for each universe in which you think that A causes B and you are right, there can be numerous others in which you are not.</p>
+
+      </div>
+
+      <a href="/quantum/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/pure-reason/">Booknotes - The critique of pure reason</a></h1>
+
+      <div class="entry">
+        <p>Lately, I’ve been exploring this book, which I will refer to as simply “The critique” from now on, by following the lectures by <a href="https://www.youtube.com/watch?v=d__In2PQS60">Robert Paul Wolff</a> and decided to put my notes here in case someone finds them useful. This is a summary. The ideas expressed in it belong to Immanuel Kant. The phrase “Kant thinks” can accompany each sentence from it, but it is omitted for brevity and ease of reading. But at the same time, it is <em>not objective</em> - I am interpreting the ideas in the book the way <em>I</em> understand them, which may or may not be the way your philosophy professor interprets them. Also, the text is <em>not in any way a substitute of reading the book itself</em> - rather my aim was for it to help people who read the book by providing an additional viewpoint into what is happening in it.</p>
+
+<p>I put my original research in a separate <a href="/world">article about Kant’s categories</a>.</p>
+
+
+      </div>
+
+      <a href="/pure-reason/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/fp/">Why is functional programming awesome</a></h1>
+
+      <div class="entry">
+        <p>I really am not the best person to author such an article (I am not that into programming anymore, and I never was a real expert in it), however I am doing it, because I have been waiting for someone else to write it for years and kept noticing the following phenomena:</p>
+
+<ol>
+  <li>People who understand functional programming, cannot make themselves understood by the general (programming) public.</li>
+  <li>Many of the people who are able to make themselves understood by the public, don’t understand enough for them to be worth listening (all functional programming articles that are understandable don’t go much farther than “You should use pure functions, man!”.</li>
+</ol>
+
+<p>Roughly the same thing has been called  “the curse of the monad” by some people: “Once you understand it, you lose the ability to explain it”. It is clear now that monads are not something you get in an afternoon, but I think you can get some idea of what FP (functional programming) is. Or, you know, in a year or so. But in order to spend that time you need some motivation. You probably need someone to tell you why exactly do you need to know about FP? Why is it awesome, so to say. And so my article begins.</p>
+
+
+      </div>
+
+      <a href="/fp/" class="read-more">Read More</a>
+    </article>
+  
+</div>
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

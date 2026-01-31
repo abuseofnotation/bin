@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - Why is functional programming awesome</title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/fp.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+            <article class="post">
+    <h1>Why is functional programming awesome</h1>
+
+    <div class="entry">
+      <p>I really am not the best person to author such an article (I am not that into programming anymore, and I never was a real expert in it), however I am doing it, because I have been waiting for someone else to write it for years and kept noticing the following phenomena:</p>
+
+<ol>
+  <li>People who understand functional programming, cannot make themselves understood by the general (programming) public.</li>
+  <li>Many of the people who are able to make themselves understood by the public, don’t understand enough for them to be worth listening (all functional programming articles that are understandable don’t go much farther than “You should use pure functions, man!”.</li>
+</ol>
+
+<p>Roughly the same thing has been called  “the curse of the monad” by some people: “Once you understand it, you lose the ability to explain it”. It is clear now that monads are not something you get in an afternoon, but I think you can get some idea of what FP (functional programming) is. Or, you know, in a year or so. But in order to spend that time you need some motivation. You probably need someone to tell you why exactly do you need to know about FP? Why is it awesome, so to say. And so my article begins.</p>
+
+<!--more-->
+
+<p>Before starting, keep in mind that you need a clear mind to understand FP. So for a second forget everything that you know about programming paradigms. Forget the Object Oriented religious bullshit, that you learned at school, or by reading different versions of the same blog post. Forget the old timers, who think that if they don’t have all the power at their fingertips at all times they are not as productive as they can be, forget, even, the academic type of programmers (and the beefs between the said groups).</p>
+
+<p>It is important to start from the beginning. So what is functional code? It is code that can be reasoned about. This phrase is often repeated but rarely explained. When you know what a program does just by looking at it (and it really does exactly that), this is functional programming. When you don’t need to trace where and under what circumstances a given function is called in order to work around the possible states of a given system, that is functional programming. When you can boost the font of your text editor up to the point where only a few lines are visible and still do your job, that is functional programming. All other things that people usually talk about, including the ones that I talk about here, are just a result of our desire to do that.</p>
+
+<h1 id="motivation-one-for-the-skeptics">Motivation (one for the skeptics)</h1>
+
+<p>I will be really professional and dedicate the first chapter to the people who are not always ready to jump on every train which promises to take them to a better place. They might be asking questions like “What is the problem that FP is solving for us?”.</p>
+
+<p>I’d say the problem is the problem with shared state. Namely that the possible states of a mutable object grow exponentially based on the functions which mutate the object. Those of you who have some programming experience are probably painfully aware of what I mean but I will give an example nevertheless: This is what I would call the “four button problem”: Imagine a program which consists of just one button which modifies some internal state. Without knowing what it does and how it works, we can test the program by just pressing the button and checking if the state is modified in the right way. Now, imagine the same program but with two buttons instead of one (and one state object which is shared between them) - now we have two combinations of presses that we have to test - one is pressing “Button 1” and then “Button 2”, another is pressing “Button 2” first. With three buttons the number of possible combinations is six, which is somehow managable, but four buttons it’s 24 which is already too much. So any program has more than 4 buttons which share a state is practically impossible to test. Unless FP is involved.</p>
+
+<h1 id="the-story-so-far">The story so far</h1>
+
+<p>In the beginning there were computations (and the desire to do more of them). Buildings, organizations, machines - none of these things can come to life without some amount of number crunching being done. But what are computations really? For our puproses, the question is easier than it sounds like: A computation is just the process in which one arithmetical term, is reduced to another, simpler term, it is as easy as <strong>1 + 1 = 2</strong>.</p>
+
+<p>Unfortunately, however simple computations may be, we humans are not very smart creatures when it comes to them, especially the ones that have more than 10 terms. Long ago, we devised a method to overcome this weakness - the method consist of associating (or <em>binding</em>) terms which are too ugly or too long for us to wrap our head around them, with symbols. This method had always worked flawlessly - we just say <strong>let A = some big term</strong> and then we just type A whenever we need to type that term. This allows us to write the computation in fewer terms, without losing any information - we know that A is equivalent to this big term, so we can always replace one for the other. This even allowed us to do part of our computation even before some of the values of this term are known, the practice of which changed mathematics for ever.</p>
+
+<p>Centuries passed and the computer was invented so we don’t need to do any computation by hand. Unfortunately when we started using it, our weakness for wrapping our heads around complex terms started giving us trouble again: the computer was a machine. When building it, its creators had to overcome numerous technical problems and limitations, so naturally it did not support the ability to declare some of the terms that we could not comprehend as symbols and to use symbols and terms interchangebly.</p>
+
+<p>After some time some people decided to bring symbols back to programming. Their idea was to create a notation for writing computations on a computer and a program which converts that notation to a working computer code. In order to do that, they had to translate each mathematical operation that people invented to one or several instructions to the computer processor. And they decided to associate the operation that we discussed earlier - the operation of <em>binding</em> a simple symbol to a more complex term to the <em>assignment</em> operation. Here is how the assignment operation works:</p>
+
+<ol>
+  <li>Compute the terms right away and get the result (the computer had to use as little memory as possible, and therefore we want to compute everything as early as possible).</li>
+  <li>Put the result in a free memory location.</li>
+  <li>Translate all instances of the symbol in the program to pointers to that location in memory (because a symbol was actually interchangeble with a memory location).</li>
+</ol>
+
+<p>The two concepts (binding and assignment) are obviously related, as the assignment was meant to work like a binding. They are both denoted with the <code class="language-plaintext highlighter-rouge">=</code> sign and in some situations an assignment is like a binding:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 1 + 1
+b = 2 + 4
+c = a + b
+
+</code></pre></div></div>
+
+<p>But there are some differences at how they typically function. The big difference is that assignment places a big focus over how and when the value is computed. For example we know that the right-hand side of the expression is computed before the left one. This is what enables us to make utterly unmathematical things like <code class="language-plaintext highlighter-rouge">x = x + 1</code>. What is the problem with this from mathematical standpoint? One problem is that it relies on the computational model that we use (the steps that I defined earlier) to work correctly. A second one is that it redefines <code class="language-plaintext highlighter-rouge">x</code> which does not make sense. But the bigger problem, which trancsends the mathematical is the problem that when we use something like that, we lose the reasoning model of symbols - a symbol is no longer associated with a term and the other way around. It is no longer a shortcut for a particular thing, but it is a vessel which at any time can be found to contain different things.</p>
+
+<p>What happened after that? Long story short, people decided that this was OK, and it enabled them to make a more efficient use of space and by the time we could afford something better they were already too familiar with this computational model to make the change.</p>
+
+<p>But anyway, where was I? Oh, yes…</p>
+
+<h1 id="pure-functions">Pure functions</h1>
+
+<p>Of course we begin our journey with <em>pure</em> functions. I’d know that FP has won when I see an article about it, which does not start with “What are pure functions?”. But this explanation is still needed, I think. For practical reasons you can think of a pure function in any programming language as one which:</p>
+
+<ol>
+  <li>In its body, it does <em>not</em> modify (mutate) the values of the arguments it accepts.</li>
+  <li>It also does not mutate, or change, the values of any external variables which it may access (although it <em>may</em> access external variables, provided that their values don’t change).</li>
+  <li>In its body, it only calls other pure functions.</li>
+</ol>
+
+<p>Again, this is a <em>practical</em> definition, and for this reason it may be quite different from the ones that you may have heard (which are often based on theory). For example you may have heard that a pure function is one which is “referentially transparent” which is a fancy way of saying that it returns the same output given the same input - this is a good definition, but it is incomplete: the <code class="language-plaintext highlighter-rouge">console.log</code> function in JS returns the same output for every input - <code class="language-plaintext highlighter-rouge">undefined</code>, but that does not make it a pure function. The other problem with this definition is that it is not enough for someone who does not already know a thing or two about FP and it may leave you asking, “OK, but how do I <em>make</em> a function referentially transparent?”. The answer to this question is the list above.</p>
+
+<p>You may have heard that pure functions are ones that don’t perform assignment. This is a nice definition, but it is a little bit sloppy. Does <code class="language-plaintext highlighter-rouge">console.log</code> perform any assigment? This is debatable. But does <code class="language-plaintext highlighter-rouge">console.log</code> modify some external variable somewhere? Well, we can be sure that the state of our console is stored in some variable somewhere and we can also be sure that this state is changed from calling the function, so for all practical reasons it does. In fact, this is the reason we are using <code class="language-plaintext highlighter-rouge">console.log</code> in the first place - we want the “side effect” - printing something on screen (as opposed to calling it for the value it produces).</p>
+
+<p>This leads us to maybe the best (and most confusing) definition of pure functions - they are the ones which have no <em>observable side effects</em>. In other words, it woudn’t make any difference for our users if we call these function 10 or 100 times. It won’t make any difference to them if we called the function now, or we used some cached result from calling it 10 days ago with the same arguments. The key to this definition’s correctness is that it is a <em>subjective</em> one, not an objective one. And that settles some questions like:</p>
+
+<blockquote>
+  <p>Wait a minute, after all, all our functions write and delete some values in the registers of the CPU, so aren’t all of them are really impure? And what is this “outside world” anyways? Isn’t this all virtual?</p>
+</blockquote>
+
+<p>Yes it is so in order to rigorously define pure functions we first define the events which are observable by our users (such as a sound coming from the speakers, the image on the screen, the time they spend waiting for a given resource to be fetched etc.) and we study the functions which don’t touch those. To some people side-effect-free would mean a different thing than to others. For example you may say that logging in some file is not a side effect, simply because your users won’t ever open it and you won’t run out of space, so logging “doesn’t count”. This is OK, you will have parts of your program which will do all kinds of side effects anyways. But let’s not get ahead of ourselves.</p>
+
+<p>Here is something to think about: the distinction between pure and impure functions is somewhat similar to the distinction between syncronous and asyncronous functions in platforms with non-blocking IO such as node.js. What do we know about synchronous functions in node.js? They:</p>
+
+<ol>
+  <li>Do not perform any asynchronous operations.</li>
+  <li>Only call other synchronous functions.</li>
+</ol>
+
+<p>If you substitude ‘asynchronous operations’ for ‘side effects’ and you get something close to the definition of a pure function. The non-blocking paradigm resembles functional programming in the respect that it makes it hard for you to write effectful functions. The difference is that it does that when it comes to just one type of side effect - IO operations while it allows all other types of effects.</p>
+
+<h1 id="equational-reasoning">Equational Reasoning</h1>
+
+<p>Why is that distinction, the one between pure and impure functions, so important? The answer is simple: because pure functions are data. If you are interested in Lisp, you may have heard that all code is data, but for pure functions, this slogan is valid in a slightly different way: Every pure function can be represented by, and is <em>isomorphic</em> to, a dictionary data structure, with the function’s inputs as keys, and its outputs as values. In mathematics, it is called a <em>function table</em>. I will give you an example with the function which converts an integer to a string:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const stringifyFn = (number) =&gt; String(number)
+</code></pre></div></div>
+
+<p>There are a finite number of integers, so it is entirely possible, and for some occasions even practical, to define such a function as a datastructire:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const stringifyTable = new Map([
+  [1, '1'],
+  [2, '2'],
+  [3, '3'],
+  [4, '4']
+  ...
+])
+</code></pre></div></div>
+<p>And behold:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>stringifyFn(1) === stringifyTable.get(1) //true
+</code></pre></div></div>
+
+<p>This is probably the most important example you will see if you want to understand what is FP all about. Not all functions can <em>really</em>
+ be represented as data structures (many of them have infinite inputs), but all of them can be reasoned about as such. One way to grasp the power of this concept is to imagine how the function-data isomorphism scales. Imagine a simple function like the one you see above being used in a more complex but also pure function. Which is being used by a yet another one… You might arrive to some very complex piece of functionality, but as long as you follow the principles stated above, what you created is an equivalent to, and can be used as, a simple datastructure, which contains keys and corresponding values. Can there be a bug in a datastructure? Well, a datastructure can be incorrect yes, but as long as it has outputs for all inputs, it will always work.</p>
+
+<p>Let me reiterate that all this is valid only as long as you follow strictly the principles which I stated above, particularily the third one: that a function should only call other pure functions. When experts say that “mostly functional programming” does not work they mean exactly this - that you cannot build a program that is, you know, almost purely-functional, but it uses just a couple of side effects and get (almost) the same benefits as you would by a truly purely-functional program. This is because the reasoning model of FP and imperative programming is different (one relies heavily on binding and substitution, and the other uses assignments).</p>
+
+<p>What about functions that take more than one parameter, like <code class="language-plaintext highlighter-rouge">(a, b) =&gt; a + b</code>. Well, you can think of them either as functions which take a compostite parameter(<code class="language-plaintext highlighter-rouge">(ab) =&gt; ab[0] + ab[1]</code>), or as functions who return other functions(<code class="language-plaintext highlighter-rouge">(a) =&gt; (b) =&gt; a + b</code>).</p>
+
+<p>What about objects? Well, immutable objects are not excluded in any way from the party. If you have an object <code class="language-plaintext highlighter-rouge">x</code> with methods <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code>, you can think of it either as a function <code class="language-plaintext highlighter-rouge">x</code> which takes one string which can be either <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code> as a parameter (the name of the “message”), and one datastructure, containing the arguments. You can also think of it as a data structure <code class="language-plaintext highlighter-rouge">x</code>, with two functions (<code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code>) that just happen to have access to <code class="language-plaintext highlighter-rouge">x</code>. Using this approach, Even the most complex function constitutes nothing more, than a series of simple functions, and even the biggest taxonomy can be reduced to an ordinary datastructure from which you can just take the result, or results, that you need. We can even identify different paths in our system which lead to the same result for the purpose of optimization, or just to reach better understanding of our program.</p>
+
+<h1 id="functional-runtimes">Functional Runtimes</h1>
+
+<p>You can find a lot of information about how nice it is to have referential transparency and to be able to apply equational reasoning. You won’t, however, have much success in finding information about what to do next. That is the topic of this chapter: how the hell creating a bunch of pure functions would help me create a GUI application, for example? Or a concurrent web server? Many functional programming tutorials seem to dismiss this question as uninteresting, but for me it is essential: running side effects is a tough job, but someone has to do it. Enter the exciting, and not very well-researched topic of functional runtimes, AKA programs that bind (no pun intended) purely-functional programs to the real world. So what is the big idea? Simple: you design your program, you split it to two parts - one is the purely functional part which, if you are good, will be the better and bigger part of your program and the other will be the imperative part, which should be as simple as possible and also as generic as possible, so many different programs can use it. Don’t take the term “runtime” literally here. In some contexts, this “runtime” can be just a simple library for running purely-functional programs that solve a specific set of problems. But the runtime can also be very complex, and support many options.</p>
+
+<p>The closest thing we have to a functional runtime in the traditional programming world are the domain-specific languages. Think of CSS, for example - CSS is a purely functional language that allow you to define the layout of a webpage easily and bug free. Its secret is that CSS code itself does not do anything. Most of the hard job is done by its runtime (the browser) - a runtime that is not very simple, but is very versatile and can support a whole class of programs (in this case graphical user interfaces).</p>
+
+<p>CSS is, of course, not a very powerful language. Which is unfortunate: imagine having the ability to embedd some real (purely-functional) code in CSS class definition, that decides how the elements from this class be positioned, based on the position of other elements, and on other forms of state. This would allow us to be a lot more flexible when creating a dynamic layout, and still don’t worry about the layout blowing in our face, bringing us many of the benefits of having access to a powerful tool, without any of the drawbacks. The whole philosophy actually boils down to that old principle about separating your code from your data. If you consider pure functions data, that is. If you don’t, the practice of separating your code from your data would still be useful, albeit very limited - anytime you need a more complex structure you will either have to copy and paste like crazy or just to drop the whole practice altogether.</p>
+
+<p>Now back to functional runtimes: as I said creating one involves splitting your program to two parts:</p>
+
+<ol>
+  <li>A pure function (or an immutable object containing pure just functions) which should encompass as much of your functionality as possible.</li>
+  <li>A bunch of imperative code supportting the pure part, which should be as small and as generic as possible.</li>
+</ol>
+
+<p>Making this split is, for me at least, the heart of the matter over how to do FP. Generally there is no magic formula for doing it. It is different for different kinds of programs. Let me reiterate that it is crucial that you do not cheat Keep a clean distinction between the two parts - keep them in separate folders, separate files, use a linter which limits the use of non-pure language features like assignments, mutability, accessing global variables. And never say stuff like:</p>
+
+<blockquote>
+  <p>I’ll just insert this <em>small</em> mutable state here, and nobody will notice.</p>
+</blockquote>
+
+<p>or:</p>
+
+<blockquote>
+  <p>…but otherwise I have to rework ALL of my program!</p>
+</blockquote>
+
+<p>You will have much more benefit from a small purely-functional module than if most of your program is mostly-functional but not quite there yet.</p>
+
+<p>Some classes of programs can be very trivially split into a purely-functional and an imperative part - think of command line tools for example, especially those of them which only use <code class="language-plaintext highlighter-rouge">STDIN</code> and <code class="language-plaintext highlighter-rouge">STDOUT</code>, like the <code class="language-plaintext highlighter-rouge">grep</code> tool. Such tools have a very simple runtime - one which just takes the input, feeds it to the purely-functional part and when it finishes, it passes the return value to <code class="language-plaintext highlighter-rouge">STDOUT</code> - you can say that they are pure functions in disguise.</p>
+
+<p>So let’s see how would we implement a small version of <code class="language-plaintext highlighter-rouge">grep</code> in node.js. We will start with the purely functional part (called <code class="language-plaintext highlighter-rouge">grep-pure.js</code>) because it is the easiest:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module.exports = (input, args) =&gt; 
+    input.split('\n')
+        .filter((row) =&gt; row.includes(args.pattern))
+        .join('\n')
+</code></pre></div></div>
+
+<p>Not much to see here. We just split the string to a list, and then we do our work using the well-know list operators. All these methods are analogous to pure functions, because ther don’t modify the object to which they are called. Instead what they do is to return a different object which serves as new “version” of the same object - a popular trick in FP.</p>
+
+<p>The function that we define is also a pure one, because it does not modify the values of its arguments: <code class="language-plaintext highlighter-rouge">input</code> and <code class="language-plaintext highlighter-rouge">args</code>, does not access any external variables, like <code class="language-plaintext highlighter-rouge">process</code> for example. We access the external variable <code class="language-plaintext highlighter-rouge">pattern</code> in the anonymous function that we pass to <code class="language-plaintext highlighter-rouge">filter</code>. This is OK, provided that we don’t modify it (we don’t) and that the variable is immutable. This explanation made the whole thing sound more complicated than it is - I just wrote the function using only immutable data and whenever I needed something I defined it as an argument.</p>
+
+<p>OK, now let’s get to the more interesting part - the <code class="language-plaintext highlighter-rouge">grep-runtime.js</code>. Because we want to be as versatile as possible, we will define a generic runtime for writing CLI applications. It is easier than it looks:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module.exports = (f) =&gt; {
+    const args = require('minimist')(process.argv.slice(2))
+    require('get-stdin')().then((input) =&gt; {
+        console.log(f(input, Object.freeze(args)))
+    })
+}
+</code></pre></div></div>
+
+<p>Here we are using effectful functions like crazy. That is how it should be - all pure functions should be moved outside of this file. We use <code class="language-plaintext highlighter-rouge">Object.freeze</code> to enforce the principle that we discussed earlier - a pure function should not mutate its arguments.</p>
+
+<p>We wrote a pure grep implementation as a pure function and a generic function for “lifting” pure functions into command-line tools. Our final program <code class="language-plaintext highlighter-rouge">grep.js</code> is what we get if we combine those two things together:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require('./grep-runtime')(require('./grep-pure'))
+
+</code></pre></div></div>
+<p>The result is can be used like ordinary <code class="language-plaintext highlighter-rouge">grep</code> - you pipe a text stream through the tool, specify the pattern and you get the results:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/&gt; cat file.txt | ./grep.js --pattern dog
+&lt; I like dogs.
+&lt; And there I saw a big shaggy dog.
+
+</code></pre></div></div>
+<p>Once we realize that we can return and pass programs around some of which are impure, but the functions which operate on them would still be pure, purely-functional programming starts to feel much more feasible.</p>
+
+<h1 id="reinventing-imperative-programming">Reinventing imperative programming</h1>
+
+<p>Our grep implementation from the previous example is incomplete - we only implemented the functionally-friendly part. Let’s try to extend it so it also accepts filepaths as input. For this we need to extend our runtime. We will take a most naive approach when doing this, while also trying <em>not</em> to move away from the general-purpose aspect of the runtime. Our program will not return a value but instead it will return a “special object” which signifies to the runtime what it needs to do - an “Action” object so to say. The runtime, then, will perform the action and then it will call the callback, that would allow us to resume our execution in a pure context. In our case we have two actions - reading from a file, and reading from the stdin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const simpleGrep = require('./grep-pure')
+
+module.exports = (args) =&gt; {
+    if (args.file !== undefined) {
+        return {
+            action: "readFile",
+            arguments: {file: args.file},
+            callback: (contents) =&gt; simpleGrep(contents, {pattern: args.pattern})
+        }
+    } else {
+        return {
+            action: "readStdin",
+            arguments: {},
+            callback: (input) =&gt; simpleGrep(input, args) 
+        }
+    }
+}
+</code></pre></div></div>
+<p>The runtime needs to be extended to support actions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const fs = require('fs')
+
+module.exports = (f) =&gt; {
+    const args = require('minimist')(process.argv.slice(2))
+
+    const result = (f(Object.freeze(args)))
+
+    if(result.action === 'readFile'){
+        fs.readFile(result.arguments.file, 'utf8', function (err,data) {
+            console.log(result.callback(data))
+        })
+    } else if (result.action === 'readStdin'){
+        require('get-stdin')().then((input) =&gt; {
+            console.log(result.callback(input))
+        })
+    } else {
+        throw new Error('Invalid action')
+    }
+}
+</code></pre></div></div>
+
+<p>But when you think about it, isn’t <code class="language-plaintext highlighter-rouge">print</code> just another action, like <code class="language-plaintext highlighter-rouge">readFile</code>? It indeed is, and refactoring our runtime to support <code class="language-plaintext highlighter-rouge">print</code> as an action would make it trully general-purpose:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const simpleGrep = require('./grep-pure')
+
+module.exports = (args) =&gt; {
+    if (args.file !== undefined) {
+        return {
+            action: 'readFile',
+            arguments: {file: args.file},
+            callback: (contents) =&gt; ({
+                action: 'print',                
+                arguments: {
+                    string: simpleGrep(contents, {pattern: args.pattern})
+                },
+                callback: undefined
+
+            })
+        }
+    } else {
+        return {
+            action: 'readStdin',
+            arguments: {},
+            callback: (input) =&gt; ({
+                action: 'print',                
+                arguments: {
+                    string: simpleGrep(input, {pattern: args.pattern})
+                },
+                callback: undefined
+
+            })
+        }
+    }
+}
+</code></pre></div></div>
+<p>The runtime needs to be extended to support this action:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const fs = require('fs')
+
+
+const processResult = (result) =&gt; {
+
+    if (result.action === 'readFile') {
+        fs.readFile(result.arguments.file, 'utf8', function (err,data) {
+            if (result.callback !== undefined) {
+                processResult(result.callback(data))
+            }
+        })
+    } else if (result.action === 'readStdin'){
+        require('get-stdin')().then((input) =&gt; {
+            if (result.callback !== undefined) {
+                processResult(result.callback(input))
+            }
+        })
+    } else if (result.action === 'print'){
+        console.log(result.arguments.string)
+        if (result.callback !== undefined) {
+            processResult(result.callback())
+        }
+    } else {
+        throw new Error('Invalid action')
+    }
+}
+
+module.exports = (f) =&gt; {
+    const args = require('minimist')(process.argv.slice(2))
+    processResult(f(Object.freeze(args)))
+}
+</code></pre></div></div>
+<p>This program, is different than the previous one and the difference does not consist solely in the addition of the <code class="language-plaintext highlighter-rouge">readDir</code> action. The bigger difference that you have to notice here is that callbacks can also return actions, (which return more actions and more actions ad infinitum). With the proper actions added, this runtime is capable of hosting any imperative program that you might want to write.</p>
+
+<p>If you don’t believe me, check this tweaked version of the previous program written using generators:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module.exports = function*(args) {
+    let input;
+    if (args.file !== undefined) {
+        input = yield readFile({file: args.file})
+    } else {
+        input = yield readStdin()
+    }
+    yield print({ string: simpleGrep(input, {pattern: args.pattern}) })
+}
+</code></pre></div></div>
+<p>You can see the runtime for this program in <a href="https://github.com/abuseofnotation/pure-grep">this repo</a>.</p>
+
+<p>My point - cooking a runtime that would emulate imperative programming style with FP is not only possible, it is (relatively) easy. And it is not the point of FP - if we thought that imperative programming style was OK, we would stick to it, instead of learning about monads and stuff (by the way, every functional runtime which can be used to simulate imperative programming is inherently monadic). What is the point of FP then? Well, for me it lies in finding the intricate balance between a runtime that allows you to do anything and one which allows you too little. Finding the balance between your runtime and your program, and creating runtimes and recipies for runtimes that are useful not only for you, but for other people.</p>
+
+<h1 id="appendix-functional-recipes">Appendix: Functional recipes</h1>
+
+<p>I wanted to end this article with some examples and these are the ones I came up with. This should give you a hint on how you can use the tips from above.</p>
+
+<h2 id="actions-as-objects">Actions as objects</h2>
+
+<p>Representing actions as objects is a very basic recipe in FP which is also used in the above example. At its heart is the idea that a type can be isomorphic to a given subroutine and an instance of that type - to an invocation of the subroutine. Therefore an effectful computation that calls the subroutine, can be replaced by a pure function which returns an instance of the type.</p>
+
+<h2 id="state-as-a-function">State as a function</h2>
+
+<p>An issue exemplified by the four-button problem is that programs often try to modify an existing state to incorporate the effects of a given action. This issue can be solved by just throwing away the old state and recomputing it from scratch from a well-defined set of input parameters.</p>
+
+<h2 id="functions-as-data">Functions as data</h2>
+
+<p>When we do imperative programming, we deal with concrete (computed) values. When we deal with FP, we often deal with values that are not yet computed (functions). In FP pure functions often return other functions and it is up to the runtime to call them and produce the final value.</p>
+
+<p><em>That’s it for now. If you want to contribute to this article, send me the most useful functional recipes you use on marinovboris@gmail.com.</em></p>
+
+<h1 id="appendix-2---on-turing-machines-and-lamda-calculus">Appendix 2 - on Turing machines and Lamda calculus</h1>
+
+
+    </div>
+
+   
+   <div class="date">
+      Written on July  4, 2017
+    </div>
+   
+  </article>
+
+  
+        <h2>More on <a href="/tags/programming">programming</a></h2>
+  
+        <h2>More on <a href="/tags/functional-programming">functional-programming</a></h2>
+  
+
+
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

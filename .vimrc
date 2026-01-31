@@ -266,6 +266,7 @@ set updatetime=750
 
 au VimEnter * if !&diff | tab all | tabfirst | endif
 
-set rtp+=/opt/homebrew/opt/fzf
-
 set nomodeline
+
+autocmd FileType markdown set spell spelllang=en_us
+set spellfile=~/bin/en.utf-8.add

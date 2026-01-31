@@ -1,11 +1,13 @@
-location="/tmp/download-all/"
+location="/home/jencel/download-all/"
 
-rm -rf /tmp/download-all
-wget  --force-html -r -l2 $1 -P /tmp/download-all
+rm -rf $location
+wget  --force-html -r -l2 $1 -P $location
 
 function prepareFile {
   while read line; do
     url=${line//$location/""}
+    echo $line
+    echo $url
     lynx $line -dump -width 9999999 | while read line; do echo "${line} -- https://${url}"; done
   done
 }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+              
+    
+
+    
+    <h1>logic articles</h1>
+      
+
+    <article class="post">
+      <h1><a href="/boolean-thinking/">The case against boolean logic</a></h1>
+
+      <div class="entry">
+        <p>In my last post about generality, I tried to show how our ambition to discover ideas that are all-encompassing and eternal makes our worldview crumble, leaving us unable to think clearly even about simple issues with obvious solutions. Today, I want to discuss another instance of the same problem, in a simpler and more direct way. You can think of this essay as a prequel to “<a href="/universal-knowledge/">When Universality Breaks</a>.”</p>
+
+
+      </div>
+      <a href="/boolean-thinking/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/logic-communication/">How does knowledge work: using logic to model real-world communication</a></h1>
+
+      <div class="entry">
+        <p><em>Hello and welcome to the moment that you (yes, all two of you) have been waiting for - the second installment of “How does knowledge work”. This is exciting right? Riight?</em></p>
+
+<p><em>We all communicate, or at least we think we do. And I mean communicate in the broadest sense, from spoken communication to written to visual, from informal to formal (in the sense of logically-formal). We will look into all of that and we will present a whole theory of how communication happens that is based on <a href="/logic-thought">the first installment of “How does knowledge work”</a> where we basically established a logical framework for modeling how the human mind works.</em></p>
+
+<p><em>You remember that, right? Right? Well, maybe the reason you fell asleep was that you actually were more interested in how people communicate with one another. Could this be it? Well, listen up, it’s actually interesting. Plus what better things you have to do? Communicate with actual people? But how would you know that you are actually communicating with them, if you are not familiar with the logical foundations of human communication?</em></p>
+
+<p><em>Hello?</em></p>
+
+
+      </div>
+      <a href="/logic-communication/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/logic-thought/">How does knowledge work: using logic to model real-world thinking</a></h1>
+
+      <div class="entry">
+        <blockquote>
+  <p>“Hello, and welcome to another episode of “Logic for Y’all”. Today we are going to tackle a rather controversial topic - “Using logic to model real-world thinking”. Asked to comment on it, most people went: “Pff, logic!” and our resident logicians prepared the following summary: “Pff, the real world!”. But still, among our listeners, there were some wannabe philosophers who insisted that this is the most important thing ever, so it appears that we have no choice but to get someone to talk about it (there will be booze at the end). So let’s give a warm welcome to the only guy who agreed to speak about this boring topic, Jencel Paniiic!”</p>
+</blockquote>
+
+
+      </div>
+      <a href="/logic-thought/" class="read-more">Read More</a>
+    </article>
+
+      
+
+      <h2><a href="/blog" >all articles</a></h2>
+    
+
+    
+
+    <h1>logic shorts</h1>
+
+    <article class="post">
+
+      
+      <h2><a href="/strong-ai-godel/">On Godel-related strong AI refutations</a></h2>
+
+      <div class="entry">
+        <p>Penrose’s theory and all other Godel-related strong-AI refutations are stupid: “Human mind is different from a computer because humans are capable of detecting logically inconsistent theories and logical paradoxes and think outside the box in order to know that they are paradoxes.”</p>
+
+<p>This is not true at all - our mind actually does nothing more than what a computer operating system would do if it sees a process that occupies a lot of memory and doesn’t produce a result - it would kill the process (or the thought that leads to paradox.)  We aren’t able to escape an infinite cycle because we are more capable than computers - we are merely equipped with heuristics necessary to escape from a situation that does not benefit us in any way (sometimes).</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/principle-triviality/">The principle of triviality</a></h2>
+
+      <div class="entry">
+        <p>I find this principle very useful in my thinking, particularily when you want to determine if something is legit. It is based party on elementary logic laws and partly on a rule of thumb. I call it the principle of triviality:</p>
+
+<p>Any self-consistent body of knowledge can be reduced to a number of clear elementary postulates from which everything else logically follows. Therefore, if the foundational postulates of a system are not immediately apparent, the system is likely not self-consistent.</p>
+
+<p>Also, the number of those postulates is usually small (this is the rule of thumb part).</p>
+
+<p>Simply put: if you cannot explain something using very elementary language and constructs, then there is probably inconsistency in it somewhere.</p>
+
+<p>Example: most religious doctrines, political ideologies, astrology, cryptocurrencies etc.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/concept-of-self/">The concept of the self</a></h2>
+
+      <div class="entry">
+        <p>Re-reading “I am a strange loop” and finding much stuff that I missed originally. I like the author’s idea of an organism’s concept of self as the central concept in an organism’s system of thought, and the one that binds all other concepts together.</p>
+
+<p>Like, a concept is considered true and real by us only if it relates to our concept of ourselves. Our concept of ourselves is the realest thing there exists for us (although it in actuality is completely objective).</p>
+
+
+      </div>
+
+    </article>
+
+    
+
+    
+
+    <h2><a href="/shorts">all shorts</a></h2>
+    <h2><a href="/tags">all topics</a></h2>
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Abuse of Notation - writings on math, logic, philosophy and art - </title>
+      <link rel="stylesheet" type="text/css" href="/custom-style.css">
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+      <link rel="stylesheet" href="/mell.css">
+      <meta name="fediverse:creator" content="@abuseofnotation@mathstodon.xyz">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+          <a href="/">
+          <img src="/logo.svg" class="logo">
+          </a>
+          <!--
+          <a href="/">
+          <h1>Aβu∑e</h1>
+          <h1 style="font-size:80px;font-weight:bold">∅f</h1>
+          <h1>ℕotλtion</h1>
+          -->
+          <h3>writings on math, logic, philosophy and art</h3>
+
+          </a>
+        </div>
+      </div>
+      <div class="content">
+
+        <img src="/images/hats/.svg" class="article-image" onerror="this.parentNode.removeChild(this)">
+
+        <div class="container">
+              
+    
+
+    
+    <h1>philosophy articles</h1>
+      
+
+    <article class="post">
+      <h1><a href="/boolean-thinking/">The case against boolean logic</a></h1>
+
+      <div class="entry">
+        <p>In my last post about generality, I tried to show how our ambition to discover ideas that are all-encompassing and eternal makes our worldview crumble, leaving us unable to think clearly even about simple issues with obvious solutions. Today, I want to discuss another instance of the same problem, in a simpler and more direct way. You can think of this essay as a prequel to “<a href="/universal-knowledge/">When Universality Breaks</a>.”</p>
+
+
+      </div>
+      <a href="/boolean-thinking/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/moral-law/">Why should I care? or why punks are correct and old wise philosophers are wrong</a></h1>
+
+      <div class="entry">
+        <p>Last week I learned that Robert Paul Wolff, the philosopher who got interested in anarchism and marxism, died and I wanted to write something dedicated to him — this was the first reason I started writing this. The second one, was to finally finish an essay that I have in my /temp folder for at least 10 years, which my 20-year-old self titled “Why should I care?”. This essay, which came about as a regular attempt to say “Fuck authority!” remained unfinished, as I didn’t feel I was prepared to arrive at the necessary conclusions. Now, I realize why — my thoughts were in strong conflict with most all philosophy ever published, notably the moral philosophy of Kant. And the position of a 20-year-old who is saying everyone else are wrong, is too anti-intellectualistic me to take.</p>
+
+<p>But now I know that I do have some allies, like the aforementioned Robert Paul Wolff, who tackles the same issues in his paper/blog post <a href="https://robertpaulwolff.blogspot.com/2017/11/the-completion-of-kants-moral.html">THE COMPLETION OF KANT’S MORAL PHILOSOPHY IN THE TENETS OF THE RECHTSLEHRE</a>. And that guy from Plato’s Republic (more on him later). So, I will attempt to finally express my thoughts of whether we are obliged to participate in society, and to treat all people, and their problems, in a way that society wants us to treat.<br />
+As an experiment, I decided to leave what I wrote before unchanged and unedited, and then continue with my current thoughts. So here we go:</p>
+
+
+      </div>
+      <a href="/moral-law/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/logic-communication/">How does knowledge work: using logic to model real-world communication</a></h1>
+
+      <div class="entry">
+        <p><em>Hello and welcome to the moment that you (yes, all two of you) have been waiting for - the second installment of “How does knowledge work”. This is exciting right? Riight?</em></p>
+
+<p><em>We all communicate, or at least we think we do. And I mean communicate in the broadest sense, from spoken communication to written to visual, from informal to formal (in the sense of logically-formal). We will look into all of that and we will present a whole theory of how communication happens that is based on <a href="/logic-thought">the first installment of “How does knowledge work”</a> where we basically established a logical framework for modeling how the human mind works.</em></p>
+
+<p><em>You remember that, right? Right? Well, maybe the reason you fell asleep was that you actually were more interested in how people communicate with one another. Could this be it? Well, listen up, it’s actually interesting. Plus what better things you have to do? Communicate with actual people? But how would you know that you are actually communicating with them, if you are not familiar with the logical foundations of human communication?</em></p>
+
+<p><em>Hello?</em></p>
+
+
+      </div>
+      <a href="/logic-communication/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/laplace/">Determinism and free will are compatible</a></h1>
+
+      <div class="entry">
+        <p>This is just a short post that aims to show that determinism and free will are totally compatible with one another.</p>
+
+
+      </div>
+      <a href="/laplace/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/universal-knowledge/">Where universality breaks: about Kant's triads and the dual to Laplace's demon</a></h1>
+
+      <div class="entry">
+        <p>Hi. Let’s wait for more people to show up… Or it’s just us? OK. So listen up, I wrote this very cool post that gathers almost all my mathematical and philosophical interests in one place…</p>
+
+<p>OK, whaterver, if you are not interested I will stop.</p>
+
+<p>OK, let’s try again _ clears throat _ “The age-old mystery of Kant’s triads has baffled academics for centuries: what is the significance of the third element that finishes each of his triad. And is it possible that the categories were given to Kant by aliens?”</p>
+
+<p>What, now it’s <em>too</em> dramatic? No, impossible, Kant never used any drugs! OK, whatever, I give up, no more introductions for these articles, let’s just get on with it!</p>
+
+
+      </div>
+      <a href="/universal-knowledge/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/gettier/">Epistemology for you all: Was Gettier a fraud?</a></h1>
+
+      <div class="entry">
+        <p>Yesterday, while browsing through the Wikipedia page on epistemology I came across the following excerpt:</p>
+
+<blockquote>
+  <p>Edmund Gettier is best known for his 1963 paper entitled “Is Justified True Belief Knowledge?”, which called into question the theory of knowledge that had been dominant among philosophers for thousands of years.[19] This, in turn, called into question the actual value of philosophy if such an obvious and easy counterexample to a major theory could exist without anyone noticing it for thousands of years.</p>
+</blockquote>
+
+<p>I did not know anything about either Edmund Gettier or the referred paper, but the way this paragraph attacked not only all philosophers but philosophy as a discipline left me infuriated, so without doing much research, I deleted it from the article, stating that “you can easily see many examples of philosophers claiming similar issues”. If I wanted to get into more detail, I would have added that I don’t think that there is such thing as a “dominant theory” in philosophy and especially such that has no counterexamples - philosophy, after all, is about arguments, so you really want to you can always construct arguments to support even the stupidest thesis (which was what I was planning to do if someone attacked me for messing with Wikipedia’s epistemology page).</p>
+
+
+      </div>
+      <a href="/gettier/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/logic-thought/">How does knowledge work: using logic to model real-world thinking</a></h1>
+
+      <div class="entry">
+        <blockquote>
+  <p>“Hello, and welcome to another episode of “Logic for Y’all”. Today we are going to tackle a rather controversial topic - “Using logic to model real-world thinking”. Asked to comment on it, most people went: “Pff, logic!” and our resident logicians prepared the following summary: “Pff, the real world!”. But still, among our listeners, there were some wannabe philosophers who insisted that this is the most important thing ever, so it appears that we have no choice but to get someone to talk about it (there will be booze at the end). So let’s give a warm welcome to the only guy who agreed to speak about this boring topic, Jencel Paniiic!”</p>
+</blockquote>
+
+
+      </div>
+      <a href="/logic-thought/" class="read-more">Read More</a>
+    </article>
+
+      
+
+    <article class="post">
+      <h1><a href="/pure-reason/">Booknotes - The critique of pure reason</a></h1>
+
+      <div class="entry">
+        <p>Lately, I’ve been exploring this book, which I will refer to as simply “The critique” from now on, by following the lectures by <a href="https://www.youtube.com/watch?v=d__In2PQS60">Robert Paul Wolff</a> and decided to put my notes here in case someone finds them useful. This is a summary. The ideas expressed in it belong to Immanuel Kant. The phrase “Kant thinks” can accompany each sentence from it, but it is omitted for brevity and ease of reading. But at the same time, it is <em>not objective</em> - I am interpreting the ideas in the book the way <em>I</em> understand them, which may or may not be the way your philosophy professor interprets them. Also, the text is <em>not in any way a substitute of reading the book itself</em> - rather my aim was for it to help people who read the book by providing an additional viewpoint into what is happening in it.</p>
+
+<p>I put my original research in a separate <a href="/world">article about Kant’s categories</a>.</p>
+
+
+      </div>
+      <a href="/pure-reason/" class="read-more">Read More</a>
+    </article>
+
+      
+
+      <h2><a href="/blog" >all articles</a></h2>
+    
+
+    
+
+    <h1>philosophy shorts</h1>
+
+    <article class="post">
+
+      
+      <h2><a href="/future-self/">Fear of the future</a></h2>
+
+      <div class="entry">
+        <p>Everything we do to secure ourselves, every decision we make out of fear of the future, ends up destroying us, ends up making our future a little more bleak — the closer we are to the public ideal of “success”, the farther we go from our own private, ideal, from our soul, if you want…</p>
+
+<p>Because ultimately it is not the future, but our <em>past</em> that defines us. The past determines who we are and it is the past that we should think about when making decisions, not the future. “What would my position be tomorrow?” is unimportant. But “How would I feel about <em>myself</em> tomorrow?” is the real question.</p>
+
+<p>And you won’t feel good, if you are betraying your past self, for the welfare of a future self, which will never materialize, which remains only a vain hope, that gets more and more disconnected from reality.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/kill-art/">To kill an art</a></h2>
+
+      <div class="entry">
+        <p>To kill an art, create a way to perform the utilitarian aspect of it in a way that is formulaic and efficient i.e. artless.</p>
+
+<p>(The art is not really dead, it is just understood by a very small amount of people (mostly other creators).)</p>
+
+<p>The art of manufacturing clothes, pottery etc were all killed in the previous generation. And in this generation, will see the dead of writing drawing and coding.</p>
+
+<p>Capitalists kill arts for profit. But they don’t think collectively, so they don’t realize that profits only come from (economic) activity and the only wilful activity that people do is creating art, so by killing art you are reducing the wilful activities (AKA fun) and replacing it will unwilful ones (AKA work).</p>
+
+<p>They don’t think collectively, so they are not concerned by the fact that they are creating a world that is incompatible with people: if you replace a worker with AI, your profit is up, but if <em>all</em> workers are replaced by AI then there can be no profits as there would be no one to buy (that’s the difference between thinking for yourself and thinking collectively).</p>
+
+<p>No one will buy willingly, so what’s left is coercion: fascism, wars — those are things where you have no choice but to participate (“He who is not with Me is against Me”). Until everything is destroyed. That’s why I don’t like people who don’t like art.</p>
+
+<p>The moral of all this is that  Hannah Arendt’s principle of the banality of evil is also valid in the other way around: not only that evil is banal, but all banal things are evil i.e. a thing is banal if and only if it is evil.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/philosophy-beefs/">Philosophy beefs</a></h2>
+
+      <div class="entry">
+        <p>This is a list of varioust arguments, quarrels, disagreements i.e. “beefs” that philosophers have had with one another.</p>
+
+<h3 id="heraclitus-vs-parmenides-5th-century-bce"><strong>Heraclitus vs. Parmenides (5th century BCE)</strong></h3>
+<p><strong>Beef</strong>: A clash between Heraclitus’s belief in constant change and Parmenides’s insistence on a static, unchanging reality.<br />
+Heraclitus: <em>“Everything flows and nothing abides; everything gives way and nothing stays fixed.”</em> (Source: Fragment 91, as recorded by Plato in <em>Cratylus</em>)<br />
+Parmenides: <em>“What is, is; what is not, is not.”</em> (Source: Fragment 2, as recorded by Simplicius in <em>Commentary on Aristotle’s Physics</em>)</p>
+
+<hr />
+
+<h3 id="heraclitus-vs-democritus-5th-century-bce"><strong>Heraclitus vs. Democritus (5th century BCE)</strong></h3>
+<p><strong>Beef</strong>: Heraclitus’s philosophy of flux versus Democritus’s atomistic materialism.<br />
+Heraclitus: <em>“You cannot step into the same river twice.”</em> (Source: Fragment 12, as recorded by Plato in <em>Cratylus</em>)<br />
+Democritus: <em>“By convention sweet, by convention bitter, by convention hot, by convention cold, by convention color; but in reality, atoms and void.”</em> (Source: Fragment 9, as recorded by Sextus Empiricus in <em>Against the Mathematicians</em>)</p>
+
+<hr />
+
+<h3 id="plato-vs-diogenes-4th-century-bce"><strong>Plato vs. Diogenes (4th century BCE)</strong></h3>
+<p><strong>Beef</strong>: Plato’s idealism and abstract philosophy versus Diogenes’s practical, anti-establishment Cynicism.<br />
+Plato: <em>“Man is a featherless biped.”</em> (Source: Diogenes Laërtius, <em>Lives and Opinions of Eminent Philosophers</em>, Book 6)<br />
+Diogenes (holding a plucked chicken): <em>“Behold! I’ve brought you a man.”</em> (Source: Diogenes Laërtius, <em>Lives and Opinions of Eminent Philosophers</em>, Book 6)</p>
+
+<hr />
+
+<h3 id="augustine-vs-pelagius-5th-century-ce"><strong>Augustine vs. Pelagius (5th century CE)</strong></h3>
+<p><strong>Beef</strong>: A theological dispute over original sin, free will, and divine grace.<br />
+Augustine: <em>“Through one man’s sin, all are condemned. Without God’s grace, no one can be saved.”</em> (Source: Augustine, <em>On Nature and Grace</em>)<br />
+Pelagius: <em>“If I ought, I can. God commands nothing impossible. Humans have the free will to choose good or evil.”</em> (Source: Pelagius, <em>Letter to Demetrias</em>)</p>
+
+<hr />
+
+<h3 id="aquinas-vs-averroes-13th-century"><strong>Aquinas vs. Averroes (13th century)</strong></h3>
+<p><strong>Beef</strong>: A debate over the relationship between faith and reason, and the nature of the soul.<br />
+Aquinas: <em>“Faith and reason are not opposed; they are two paths to the same truth.”</em> (Source: Aquinas, <em>Summa Theologica</em>)<br />
+Averroes: <em>“Philosophy and religion are separate domains. Truth can be reached through reason alone.”</em> (Source: Averroes, <em>The Incoherence of the Incoherence</em>)</p>
+
+<hr />
+
+<h3 id="leibniz-vs-voltaire-18th-century"><strong>Leibniz vs. Voltaire (18th century)</strong></h3>
+<p><strong>Beef</strong>: Voltaire’s satirical critique of Leibniz’s optimism in <em>Candide</em>.<br />
+Leibniz: <em>“This is the best of all possible worlds, for God, in His wisdom, has chosen it.”</em> (Source: Leibniz, <em>Theodicy</em>)<br />
+Voltaire: <em>“If this is the best of all possible worlds, what must the others be like?”</em> (Source: Voltaire, <em>Candide</em>)</p>
+
+<hr />
+
+<h3 id="hegel-vs-schopenhauer-early-19th-century"><strong>Hegel vs. Schopenhauer (early 19th century)</strong></h3>
+<p><strong>Beef</strong>: Hegel’s optimistic dialectical idealism versus Schopenhauer’s pessimistic philosophy of the will.<br />
+Schopenhauer: <em>“Hegel, installed from above by the powers that be, as the certified Great Philosopher, was a flat-headed, insipid, nauseating, illiterate charlatan, who reached the pinnacle of audacity in scribbling together and dishing up the craziest mystifying nonsense.”</em> (Source: Schopenhauer, <em>Parerga and Paralipomena</em>, Vol. 1)<br />
+Hegel: <em>“The real is rational, and the rational is real.”</em> (Source: Hegel, <em>Elements of the Philosophy of Right</em>, Preface)</p>
+
+<hr />
+
+<h3 id="brouwer-vs-bolland-1904-1905"><strong>Brouwer vs. Bolland (1904-1905)</strong></h3>
+<p><strong>Beef</strong>: Brouwer’s critique of Bolland’s Hegelianism and the role of language in philosophy.<br />
+Brouwer: <em>“Language by itself has no meaning; any philosophy which searched for a firm foundation based on that presumption has come to grief.”</em> (Source: Brouwer, <em>Life, Art, and Mysticism</em>, 1905)<br />
+Bolland: <em>“Brouwer’s mysticism is the babble of a child who has yet to grasp the pure concept.”</em> (Source: Bolland’s response to Brouwer, as cited in historical accounts of their dispute)</p>
+
+<hr />
+
+<h3 id="brouwer-vs-hilbert-1920s"><strong>Brouwer vs. Hilbert (1920s)</strong></h3>
+<p><strong>Beef</strong>: A foundational dispute over the validity of the law of excluded middle in mathematics.<br />
+Brouwer: <em>“The law of excluded middle is a dogma that has no place in mathematics.”</em> (Source: Brouwer, <em>Intuitionism and Formalism</em>, 1912)<br />
+Hilbert: <em>“To take the law of excluded middle from the mathematician is like taking the telescope from the astronomer.”</em> (Source: Hilbert’s response to Brouwer, as cited in historical accounts of their dispute)</p>
+
+<hr />
+
+<h3 id="wittgenstein-vs-popper-1946"><strong>Wittgenstein vs. Popper (1946)</strong></h3>
+<p><strong>Beef</strong>: A heated argument over the nature of philosophical problems during a meeting at Cambridge.<br />
+Wittgenstein (wielding a poker): <em>“Popper, you misunderstand the nature of philosophical problems.”</em> (Source: Eyewitness accounts of the Cambridge Moral Science Club meeting, 1946)<br />
+Popper: <em>“There are genuine philosophical problems, Wittgenstein, and your poker won’t solve them.”</em> (Source: Popper’s recollection of the event in <em>Unended Quest</em>)</p>
+
+<hr />
+
+<h3 id="sartre-vs-camus-1950s"><strong>Sartre vs. Camus (1950s)</strong></h3>
+<p><strong>Beef</strong>: A falling-out over the role of revolution, violence, and morality in politics.<br />
+Sartre: <em>“Camus, you’ve become a bourgeois moralist, betraying the revolution.”</em> (Source: Sartre’s critique of Camus in <em>Les Temps Modernes</em>, 1952)<br />
+Camus: <em>“Sartre, your Marxism is a prison of abstractions, far removed from the reality of human suffering.”</em> (Source: Camus’ response in <em>The Rebel</em>, 1951)</p>
+
+<hr />
+
+<h3 id="chomsky-vs-foucault-1971"><strong>Chomsky vs. Foucault (1971)</strong></h3>
+<p><strong>Beef</strong>: A debate over human nature, justice, and the role of power in society.<br />
+Chomsky: <em>“Human nature is real, and justice is rooted in it.”</em> (Source: Chomsky-Foucault debate, <em>Human Nature: Justice vs. Power</em>, 1971)<br />
+Foucault: <em>“Justice is a tool of power, and human nature is a myth constructed by institutions.”</em> (Source: Chomsky-Foucault debate, <em>Human Nature: Justice vs. Power</em>, 1971)</p>
+
+<hr />
+
+<h3 id="dennett-vs-chalmers-1990s"><strong>Dennett vs. Chalmers (1990s)</strong></h3>
+<p><strong>Beef</strong>: A disagreement over the “hard problem” of consciousness and the limits of materialism.<br />
+Dennett: <em>“Chalmers’ ‘hard problem’ of consciousness is a pseudo-problem, a philosopher’s fantasy.”</em> (Source: Dennett, <em>Consciousness Explained</em>, 1991)<br />
+Chalmers: <em>“Dennett’s materialism is a shallow evasion of the real mystery of consciousness.”</em> (Source: Chalmers, <em>The Conscious Mind</em>, 1996)</p>
+
+<hr />
+
+<p>Conclusion: Heraclitus is probably the greatest philosopher ever, as he is involved in not one, but two of the greatest beefs of all time, Heraclitus VS Parmenides and Heraclitus VS Democritus.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/our-society/">Society</a></h2>
+
+      <div class="entry">
+        <p>Society in which you step over homeless folks on your way to pointlessly click and type on the computer all day, is deeply fucked up. And you have to be veeery brainwashed to not realize that.</p>
+
+<p>Society where everyone’s main activity is to do a “job” that serves no purpose but to make some people richer.</p>
+
+<p>Where we commute to that “job” by cars while the planet is dying.</p>
+
+<p>Where we are only allowed to do this “job” in an “office”, although it was clearly proven that they are just as capable of doing it at home.</p>
+
+<p>Where there are still people are sleeping on the streets, people who can be sheltered in the “offices”, but instead we are supposed to just run over those people our way to work and not care.</p>
+
+<p>And we are supposed to pretend all of this is OK, lest we are fired from this system and have to lie down next to those people.</p>
+
+<p>Well, it’s not worth it.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/unity/">Unity of thought</a></h2>
+
+      <div class="entry">
+        <p>There is an ability I call <em>unity of thought</em>, for a lack of a better word, which is essential for acquiring intelligence/wisdom. It is the ability to connect each new idea/view that you have, with all the other ideas/views in your mind, to make it compatible with those. And to drop the ideas and views that aren’t compatible.</p>
+
+<p>(it is called <em>holding</em> a view for a reason — it takes effort and you cannot do it with too many of those.)</p>
+
+<p>Unifying your thoughts sets your mind free, but it requires commitment.</p>
+
+<p>It requires that you remain consistent in your thoughts and view, even in contexts where this is not beneficial to you.</p>
+
+<p>It requires you to reject the ideas that your brain wants you to reject.</p>
+
+<p>No compromise.</p>
+
+<p>Trying to balance a different set of views and ideas, depending on the situation, will make you dumb and will mess up your mental health…</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/continuous/">Is the world discrete or continuous</a></h2>
+
+      <div class="entry">
+        <blockquote>
+  <p>I have always been awed and confused by the apparent divide between number theory and the other algebraic fields of mathematics. Look closely between any two regions of mathematical study and you will find numerous dualities weaving a dense web of interconnection. Yet, number theory seems to exhibit a repelling force to the rest of math. Mathematical objects such as the Riemann Hypothesis build a bridge to number theory by exploiting the periodicity of continuous functions. While I only have a cursory understanding of it, the Langlands Problem is a massive effort to construct formidable and durable machinery for answering number theoretic questions using algebraic reasoning, but it remains one of the largest pieces of active work in Mathematics today and we don’t have good answers yet.</p>
+</blockquote>
+
+<blockquote>
+  <p>What I mean by “algebraic” is that, for much of mathematics, a little goes a long way. By defining very simple constructs such as sets and binary operations with an amount of properties you could count on one hand, we can reconcile models so powerful that they predicted the existence of Black Holes before we ever directly imaged one. These are powerful ideas, and yet, they are also elegant and convenient. Simple concepts such as Eigenvalues combined with infinite linear operators like differentials allow us to build bridges, predict quantum systems’ behavior, and even probe the dynamics of biological populations.</p>
+</blockquote>
+
+<blockquote>
+  <p>Yet, in number theory, simple questions such as “is every even integer greater than 2
+the sum of two prime numbers?” have been unsolved for hundreds (and in some cases, thousands) of years. We can make clever use of Modular Arithmetic along with inductive techniques to prove results in many cases, but often it is not intuitive when a given question in number theory will be easy to solve or impossible.</p>
+</blockquote>
+
+<p><a href="https://kylehovey.github.io/blog/the-integers-in-our-continuum">Source</a></p>
+
+<p>This subject is very fruitful. I always thought that the world itself is continuous (like the Reals )and our understanding of it is discrete (like the integers) i.e. discrete is an approximation, like neuron firings are discrete, and we only speak discrete, so this is why the integers exist.</p>
+
+<p>Kant speaks a lot about the concept of a number as an a-priori concept of our mind, and I believe that by “number” he means “integer” (at least when he refers to the category of quantity).</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/addiction/">What is addiction</a></h2>
+
+      <div class="entry">
+        <p>Today’s topic of discussion is addiction. Why do we get addicted?</p>
+
+<p>The simple answer is that addictive stuff is pleasurable and we just like to do stuff that is pleasurable, but that’s not complete, e.g. nobody goes to rehab for patting kittens.</p>
+
+<p>The reason for the problem of addiction — feelings of guilt and shame result in self hatred and desire for self-destruction that is channeled by a given substance or behavior. This is confirmed by the success of the 12 step programs — remove the guilt and shame and the addiction takes care of itself.</p>
+
+<p>It’s like your problem is that you think you have a problem, and also that society thinks you do. Your problem is other people.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/conformism/">Conformity is not the way</a></h2>
+
+      <div class="entry">
+        <p>What is conformism. Dictionary defines it as “<em>willingness</em> to conform”, but I think a better definition of conformism would be the <em>want</em>, <em>desire</em> to conform (as everyone are willing to conform when given the right motivation). This is not a complete definition either, because in order to have conformism you have to have something to confront to i.e. an established way of doing things which in turns entails that there must be an an establish<em>ment</em> i.e. a group of people who determine what’s right and wrong.</p>
+
+<p>The two things are very interrelated - you cannot have conformists without having establishment and you cannot have establishment without having conformists.</p>
+
+<p>I think that it is unquestionable that the dream of every aspiring conformist would be for the, to become the establishment, to be the person who sets the agenda. Only then would a conformist be who they want to be i.e. conformists are people are ready to change the whole world, just so they can be who they want to be <em>while remaining conformists</em>. To these people, I want to say: “No need for that. Just don’t be conformists. Conformity is not the way.”</p>
+
+<p>Conformism is also related to tolerance, or, more precisely to the <em>lack</em> of tolerance. Tolerance is not the elevated state of mind that some people present it to be, but rather a discovery — the discovery that you can be/do what you want to be/do, and others can… do whatever they want, actually, without there being any conflict.</p>
+
+<p>Once you make that discovery, a lot of things follow (e.g. that you should not be conformists, that the way our lives are organized is fucking stupid).</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/plato-anarchy/">Plato's Republic and anarchy</a></h2>
+
+      <div class="entry">
+        <p>The more I reread The Republic, the more I think that the guy who argued with Socrates at the beginning had a solid point — justice is whatever the rulers say. Incidentally, this argument leads straight to anarchy  (the system which is taken to be bad, without any arguments).</p>
+
+<blockquote>
+  <p>Well, he said, have you never heard that forms of government differ; there are tyrannies, and there are democracies, and there are aristocracies?</p>
+
+  <p>Yes, I know.</p>
+
+  <p>And the government is the ruling power in each state?</p>
+
+  <p>Certainly.</p>
+
+  <p>And the different forms of government make laws democratical, aristocratical, tyrannical, with a view to their several interests; and these laws, which are made by them for their own interests, are the justice which they deliver to their subjects, and him who transgresses them they punish as a breaker of the law, and unjust. And that is what I mean when I say that in all states there is the same principle of justice, which is the interest of the government; and as the government must be supposed to have power, the only reasonable conclusion is, that everywhere there is one principle of justice, which is the interest of the stronger.</p>
+</blockquote>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/good-theories/">Good theories</a></h2>
+
+      <div class="entry">
+        <p>Whenever I think about good physical theories, I immediately  think of Boltzmann’s statistical mechanics (the theory of entropy, you can say), not because he basically discovered the science of atoms and molecules, but simply because every time I see an ice cube in a glass, I see the particles, the Brownian motion, the way the heat and coldness dissolve etc.</p>
+
+<p>I don’t think about the number of grand important open issues that were solved by this theory, but I think about way the way that a person like me can use it in their thinking. Like for example that one time when  my frined told me to leave the oven opened after using it, because they wanted for the heat in the oven to warm the room, and I explained to them that the heat from the oven will <em>always</em> warm the room, simply because it had nowhere else to go.</p>
+
+<p>And I think of category theory in a similar way — not as a tool that delivers results I use to solve some important problems, that were otherwise unsolvable, but it is a tool that broadens my perception of the world, which is much more important and fruitful. I don’t <em>care</em> if all problems which are solved by category theory happen to also be solved by other mathematical theories, nor how many of them are actually solved this way, I care only about the categories and functors in my head.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/data-theories/">Data</a></h2>
+
+      <div class="entry">
+        <p>People like to be reminded:</p>
+
+<blockquote>
+  <p>“data never speak for themselves”</p>
+</blockquote>
+
+<p>But of course it doesn’t, after all, the objects of the dataset, the phenomena being investigated etc. are all defined using some theory, never forget that i.e. you have the theories even <em>before</em> you have the data (how can it speak of itself then?)</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/feedback-loops/">Feedback loops</a></h2>
+
+      <div class="entry">
+        <p>“Protest against trans people, cause they are insane.”
+“Lock people in prison, cause they commit more crimes.”
+“Ban burkas, cause islamic people are terrorist.”</p>
+
+<p>Life would be much easier if more people understood feedback loops.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/good-theories/">Good theories</a></h2>
+
+      <div class="entry">
+        <p>Whenever I think about good physical theories, I immediately  think of Boltzmann’s statistical mechanics, not because he basically discovered the science of atoms and molecules, but simply because every time I see an ice cube in a glass, I see the particles, the Brownian motion, the way the heat and coldness dissolve etc.</p>
+
+<p>And category theory is similar - it may not be a tool that I use to solve some important problems, that were otherwise unsolvable, but it is a tool that broadens my perception of the world, which is much more important and fruitful.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/occams-razor/">Occam's razor</a></h2>
+
+      <div class="entry">
+        <p>Let’s talk about Occam’s Razor. The most popular formulation of Occam’s Razor says that “the simplest explanation is usually right”, but I think this is a huge oversimplification of Occam’s razor.</p>
+
+<p>Firstly, I think it is apt to say the simplest explanation <em>that explains the most amount of effects that are observed</em>, e.g. saying that some God created the world is much simpler than coming up with a cosmology, but it doesn’t account for many of the things that we observe.</p>
+
+<p>Secondly, Occam’s Razor wouldn’t indicate that such explanation is “usually right” (Why “usually”? What is a “right” explanation anyways?), it says that it should be <em>preferred</em>, as in that is <em>better</em> than an explanation that contains details that don’t explain anything.</p>
+
+<p>“We are to admit no more causes of natural things than such as are both true and sufficient to explain their appearances.” — Newton</p>
+
+<p>But there is a deeper formulation, that concerns the very nature of explanations, hinted here in Wittgenstein’s Tractatus:</p>
+
+<blockquote>
+  <p>3.328 “If a sign is not necessary then it is meaningless. That is the meaning of Occam’s Razor.”</p>
+</blockquote>
+
+<p>In a logically correct explanation of a phenomena, you are not allowed to invoke any entity without using some part of the phenomena as a justification for your claim.</p>
+
+<p>E.g. if your apartment has been robbed, you are allowed to say stuff like:</p>
+
+<blockquote>
+  <p>1) “There is a rope hanging from my window, therefore the robber used it to enter”</p>
+</blockquote>
+
+<p>or even less probable stuff like:</p>
+
+<blockquote>
+  <p>2) “They didn’t steel my shampoo, therefore they must be bald”</p>
+</blockquote>
+
+<p>But not:</p>
+
+<blockquote>
+  <p>3) “The thief is probably a person of color”</p>
+</blockquote>
+
+<p>The difference is that the claim 3) that the thief is a person of color, has no basis,  whereas there is <em>some</em> basis, for claiming 2) that they are bald, (although not much.)</p>
+
+<p>Statistically, 3) might be probable, more probable than 2), but still 3) is forbidden and 2) is allowed, cause when we make claim 2) we are thinking, whereas when we make claim 3) we are just repeating stuff that we heard before.</p>
+
+<p>The scholastics (just like the Greeks) had faith that God left clues that would allow them to discover the truth about the world by themselves. This is the basis for Occam’s razor - faith in one’s own abilities. And this is what makes it important.</p>
+
+<p>Also, one might consider the principle that is dual to Occam’s razor:</p>
+
+<ul>
+  <li>
+    <p>Occam’s razor (or <em>Negative</em> Occam’s razor, as I sometimes think about it): Entities must not be <em>multiplied</em> beyond necessity i.e. when forming a theory, postulate no more than it is needed to explain the phenomena.</p>
+  </li>
+  <li>
+    <p>Dual Occam’s razor (or <em>Positive</em> Occam’s razor): Entities must not be <em>removed</em> beyond necessity i.e. if something is indeed needed to better explain the phenomena, it <em>must</em> be postulated.</p>
+  </li>
+</ul>
+
+<p>David Deutsch uses this to makes a very compelling argument in “The fabric of reality”, regarding the Many-worlds hypothesis of quantum mechanics  that goes roughly like this: “if the other universes don’t exist, then where does the computation of quantum computing algorithms, such as Shor’s alghorithm, takes place?”</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/short-history-philosophy/">Short history of modern philosophy</a></h2>
+
+      <div class="entry">
+        <p>The biggest discovery of 19-th century philosophy was due to Kant, who discovered that you can have a framework that is entirely consistent with Plato, Aristotel, Leibniz et al, and at the same time consistent with empiric data, and with itself, provided that you accept that this framework is kinda subjective.</p>
+
+<p>The biggest discovery of the 20-th century, due to Baudrillard, Barthes, et al (pardon my lack of French philosophy background), and at the same time by Wittgenstein, McLuhan and probably many other people, (actually, Hume was there all along) is that a framework that is subjective can actually be consistent with anything you want, as long as you don’t pose any specific criteria to what “subjective” is.</p>
+
+<p>The biggest discovery of the 21-th century, is still due, I guess, but it would probably be some formalization of the idea of the subject, which would be a full circle towards the times before 19-th century.</p>
+
+<p>Meanwhile in the realm of science:</p>
+
+<p>Newton discovers a scientific framework that is entirely consistent with Plato et al, if only you have the concept of an absolute space, but the concept of absolute space doesn’t agree with observation.</p>
+
+<p>Einstein discovers a framework that that doesn’t include the concept of absolute time (which he doesn’t admit is Kantian).</p>
+
+<p>Quantum mechanics discover that a framework that does not rely on the concept of absolute time is inherently subjective (depends on observer).</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/capitalism-christianity/">Authority and christianity</a></h2>
+
+      <div class="entry">
+        <p>I was thinking that Plato allegedly said that ignorance is the only sin and if it’s possible that he said that, since the concept of a sin came later in history and I suddenly realized that the concept of a sin is pure BS Like “There is this thing that you would really like to do but you should not do it because it is wrong (and God will punish you), so you should never ever do it and you should beat yourself (literary) when you go as far as to think about it.”</p>
+
+<p>That’s like saying “you’re guilty until proven innocent, and you will never be innocent. All you can do is pray to <em>us</em> to relieve your pain.”</p>
+
+<p>The doctrine of the world’s major religion is just totalitarian propaganda, thinly disguised as advice/prophecy.</p>
+
+<p>Like, if you take the fable about Adam and Eve and the apple. What does the apple represent? Sex? Knowledge? Or most probably just <em>opposition to authority</em>. Not clear what was God’s purpose with putting the tree there. All we understand is that if we do wrong we will be punished and we already did wrong…</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/early-late-wittgenstein/">Early and late Wittgenstein</a></h2>
+
+      <div class="entry">
+        <p>Hot philosophy take: The big difference between the early and late Wittgenstein is that the early Wittgenstein thought that a picture is supposed to have a single interpretation that can be communicated between interested parties, whereas the later Wittgenstein realized that this can never actually happen.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/free-thought/">Intelligence and freedom of thought</a></h2>
+
+      <div class="entry">
+        <p>Intelligence is just the practice  of thinking freely about something, (without accepting any kind of external dogma as a-priori true.) Nobody can ever teach you to be intelligent.</p>
+
+<p>99 percent of being intelligent is realizing that all those fucktards who give you advice like “Don’t marry” or “Go study this and that” are just fucktards who don’t have anything better to do and are using you as a means to raise their self esteem m by having people listening to them.</p>
+
+<p>Most people recognize <em>some</em> of these people as fucktards, but few recognize and are able to break free from all of them.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/kants-principle/">Kant's principle</a></h2>
+
+      <div class="entry">
+        <p>Kant’s principle: If there is only one of it (and there cannot ever be more), then it’s probably imaginary e.g. time, space, god, self…</p>
+
+<p>Corrolary: You only truly understand the things that you yourself made up. And so if you think you truly understand something, either you are wrong or you made that thing up.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/kants-discovery/">Kant's discovery</a></h2>
+
+      <div class="entry">
+        <p>The main discovery of Kant is that we are not “blank sheets”, but are born predisposed to certain modes of perception. This thought had profound influence on almost every intellectual discipline.</p>
+
+<p>I believe that Kant discovered that when thinking about the laws of Euclidean geometry (“Given two points, there is a straight line that joins them”). These are “facts” that are deeply embedded in our perception of the world, so much that we <em>cannot imagine</em> a world where they are not true, but at the same time they cannot be proved, they don’t follow from anything.</p>
+
+<p>Therefore, he reasoned, there are laws/axioms/postulates that are “embedded” in our minds, that come <em>before perception</em> giving general direction about our perception of the world. They are “pure reason”.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/science-philosophy-math/">Science philosophy and mathematics</a></h2>
+
+      <div class="entry">
+        <p>Science is just a subdiscipline of philosophy, the scientific method is an application to what philosophers call critical thinking.</p>
+
+<p>Critical thinking is just asking yourself the question “What would be the consequence if a given thing that we accept as true is actually false?” over and over again.</p>
+
+<p>The scientific method is the practice of applying this question to empirical observations.</p>
+
+<p>Mathematics is another subdiscipline of philosophy that studies how far can you go once you accept a given set of postulates as true (while the rest of philosophy is mostly concerned with <em>which things</em> are true).</p>
+
+<p>So science is mathematics + a little philosophy. This came because I learned that when writing “Principia Mathematica”, Newton was influenced by two books - “Principia Philosophiæ” by Rene Descartes, from which he took the subject matter (and the name) and “The Elements” by Euclid, from which he took the method of reasoning.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/strong-ai-godel/">On Godel-related strong AI refutations</a></h2>
+
+      <div class="entry">
+        <p>Penrose’s theory and all other Godel-related strong-AI refutations are stupid: “Human mind is different from a computer because humans are capable of detecting logically inconsistent theories and logical paradoxes and think outside the box in order to know that they are paradoxes.”</p>
+
+<p>This is not true at all - our mind actually does nothing more than what a computer operating system would do if it sees a process that occupies a lot of memory and doesn’t produce a result - it would kill the process (or the thought that leads to paradox.)  We aren’t able to escape an infinite cycle because we are more capable than computers - we are merely equipped with heuristics necessary to escape from a situation that does not benefit us in any way (sometimes).</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/dishonesty/">On dishonesty</a></h2>
+
+      <div class="entry">
+        <p>This morning I woke up with the following question in mind: What are the characteristics of the mental process that strips life from it’s dreamlike properties and makes it dull and monotonous?</p>
+
+<p>My theory is has to do with dishonesty.</p>
+
+<p>Dishonesty are the processes  in which we purposefully create an interpretation of the facts that we know is not the most truthful interpretation.</p>
+
+<p>So, when being dishonest, we have to maintain two separate interpretations - the true one (which would always exist), and the the one we want to believe and/or want others to believe.</p>
+
+<p>the true interpretation is “alive” - it always updates, it always has something happening with it.</p>
+
+<p>The false one, is less connected to reality, so it is static. Nothing happens in it, as we have to ignore the reality with which it is incompatible.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/principle-triviality/">The principle of triviality</a></h2>
+
+      <div class="entry">
+        <p>I find this principle very useful in my thinking, particularily when you want to determine if something is legit. It is based party on elementary logic laws and partly on a rule of thumb. I call it the principle of triviality:</p>
+
+<p>Any self-consistent body of knowledge can be reduced to a number of clear elementary postulates from which everything else logically follows. Therefore, if the foundational postulates of a system are not immediately apparent, the system is likely not self-consistent.</p>
+
+<p>Also, the number of those postulates is usually small (this is the rule of thumb part).</p>
+
+<p>Simply put: if you cannot explain something using very elementary language and constructs, then there is probably inconsistency in it somewhere.</p>
+
+<p>Example: most religious doctrines, political ideologies, astrology, cryptocurrencies etc.</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/popper/">Popper's argument</a></h2>
+
+      <div class="entry">
+        <p>The logical basis of Popper’s solution to the problem of induction - only with modus tollens we can make valid logical conclusions that proceed from specific to general, and we can make only negative such conclusions, e.g. “This swan is black, therefore not all swans are white.” Hence the only criteria for valid knowledge is fasifiability.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/antinomy/">Antinomy</a></h2>
+
+      <div class="entry">
+        <p>Word of the day: Antinomy —  an undecidable conflict between two theses, none of which is true, simply because the question has no answer. (via Immanuel Kant)</p>
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/systematic-learning/">On systematic learning</a></h2>
+
+      <div class="entry">
+        <p>Systematic learning (especially of the institutionalized kind, the way it’s done at schools) doesn’t work - the principal method of learning is being exposed to some new info which you connect to what you already know in a creative way, educational institutions always try to do the creative work for you and that’s why the process is bound to fail. Learning is always spontaneous and almost always comes from unserious and unusual channels. That’s why a week of motivated research can get you to learn more than years at school.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/facts/">Facts</a></h2>
+
+      <div class="entry">
+        <p>I came to the world for the facts, but it turns out I can only have pictures of facts. This is some shit.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/wittgenstein-kierkegaard/">Wittgenstein and Kierkegaard's last words</a></h2>
+
+      <div class="entry">
+        <p>Look how different philosophers are from one another:</p>
+
+<p>Wittgenstein’s last words (upon hearing that friends are coming to visit him): “Tell them I’ve had a wonderful life”</p>
+
+<p>Kierkegaard’s were “My life is a great, to others unknown and incomprehensible suffering.”</p>
+
+<p>Seems that Wittgenstein and Kierkegaard are the modern version of the laughing and the crying philosopher.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/kant-hume/">Kant vs Hume</a></h2>
+
+      <div class="entry">
+        <p>I find it fascinating how similar it is to the Critique of Pure Reason, though the backgrounds of the two authors are so different.</p>
+
+<p>Kant and Hume embody the religious and scientific schools in philosophy, Kant seeing belief as a transformative force and Hume seeing it as a peculiarly of the human character.</p>
+
+<p>The ultimate conclusion that you can reach when comparing their viewpoints is that causality is not a law, nor a meta law, but a belief which every thinking being must hold to some extend.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/critique-deepest/">Deepest chapter of Kant's Critique</a></h2>
+
+      <div class="entry">
+        <p>At first I thought that the Transcendental Deduction was the heart of the matter of “The Critique of Pure Reason”, but upon rereading, it’s definitely not it. The deepest chapter is appropriately called “Systematic representation of All the Synthetic Principles of Pure Understanding” and is awesome. Especially the “Analogies of Experience” and the “Anticipation of Perception” are so deep that I did not understand a single word at first, but it all comes together with time.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/positive-nihilism/">Positive nihilism</a></h2>
+
+      <div class="entry">
+        <p>Positive nihilism:</p>
+
+<p>Nothing that you say or do matters in the grand scheme of things, and this is pathetic, but more pathetic is the refusal to accept that fact, instead of conforming to it and thus making it the only thing you conform to:</p>
+
+<p>Your achievements don’t matter, so no point in being dishonest.</p>
+
+<p>You failures don’t matter, so no point in giving up.</p>
+
+<p>Your strive to perfection is vain, so no point in pressuring yourself.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/concept-of-self/">The concept of the self</a></h2>
+
+      <div class="entry">
+        <p>Re-reading “I am a strange loop” and finding much stuff that I missed originally. I like the author’s idea of an organism’s concept of self as the central concept in an organism’s system of thought, and the one that binds all other concepts together.</p>
+
+<p>Like, a concept is considered true and real by us only if it relates to our concept of ourselves. Our concept of ourselves is the realest thing there exists for us (although it in actuality is completely objective).</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/spirituality/">On spirituality and society</a></h2>
+
+      <div class="entry">
+        <p>It won’t be till we start fearing spiritual death more than we fear physical death, that our society will arrive at the next stage.</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/myriad-of-things/">On the concept of myriad of things</a></h2>
+
+      <div class="entry">
+        <p>Dogen’s concept of a “myriad of things” (or “the thousand things” as it is sometimes translated) is very similar to Kant’s concept of the “manifold of sensibility”, essentially both are trying to highlight the novel, flux-like aspect of reality, the fact that the concept of objects are subjective (no pun intended). It would be a really cool plot twist if it turned out that Kant had read Dogen (very highly unlikely in real life).</p>
+
+
+      </div>
+
+    </article>
+
+    
+      <h2><a href="/productivity/">On productivity</a></h2>
+
+      <div class="entry">
+        <p>Seems that all this obsession with productivity that we have is due to the fact that we don’t believe in the things we do and so we want to at least do more of them.</p>
+
+
+      </div>
+
+    </article>
+
+    
+
+    
+
+    <h2><a href="/shorts">all shorts</a></h2>
+    <h2><a href="/tags">all topics</a></h2>
+
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+
+      <div class="container">
+          <h1>Subscribe</h1>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/abuseofnotation"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/abuseofnotation', 'popupwindow')"
+            class="embeddable-buttondown-form"
+          >
+            <input type="email" placeholder="Enter your email" name="email" id="bd-email" class="textfield" />
+            
+            <input type="submit" class="read-more" value="Subscribe" />
+            <p>
+              <a  href="https://buttondown.email/refer/abuseofnotation" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
+      </div>
+
+      <div class="container">
+          <h1>Support</h1>
+          <p><a href="https://patreon.com/abuseofnotation">Patreon</a></p>
+          <p><a href="https://ko-fi.com/borismarinov">Ko-fi</a></p>
+      </div>
+
+      <div class="container">
+          <h1>Contact</h1>
+          <p><a href="mailto:marinovboris@protonmail.com">email</a></p>
+          <p><a rel="me" target="_blank" href="https://mathstodon.xyz/@abuseofnotation">Mastodon</a></p>
+          <p><a target="_blank" href="https://twitter.com/AlexanderKatt/">twitter</a></p>
+      </div>
+
+      <div class="container">
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+        
+      </div>
+    </body>
+
+
+

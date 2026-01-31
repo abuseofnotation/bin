@@ -1,7 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
+PATH=~/bin:$PATH
 # web-random-page abuseofnotation.github.io/ | web-random-paragraph | toot
 
 web-random-paragraph-from-page abuseofnotation.github.io/ | toot
 
+cd ~/pr/category-theory-illustrated
+git push-stuff
 
-
+cd ~/pr/mind-against-the-machine
+git push-stuff
